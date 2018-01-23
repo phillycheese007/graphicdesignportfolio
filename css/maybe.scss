@@ -1,0 +1,32 @@
+---
+#graphic2
+---
+$primary_back_color:black;
+$primary_font_color:white;
+$first-color:black;
+$second-color:white;
+$third-color:purple;
+$link-padding:14px;
+
+@mixin link-style {
+  $text-decor-underline:underline;
+  text-decoration: $text-decor-underline;
+}
+
+
+
+/*--BB  Universals--*/
+/*--BB  Universals--*/
+/*--BB  Universals--*/
+
+body, 
+html {
+  margin:0;
+  padding:0;
+}
+body{
+  background: #ffffff;
+  color: #000000;
+  font-family: times, sans-serif;
+  font-size: 9px;
+}
