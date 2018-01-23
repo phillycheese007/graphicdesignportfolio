@@ -19,7 +19,7 @@ $link-padding:14px;
 /*--BB  Universals--*/
 /*--BB  Universals--*/
 
-body, 
+body,
 html {
   margin:0;
   padding:0;
@@ -39,7 +39,7 @@ a:active {text-decoration: underline;}
 h1{color:black;font-size:10.5px;font-weight:normal;margin:0;padding:0;}
 h2{color:black;font-size:11.5px;font-weight:normal;margin:0;padding:0;}
 
-ul{ list-style-type:none;}  
+ul{ list-style-type:none;}
 
 .rightfloat{float:right;}
 .leftfloat{float:left;}
@@ -66,7 +66,7 @@ ul{ list-style-type:none;}
     width:600px;
     margin:0 auto;
     margin-bottom:100px;
-    padding:0; 
+    padding:0;
 }
 
 
@@ -97,7 +97,7 @@ ul{ list-style-type:none;}
     margin-top:4px; /* this is from top of actual page */
     /*margin-bottom:40px;*/
     #logo{
-      width:200px;margin:0 auto;  
+      width:200px;margin:0 auto;
       img{display:block;margin:auto;}
     }  /* EE #logo */
   }  /* EE #logoheader */
@@ -105,10 +105,10 @@ ul{ list-style-type:none;}
 
 #header_holder{
   background:none;position:relative;z-index:99;height:10px;width:600px;margin:0 auto;padding:0;
-  
 
-  
-  
+
+
+
    /*----------------BB Menu--*/
    /*----------------BB Menu--*/
 
@@ -120,8 +120,8 @@ ul{ list-style-type:none;}
 
    /*----------------EE Menu--*/
    /*----------------EE Menu--*/
-  
-  
+
+
 /* put men here before end logo header */
 } /* EE #header_holder------------------------------------------------------------------------------------------ */
 
@@ -159,8 +159,8 @@ ul{ list-style-type:none;}
 
 .arrow_right {
   margin-top:1px;
-  width: 0; 
-  height: 0; 
+  width: 0;
+  height: 0;
   border-top: 7px solid transparent;
   border-bottom: 7px solid transparent;
   border-left: 7px solid black;
@@ -192,17 +192,17 @@ ul{ list-style-type:none;}
 /*--BB  Thumbnails--*/
 #thumb_holder{background:blue;width:100%;}
 ul.thumbnails {list-style-type:none;background:red; margin:0 auto;padding:0;}
-ul.thumbnails li {background:yellow;height:110px;width:140px;margin-left:5px;margin-right:5px;margin-top:50px;float:left;text-align:center;} 
+ul.thumbnails li {background:yellow;height:110px;width:140px;margin-left:5px;margin-right:5px;margin-top:50px;float:left;text-align:center;}
 
 
 .thumbnails{
-  .mask { 
-    overflow:hidden; 
+  .mask {
+    overflow:hidden;
     width:135px;
     height:100px;
     margin:0px auto;
     margin-bottom:21px;
-  } 
+  }
   .caption{background:none;height:150px;line-height:50x;font-size:11px;}
 }
 
@@ -286,16 +286,16 @@ ul.thumbnails li {background:yellow;height:110px;width:140px;margin-left:5px;mar
 /*---BB Media Queries --*/
 
 @media screen and (max-width:680px) {
-  
+
 
   #header_holder{width:90vw;height:12.5vw;}
   #logo img {height:12.5vw;}
- 
-  
+
+
    /*----------------BB Menu--*/
    /*----------------BB Menu--*/
 
-.menu3{width:90vw;margin-top:175px;height:25px;line-height:35px;background:grey;margin:0;margin-bottom:30px;padding:0;}
+.menu3{width:90vw;margin-top:175px;height:25px;line-height:35px;background:none;margin:0;margin-bottom:30px;padding:0;}
 .menu3 ul {margin:0;padding:0;}
 .menu3 ul li {float:left;height:25px;}
 .menu3 ul .about {width:46%;background:none;text-align:right;}
@@ -304,32 +304,32 @@ ul.thumbnails li {background:yellow;height:110px;width:140px;margin-left:5px;mar
    /*----------------EE Menu--*/
    /*----------------EE Menu--*/
 
-  
-  .main_container{ background:red;width:90vw;height:auto;margin:0 auto;padding:0;}
-  
-  
+
+  .main_container{ background:none;width:90vw;height:auto;margin:0 auto;padding:0;}
+
+
    /*----------------BB Thumbnails--*/
    /*----------------BB Thumbnails--*/
-  
-#thumb_holder{background:blue;width:90vw;margin:0 auto;}
-ul.thumbnails {list-style-type:none;background:purple;  margin:0 auto;padding:0;}
-ul.thumbnails li {background:yellow;height:14vw;width:20vw;margin-right:1.2vw;margin-left:1.2vw; margin-top:50px;float:left;text-align:center;} 
+
+#thumb_holder{background:none;width:90vw;margin:0 auto;}
+ul.thumbnails {list-style-type:none;background:none;  margin:0 auto;padding:0;}
+ul.thumbnails li {background:none;height:14vw;width:20vw;margin-right:1.2vw;margin-left:1.2vw; margin-top:50px;float:left;text-align:center;}
 
 .thumbnails{
-  .mask { 
-    overflow:hidden; 
+  .mask {
+    overflow:hidden;
     width:19vw;
     height:14vw;
     margin:0px auto;
     margin-bottom:2em;/*--to force down title--*/
-  } 
+  }
   .caption{background:red;margin-top:0px;height:150px;line-height:50x;font-size:11px;}
 }
 /*--EE  Thumbnails--*/
 /*--EE  Thumbnails--*/
 /*--EE  Thumbnails--*/
 
-  
+
   .big_image_info{background:none;width:82vw;}
   #big_image {
     margin:0;padding:0;
@@ -359,7 +359,7 @@ ul.thumbnails li {background:yellow;height:14vw;width:20vw;margin-right:1.2vw;ma
 and (max-device-width: 680px) {
    ul.topnav{/*background:green;*/}
 }
-   
+
 
 @media screen and (max-width:680px) {
   ul.topnav.responsive {position: relative;}
@@ -385,7 +385,7 @@ and (max-device-width: 680px) {
     margin-left:0px;
     width: 100%;
    /* background:orange;*/}
-   
+
 }
 
 @media screen and (min-width:680px) {
@@ -397,7 +397,7 @@ and (max-device-width: 680px) {
    /* background:blue;*/}
     .block{
      min-width:40vw; max-width:60vh;position:relative;margin:60 auto !important;background:red;
-      
+
   }
 
 }
