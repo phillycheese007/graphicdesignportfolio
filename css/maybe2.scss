@@ -192,7 +192,7 @@ ul{ list-style-type:none;}
 /*--BB  Thumbnails--*/
 #thumb_holder{background:blue;width:100%;}
 ul.thumbnails {list-style-type:none;background:red; margin:0 auto;padding:0;}
-ul.thumbnails li {background:yellow;height:110px;width:140px;margin-left:5px;margin-right:5px;margin-top:50px;float:left;text-align:center;}
+ul.thumbnails li {background:none;height:110px;width:140px;margin-left:5px;margin-right:5px;margin-top:50px;float:left;text-align:center;}
 
 
 .thumbnails{
@@ -201,7 +201,7 @@ ul.thumbnails li {background:yellow;height:110px;width:140px;margin-left:5px;mar
     width:135px;
     height:100px;
     margin:0px auto;
-    margin-bottom:21px;
+    margin-bottom:14px;
   }
   .caption{background:none;height:150px;line-height:50x;font-size:11px;}
 }
