@@ -306,7 +306,7 @@ ul.thumbnails li {background:yellow;height:110px;width:140px;margin-left:5px;mar
    /*----------------BB Thumbnails--*/
    /*----------------BB Thumbnails--*/
   
-#thumb_holder{background:blue;width:90vw;margin:0 auto;height:100%;}
+#thumb_holder{background:blue;width:90vw;margin:0 auto;}
 ul.thumbnails {list-style-type:none;background:red; margin:0 auto;padding:0;}
 ul.thumbnails li {background:yellow;height:14vw;width:20vw;margin-left:1.2vw; margin-top:50px;float:left;text-align:center;} 
 
@@ -316,7 +316,7 @@ ul.thumbnails li {background:yellow;height:14vw;width:20vw;margin-left:1.2vw; ma
     width:19vw;
     height:14vw;
     margin:0px auto;
-    margin-bottom:0px;
+    margin-bottom:2em;/*--to force down title--*/
   } 
   .caption{background:red;margin-top:0px;height:150px;line-height:50x;font-size:11px;}
 }
