@@ -246,7 +246,12 @@ ul.thumbnails li {background:yellow;height:110px;width:140px;margin-left:5px;mar
   width:230px;
   height:230px;
 }
-
+.pingpong {
+  object-fit: cover;
+  object-position: 50% 10%;
+  width:230px;
+  height:230px;
+}
    /*----------------EE Thumbnail cropping--*/
    /*----------------EE Thumbnail cropping--*/
 
