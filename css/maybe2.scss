@@ -104,7 +104,7 @@ ul{ list-style-type:none;}
 
 
 #header_holder{
-  background:green;position:relative;z-index:99;height:10px;width:600px;margin:0 auto;padding:0;
+  background:none;position:relative;z-index:99;height:10px;width:600px;margin:0 auto;padding:0;
   
 
   
@@ -312,7 +312,7 @@ ul.thumbnails li {background:yellow;height:110px;width:140px;margin-left:5px;mar
    /*----------------BB Thumbnails--*/
   
 #thumb_holder{background:blue;width:90vw;margin:0 auto;}
-ul.thumbnails {list-style-type:none;background:purple;height:100%; margin:0 auto;padding:0;}
+ul.thumbnails {list-style-type:none;background:purple;  margin:0 auto;padding:0;}
 ul.thumbnails li {background:yellow;height:14vw;width:20vw;margin-right:1.2vw;margin-left:1.2vw; margin-top:50px;float:left;text-align:center;} 
 
 .thumbnails{
