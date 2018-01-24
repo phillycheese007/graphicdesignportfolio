@@ -104,7 +104,7 @@ ul{ list-style-type:none;}
 
 
 #header_holder{
-  background:none;position:relative;z-index:99;height:10px;width:600px;margin:0 auto;padding:0;
+  background:none;position:relative;z-index:99;height:10px;width:100%;margin:0 auto;padding:0;
 
 
 
@@ -213,21 +213,21 @@ ul.thumbnails li {background:none;height:110px;width:140px;margin-left:5px;margi
 
 .banana {
   object-fit: cover;
-  object-position: 90% 50%;
-  width:250px;
-  height:250px;
+  object-position: 70% 70%;
+  width:200px;
+  height:100px;
 }
 .perrier {
   object-fit: cover;
-  object-position: 50% 50%;
-  width:250px;
-  height:250px;
+  object-position: 80% 80%;
+  width:200px;
+  height:150px;
 }
 .pigeon {
   object-fit: cover;
-  object-position: 50% 50%;
+  object-position: 80% 100%;
   width:230px;
-  height:230px;
+  height:130px;
 }
 .bottles {
   object-fit: cover;
@@ -237,9 +237,9 @@ ul.thumbnails li {background:none;height:110px;width:140px;margin-left:5px;margi
 }
 .trippyphone {
   object-fit: cover;
-  object-position: 50% 50%;
-  width:250px;
-  height:250px;
+  object-position: 70% 70%;
+  width:190px;
+  height:100px;
 }
 .skate {
   object-fit: cover;
@@ -250,8 +250,8 @@ ul.thumbnails li {background:none;height:110px;width:140px;margin-left:5px;margi
 .pingpong {
   object-fit: cover;
   object-position: 50% 50%;
-  width:250px;
-  height:250px;
+  width:190px;
+  height:120px;
 }
    /*----------------EE Thumbnail cropping--*/
    /*----------------EE Thumbnail cropping--*/
@@ -326,6 +326,43 @@ ul.thumbnails li {background:none;height:14vw;width:20vw;margin-right:1.2vw;marg
   }
   .caption{background:none;margin-top:0px;height:150px;line-height:50x;font-size:11px;}
 }
+  
+
+   /*----------------BB Thumbnail cropping--*/
+   /*----------------BB Thumbnail cropping--*/
+
+.banana {
+  width:100px;
+  height:100px;
+}
+.perrier {
+  width:125px;
+  height:125px;
+}
+.pigeon {
+  width:130px;
+  height:130px;
+}
+.bottles {
+  width:185px;
+  height:110px;
+}
+.trippyphone {
+  width:100px;
+  height:100px;
+}
+.skate {
+  width:100px;
+  height:100px;
+}
+.pingpong {
+  width:125px;
+  height:125px;
+}
+   /*----------------EE Thumbnail cropping--*/
+   /*----------------EE Thumbnail cropping--*/
+
+  
 /*--EE  Thumbnails--*/
 /*--EE  Thumbnails--*/
 /*--EE  Thumbnails--*/
