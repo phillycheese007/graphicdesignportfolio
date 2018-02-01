@@ -22,3 +22,4 @@ var output2 = template(img1);
 
 // HTML element with id "animalList" is set to the output above
 document.getElementById("animalList").innerHTML = output;
+document.getElementById("animalList2").innerHTML = output;
