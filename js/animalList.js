@@ -18,6 +18,7 @@ var img1 = {poop: [
  
 // data is passed to above template
 var output = template(data);
- 
+var output2 = template(img1);
+
 // HTML element with id "animalList" is set to the output above
 document.getElementById("animalList").innerHTML = output;
