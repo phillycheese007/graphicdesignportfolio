@@ -6,6 +6,8 @@
 <meta name="author" content="Philip Dusel">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1 maximum-scale=1">
 <link rel="stylesheet" href="/graphicdesignportfolio/css/maybe2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
 <style>
   #header_holder{background:none;height:70px;}
   
@@ -275,8 +277,21 @@
 <!-- EE .thumbnails -->
 <!-- EE .thumbnails -->
 <!-- EE .thumbnails -->
+      
+      <span style="display:none;">
+   <img id="id1" src="~$imageUrl`" onload="javascript:showImage();">
+</span>
+      
+      
 
-
+<script>
+  var _img = document.getElementById('id1');
+var newImg = new Image;
+newImg.onload = function() {
+    _img.src = this.src;
+}
+newImg.src = '/philipdusel/graphic/trippyphone2.jpg';
+      </script>
 
 
 
