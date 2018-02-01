@@ -4,6 +4,7 @@ var source = document.getElementById("animalTemplate").innerHTML;
  
 // Handlebars compiles the above source into a template
 var template = Handlebars.compile(source);
+var template2 = Handlebars.compile($('#t').html())
  
 // data
 var data = {animals: [
