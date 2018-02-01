@@ -11,6 +11,12 @@ var data = {animals: [
   {type: "Cat", sound: "meow"},
   {type: "Cow", sound: "moo"}
 ]};
+
+var img1 = {poop: [
+  {type: "Dog", sound: "woof"},
+  {type: "Cat", sound: "meow"},
+  {type: "Cow", sound: "moo"}
+]};
  
 // data is passed to above template
 var output = template(data);
