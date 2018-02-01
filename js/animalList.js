@@ -18,7 +18,7 @@ var img1 = "/philipdusel/html/pages/images_flowers.html"
  
 // data is passed to above template
 var output = template(data);
-var output2 = template(img1);
+var output2 = template2(img1);
 
 // HTML element with id "animalList" is set to the output above
 document.getElementById("animalList").innerHTML = output;
