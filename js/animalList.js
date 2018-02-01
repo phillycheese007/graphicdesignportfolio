@@ -13,9 +13,7 @@ var data = {animals: [
 ]};
 
 var img1 = {poop: [
-  {type: "Dog", sound: "woof"},
-  {type: "Cat", sound: "meow"},
-  {type: "Cow", sound: "moo"}
+  {src1: "/philipdusel/html/pages/images_flowers.html"}
 ]};
  
 // data is passed to above template
