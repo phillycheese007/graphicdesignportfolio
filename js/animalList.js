@@ -12,9 +12,8 @@ var data = {animals: [
   {type: "Cow", sound: "moo"}
 ]};
 
-var img1 = {poop: [
-  {src1: "/philipdusel/html/pages/images_flowers.html"}
-]};
+var img1 = "/philipdusel/html/pages/images_flowers.html"
+
  
 // data is passed to above template
 var output = template(data);
