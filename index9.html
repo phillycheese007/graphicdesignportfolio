@@ -128,6 +128,8 @@ $grid.on( 'click', '.grid-item', function( event ) {
   $grid.packery( 'fit', event.currentTarget, 10, 10 );
       
     $(  event.currentTarget  ).siblings().removeClass('grid-item--large');
+      $(  event.currentTarget  ).siblings().removeClass('image_boob');
+
     $(  event.currentTarget  ).toggleClass('grid-item--large');
   $( event.currentTarget ).toggleClass( "image_boob" );
   
