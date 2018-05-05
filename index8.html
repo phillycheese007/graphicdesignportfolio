@@ -1,0 +1,111 @@
+<!doctype html>
+<html class="export" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Gapless, draggable grid layouts">
+<link rel="stylesheet" href="/graphicdesignportfolio/css/packery-docs.css" media="screen">
+
+<style>
+* { box-sizing: border-box; }
+
+/* force scrollbar, prevents initial gap */
+html { overflow-y: scroll; }
+
+body { font-family: sans-serif; }
+
+/* ---- grid ---- */
+
+.grid {
+  background: #DDD;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .element-item ---- */
+
+/* 5 columns, percentage width */
+.grid-sizer,
+.grid-item {
+  width: 20%;
+}
+
+.grid-item {
+  float: left;
+  height: 100px;
+  background: #C09;
+  border: 2px solid hsla(0, 0%, 0%, 0.5);
+}
+
+.grid-item--width2 { width: 40%; }
+.grid-item--height2 { height: 200px; }
+
+.grid-item--large {
+  position:absolute !important;top:0;
+  width: 100%;
+  height: 90vh;
+  background: pink;
+}
+@media only screen and (max-width: 600px) {
+.grid-sizer,.grid-item {width: 30%;}
+}
+  </style>
+  
+  
+</head>
+<body class="-page" data-page="">
+
+
+<h1>Packery - columnWidth, element sizing</h1>
+
+<div class="grid">
+  <div class="grid-sizer"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+   <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+</div>
+
+  
+  
+<!-- Packery does NOT require jQuery.
+  jQuery is only used for jQuery UI Draggable -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+<script src="/graphicdesignportfolio/js/packery-docs.min.js"></script>
+
+<script>
+var $grid = $('.grid').packery({
+  itemSelector: '.grid-item',
+  columnWidth: '.grid-sizer',
+  percentPosition: true
+}); 
+  
+$grid.on( 'click', '.grid-item', function( event ) {
+  $grid.packery( 'fit', event.currentTarget, 10, 10 );
+      
+    $(  event.currentTarget  ).siblings().removeClass('grid-item--large');
+    $(  event.currentTarget  ).toggleClass('grid-item--large');
+  // trigger layout after item size changes
+  $grid.packery('layout');
+  
+});  
+</script>
+  
+
+
+
+  
+});
+</body>
+</html>
