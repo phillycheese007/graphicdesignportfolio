@@ -73,9 +73,10 @@ body { font-family: sans-serif; }
 @media only screen and (max-width: 400px) {
 .grid-item {width: 100%;}
 .grid-sizer {width: 100%;} 
+  .image_boob img{width:100% object-fit:contain}
 } 
   
-.boob{width:100% !important}
+.image_boob{width:100% !important}
 .five_percent{margin:5%;}
   </style>
   
@@ -128,7 +129,7 @@ $grid.on( 'click', '.grid-item', function( event ) {
       
     $(  event.currentTarget  ).siblings().removeClass('grid-item--large');
     $(  event.currentTarget  ).toggleClass('grid-item--large');
-  $( event.currentTarget ).toggleClass( "boob" );
+  $( event.currentTarget ).toggleClass( "image_boob" );
   
   // trigger layout after item size changes
   $grid.packery('layout');
