@@ -159,7 +159,7 @@ strong { font-weight: bold; }
     height: auto;
     margin-bottom: 20px;
   }
-
+.col3 { width: 480px; }
 }
 
 .copy h2 {
