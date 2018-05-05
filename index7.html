@@ -128,7 +128,7 @@ var pckry = new Packery( container, {
   gutter: 20
 });
   
-$pckry.on( 'click', '.grid-item', function( event ) {
+$pckry.on( 'click', '.item', function( event ) {
   $pckry.packery( 'fit', event.currentTarget, 10, 10 );
       
     $(  event.currentTarget  ).siblings().removeClass('grid-item--large');
