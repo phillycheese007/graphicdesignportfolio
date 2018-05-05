@@ -161,10 +161,6 @@ strong { font-weight: bold; }
     height: auto;
     margin-bottom: 20px;
   }
-  
-  #content {
-    padding-left: 10px;
-  }
 
 }
 
@@ -241,7 +237,7 @@ button {
 
 .demos #copy,
 .docs #content {
-  max-width: 640px;
+  max-width: 840px;
 }
 
 .docs #content h2 {
