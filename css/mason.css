@@ -337,6 +337,8 @@ button {
 .col3 { width: 280px; }
 .col4 { width: 380px; }
 .col5 { width: 480px; }
+.col22 { width: 25%; }
+
 
 .col1 img { max-width: 80px; }
 .col2 img { max-width: 180px; }
