@@ -112,7 +112,7 @@ $grid.on( 'click', '.grid-item', function( event ) {
       
     $(  event.currentTarget  ).siblings().removeClass('grid-item--large');
     $(  event.currentTarget  ).toggleClass('grid-item--large');
-  $( event.currentTarget ).width( 900 );
+  
   // trigger layout after item size changes
   $grid.packery('layout');
     $("html, body").animate({ scrollTop: 0 }, "fast");
