@@ -697,9 +697,9 @@ var $grid = $('.grid').packery({
 $grid.on( 'click', '.grid-item', function( event ) {
   $grid.packery( 'fit', event.currentTarget, 10, 10 );
   
-    $(  event.currentTarget  ).toggleClass('grid-item--large');
+    $(  event.currentTarget  ).siblings.toggleClass('grid-item--large');
   // trigger layout after item size changes
-  $grid.packery('layout');siblings
+  $grid.packery('layout');
   
 });
 
