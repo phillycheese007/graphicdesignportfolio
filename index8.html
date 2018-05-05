@@ -118,6 +118,12 @@ $grid.on( 'click', '.grid-item', function( event ) {
   $grid.packery('layout');
   
 });  
+  
+$(".grid-item").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
+  
 </script>
   
 
