@@ -132,7 +132,7 @@ var pckry = new Packery( container, {
 });
   
 $pckry.on( 'click', '.item', function( event ) {
-  $pckry( 'fit', event.currentTarget, 10, 10 );
+  $pckry.packery( 'fit', event.currentTarget, 10, 10 );
     $(  event.currentTarget  ).siblings().removeClass('grid-item--large');
     $(  event.currentTarget  ).toggleClass('grid-item--large');
 
