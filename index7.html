@@ -123,6 +123,13 @@ Packery.prototype.needsResizeLayout = function() {
 var $grid = $('.grid').packery({
   itemSelector: '.item'
 }); 
+
+var container = document.querySelector('.packery');
+var pckry = new Packery( container, {
+  itemSelector: '.item',
+  columnWidth: 150,
+  gutter: 20
+});
   
 $grid.on( 'click', '.item', function( event ) {
   $grid.packery( 'fit', event.currentTarget, 10, 10 );
@@ -133,14 +140,8 @@ $grid.on( 'click', '.item', function( event ) {
   $grid.packery('layout');
 });
   
- // init packery
   
-var container = document.querySelector('.packery');
-var pckry = new Packery( container, {
-  itemSelector: '.item',
-  columnWidth: 150,
-  gutter: 20
-});
+
   
 
     
