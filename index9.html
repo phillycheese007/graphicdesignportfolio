@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<TITLE>PDZN</TITLE>
+<meta name=”description” content="Portfolio of PDZN Design.">
+<meta name="keywords" content="Graphic Design, Illustration, Junior Designer">
+<meta name="author" content="Philip Dusel">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1 maximum-scale=1">
+  
+<link rel="stylesheet" href="/graphicdesignportfolio/css/packery-docs.css" media="screen">
+
+<style>
+* { box-sizing: border-box; }
+
+/* force scrollbar, prevents initial gap */
+html { overflow-y: scroll; }
+
+body { font-family: sans-serif; }
+
+/* ---- grid ---- */
+
+.grid {
+  background: #DDD;
+  width:90%;margin:10px 5%;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .element-item ---- */
+
+/* 5 columns, percentage width */
+.grid-sizer,
+.grid-item {
+  width: 20%;
+}
+
+.grid-item {
+  overflow:hidden;
+  float: left;
+  height: 350px;
+  background: #C09;
+  border: 2px solid hsla(0, 0%, 0%, 0.5);
+}
+
+.grid-item--large {
+  position:absolute !important;top:0;
+  width: 100%;
+  height: 90vh;
+  background: pink;text-align:center;
+}
+
+@media only screen and (min-width: 960px) {
+.grid-item {width: 20%;}
+.grid-sizer {width: 20%;} 
+} 
+@media only screen and (max-width: 960px) {
+.grid-item {width: 25%;}
+.grid-sizer {width: 25%;} 
+}
+@media only screen and (max-width: 800px) {
+.grid-item {width: 33%;}
+.grid-sizer {width: 33%;} 
+} 
+@media only screen and (max-width: 560px) {
+.grid-item {width: 50%;}
+.grid-sizer {width: 50%;} 
+} 
+@media only screen and (max-width: 400px) {
+.grid-item {width: 100%;}
+.grid-sizer {width: 100%;} 
+} 
+  
+.boob{width:100% !important}
+.five_percent{margin:5%;}
+  </style>
+  
+  
+</head>
+<body class="-page" data-page="">
+
+
+<h1 class="five_percent">PDZN :)</h1>
+
+<div class="grid">
+  <div class="grid-sizer"></div>
+  
+  <div class="grid-item">
+    <img class="img1" src="/graphicdesignportfolio/images/queenlrg.jpg">
+    <img class="img1" src="/graphicdesignportfolio/images/queenlrg.jpg">
+  </div>
+  
+  <div class="grid-item">
+    <img class="img1" src="/graphicdesignportfolio/images/la2.jpg">
+  </div>
+    <div class="grid-item">
+    <img class="img1" src="/graphicdesignportfolio/images/la2.jpg">
+  </div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+  <div class="grid-item"></div>
+</div>
+
+  
+  
+<!-- Packery does NOT require jQuery.
+  jQuery is only used for jQuery UI Draggable -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+<script src="/graphicdesignportfolio/js/packery-docs.min.js"></script>
+
+<script>
+var $grid = $('.grid').packery({
+  itemSelector: '.grid-item',
+  columnWidth: '.grid-sizer',
+  percentPosition: true
+}); 
+  
+$grid.on( 'click', '.grid-item', function( event ) {
+  $grid.packery( 'fit', event.currentTarget, 10, 10 );
+      
+    $(  event.currentTarget  ).siblings().removeClass('grid-item--large');
+    $(  event.currentTarget  ).toggleClass('grid-item--large');
+  $( event.currentTarget ).toggleClass( "boob" );
+  
+  // trigger layout after item size changes
+  $grid.packery('layout');
+    $("html, body").animate({ scrollTop: 0 }, "fast");
+
+  
+});  
+  
+
+  
+</script>
+  
+
+
+</body>
+</html>
