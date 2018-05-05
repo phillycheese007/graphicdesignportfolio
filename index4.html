@@ -82,9 +82,11 @@
 
 
 <script>
+  var $container = $('#container').imagesLoaded(
+    
   $(function(){
     
-    $('#container').masonry({
+    $container.masonry({
       itemSelector: '.box',
       columnWidth: 300,
       isAnimated: !Modernizr.csstransitions,
