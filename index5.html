@@ -27,7 +27,7 @@ html { overflow-y: scroll; }
 body { font-family: sans-serif; }
 
 .grid {
-  background: #EEE;
+  background: red;
 }
 
 /* item is invisible, but used for layout */
@@ -58,8 +58,9 @@ body { font-family: sans-serif; }
 
 /* both item and item content change size */
 .grid-item.is-expanded {
-  width: 60%;
-  height: 200px;
+  background:blue;
+  width: 100%;
+  height: 400px;
   z-index: 2;
 }
 
@@ -126,7 +127,74 @@ body { font-family: sans-serif; }
   </div>
 </div>
 
+<script>
+var $grid = $('.grid').packery({
+  itemSelector: '.grid-item',
+  percentPosition: true
+});
 
+$grid.on( 'click', '.grid-item-content', function( event ) {
+
+  var itemContent = event.currentTarget;
+  setItemContentPixelSize( itemContent );
+
+  var itemElem = itemContent.parentNode;
+  var $item = $( itemElem );
+  var isExpanded = $item.hasClass('is-expanded');
+  $( itemElem ).toggleClass('is-expanded');
+
+  // force redraw
+  var redraw = itemContent.offsetWidth;
+  // renable default transition
+  itemContent.style[ transitionProp ] = '';
+
+  addTransitionListener( itemContent );
+  setItemContentTransitionSize( itemContent, itemElem );
+
+  if ( isExpanded ) {
+    // if shrinking, shiftLayout
+    $grid.packery('shiftLayout');
+  } else {
+    // if expanding, fit it
+    $grid.packery( 'fit', itemElem );
+  }
+});
+
+var docElem = document.documentElement;
+var transitionProp = typeof docElem.style.transition == 'string' ?
+    'transition' : 'WebkitTransition';
+var transitionEndEvent = {
+  WebkitTransition: 'webkitTransitionEnd',
+  transition: 'transitionend'
+}[ transitionProp ];
+
+function setItemContentPixelSize( itemContent ) {
+  var previousContentSize = getSize( itemContent );
+  // disable transition
+  itemContent.style[ transitionProp ] = 'none';
+  // set current size in pixels
+  itemContent.style.width = previousContentSize.width + 'px';
+  itemContent.style.height = previousContentSize.height + 'px';
+}
+
+function addTransitionListener( itemContent ) {
+  // reset 100%/100% sizing after transition end
+  var onTransitionEnd = function() {
+    itemContent.style.width = '';
+    itemContent.style.height = '';
+    itemContent.removeEventListener( transitionEndEvent, onTransitionEnd );
+  };
+  itemContent.addEventListener( transitionEndEvent, onTransitionEnd );
+}
+
+function setItemContentTransitionSize( itemContent, itemElem ) {
+  // set new size
+  var size = getSize( itemElem );
+  itemContent.style.width = size.width + 'px';
+  itemContent.style.height = size.height + 'px';
+}
+
+  </script>
 
 </body>
 </html>
