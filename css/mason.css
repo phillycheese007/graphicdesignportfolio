@@ -159,10 +159,7 @@ strong { font-weight: bold; }
     height: auto;
     margin-bottom: 20px;
   }
-.col3 { width: 480px; }
-	#content {
-  max-width: 840px;
-}
+
 }
 
 .copy h2 {
