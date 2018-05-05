@@ -13,7 +13,14 @@
 * { box-sizing: border-box; }
 
 /* force scrollbar, prevents initial gap */
-html { overflow-y: scroll; }
+  
+html {
+  font-family: sans-serif; /* 1 */
+  line-height: 1.15; /* 2 */
+  -ms-text-size-adjust: 100%; /* 3 */
+  -webkit-text-size-adjust: 100%; /* 3 */
+  overflow-y: scroll; /* force scrollbar, prevents initial gap */
+}
 
 body { font-family: sans-serif;margin:0; }
 
