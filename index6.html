@@ -690,6 +690,9 @@ body { font-family: sans-serif; }
 
 <script>
 
+var $grid = $('.grid').packery({
+  itemSelector: '.grid-item'
+}); 
   
 $grid.on( 'click', '.grid-item', function( event ) {
   $grid.packery( 'fit', event.currentTarget, 120, 60 );
