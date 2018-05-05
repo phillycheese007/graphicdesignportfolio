@@ -54,9 +54,20 @@ body { font-family: sans-serif; }
   background: pink;text-align:center;
 }
 
-@media only screen and (max-width: 800px) {
-
+@media only screen and (min-width: 960px) {
+.grid-sizer {width: 20%;} 
+} 
+@media only screen and (max-width: 960px) {
+.grid-sizer {width: 25%;} 
+}
+@media only screen and (max-width: 800px) {}
 .grid-sizer {width: 33%;} 
+} 
+@media only screen and (max-width: 560px) {
+.grid-sizer {width: 50%;} 
+} 
+@media only screen and (max-width: 400px) {
+.grid-sizer {width: 100%;} 
 } 
   
 .img1{}
