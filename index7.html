@@ -131,13 +131,13 @@ var pckry = new Packery( container, {
   gutter: 20
 });
   
-$container.on( 'click', '.item', function( event ) {
-  $container( 'fit', event.currentTarget, 10, 10 );
+$pckry.on( 'click', '.item', function( event ) {
+  $pckry( 'fit', event.currentTarget, 10, 10 );
     $(  event.currentTarget  ).siblings().removeClass('grid-item--large');
     $(  event.currentTarget  ).toggleClass('grid-item--large');
 
   // trigger layout after item size changes
-  $container.packery('layout');
+  $pckry('layout');
 });
   
   
