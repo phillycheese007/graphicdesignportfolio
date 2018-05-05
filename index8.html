@@ -52,9 +52,15 @@ body { font-family: sans-serif; background:blue;}
   height: 90vh;
   background: pink;
 }
-  
+  .center{}
 @media only screen and (max-width: 600px) {
 .grid-sizer,.grid-item {width: 30%;}
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 }
   
 .img1{object-fit:contain}
@@ -71,10 +77,10 @@ body { font-family: sans-serif; background:blue;}
 <div class="grid">
   <div class="grid-sizer"></div>
   <div class="grid-item">
-    <img class="img1" src="/graphicdesignportfolio/images/queenlrg.jpg">
+    <img class="img1 center" src="/graphicdesignportfolio/images/queenlrg.jpg">
   </div>
   <div class="grid-item">
-    <img class="img1" src="/graphicdesignportfolio/images/la2.jpg">
+    <img class="img1 center" src="/graphicdesignportfolio/images/la2.jpg">
   </div>
     <div class="grid-item">
     <img class="img1" src="/graphicdesignportfolio/images/la2.jpg">
