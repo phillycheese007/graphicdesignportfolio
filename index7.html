@@ -131,8 +131,18 @@ $grid.on( 'click', '.item', function( event ) {
     $(  event.currentTarget  ).toggleClass('grid-item--large');
   // trigger layout after item size changes
   $grid.packery('layout');
-  
 });
+  
+ // init packery
+  
+var container = document.querySelector('.packery');
+var pckry = new Packery( container, {
+  itemSelector: '.item',
+  columnWidth: 150,
+  gutter: 20
+});
+  
+
     
 </script>
   
