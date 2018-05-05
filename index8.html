@@ -13,12 +13,11 @@
 /* force scrollbar, prevents initial gap */
 html { overflow-y: scroll; }
 
-body { font-family: sans-serif; }
-
+body { font-family: sans-serif; background:blue;}
 /* ---- grid ---- */
 
 .grid {
-  background: #DDD;
+  background: red;margin:0 auto;
 }
 
 /* clear fix */
@@ -52,9 +51,13 @@ body { font-family: sans-serif; }
   height: 90vh;
   background: pink;
 }
+  
 @media only screen and (max-width: 600px) {
 .grid-sizer,.grid-item {width: 30%;}
 }
+  
+.img1{}
+  
   </style>
   
   
@@ -65,9 +68,15 @@ body { font-family: sans-serif; }
 <h1>Packery - columnWidth, element sizing</h1>
 
 <div class="grid">
-  <div class="grid-sizer"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
+  <div class="grid-sizer">
+    <img class="img1" src="/graphicdesignportfolio/images/queenlrg.jpg">
+  </div>
+  <div class="grid-sizer">
+    <img class="img1" src="/graphicdesignportfolio/images/la2.jpg">
+  </div>
+    <div class="grid-sizer">
+    <img class="img1" src="/graphicdesignportfolio/images/la2.jpg">
+  </div>
   <div class="grid-item"></div>
   <div class="grid-item"></div>
    <div class="grid-item"></div>
