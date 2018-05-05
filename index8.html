@@ -75,7 +75,7 @@ body { font-family: sans-serif; }
 .grid-sizer {width: 100%;} 
 } 
   
-.img1{}
+.boob{width:100% !important}
 .five_percent{margin:5%;}
   </style>
   
@@ -128,7 +128,7 @@ $grid.on( 'click', '.grid-item', function( event ) {
       
     $(  event.currentTarget  ).siblings().removeClass('grid-item--large');
     $(  event.currentTarget  ).toggleClass('grid-item--large');
-  $(".grid-item").width( "100%" );
+  $( event.currentTarget ).addClass( "boob" );
   
   // trigger layout after item size changes
   $grid.packery('layout');
