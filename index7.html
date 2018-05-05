@@ -43,6 +43,9 @@ body { font-family: sans-serif; }
   border: 2px solid hsla(0, 0%, 0%, 0.5);
 }
 
+.grid-item--width2 { width: 40%; }
+.grid-item--height2 { height: 200px; }
+
 .grid-item--large {
   position:absolute !important;top:0;
   width: 100%;
@@ -59,20 +62,15 @@ body { font-family: sans-serif; }
 <body class="-page" data-page="">
 
 
+<h1>Packery - columnWidth, element sizing</h1>
+
 <div class="grid">
   <div class="grid-sizer"></div>
   <div class="grid-item"></div>
   <div class="grid-item"></div>
-  <div class="grid-item"></div
   <div class="grid-item"></div>
   <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div
-  <div class="grid-item"></div>
+   <div class="grid-item"></div>
   <div class="grid-item"></div>
   <div class="grid-item"></div>
   <div class="grid-item"></div>
@@ -84,21 +82,16 @@ body { font-family: sans-serif; }
   jQuery is only used for jQuery UI Draggable -->
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
-
-  <script src="/graphicdesignportfolio/js/packery-docs.min.js"></script>
+<script src="/graphicdesignportfolio/js/packery-docs.min.js"></script>
 
 <script>
-// https://packery.metafizzy.co/packery.pkgd.js added as external resource
-
-// overwrite Packery methods
-  
 var $grid = $('.grid').packery({
   itemSelector: '.grid-item',
   columnWidth: '.grid-sizer',
   percentPosition: true
 }); 
   
-$grid.on( 'click', '.item', function( event ) {
+$grid.on( 'click', '.grid-item', function( event ) {
   $grid.packery( 'fit', event.currentTarget, 10, 10 );
       
     $(  event.currentTarget  ).siblings().removeClass('grid-item--large');
@@ -106,17 +99,7 @@ $grid.on( 'click', '.item', function( event ) {
   // trigger layout after item size changes
   $grid.packery('layout');
   
-});
-  
-
-  
-
-  
-  
-
-  
-
-    
+});  
 </script>
   
 
