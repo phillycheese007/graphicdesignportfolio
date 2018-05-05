@@ -128,6 +128,11 @@ var pckry = new Packery( container, {
   gutter: 20
 });
 
+  
+  $pckry.on( 'click', '.grid-item', function( event ) {
+  $pckry( 'fit', event.currentTarget, 10, 10 );
+});
+    
 </script>
   
 
