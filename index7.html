@@ -88,12 +88,9 @@
 
 // overwrite Packery methods
   
-
 var $grid = $('.grid').packery({
-  itemSelector: '.item',
-  columnWidth: '.grid-sizer',
-  percentPosition: true
-});
+  itemSelector: '.item'
+}); 
   
 $grid.on( 'click', '.item', function( event ) {
   $grid.packery( 'fit', event.currentTarget, 10, 10 );
@@ -102,6 +99,7 @@ $grid.on( 'click', '.item', function( event ) {
     $(  event.currentTarget  ).toggleClass('grid-item--large');
   // trigger layout after item size changes
   $grid.packery('layout');
+  
 });
   
 // external js: packery.pkgd.js
