@@ -123,6 +123,7 @@ body { font-family: sans-serif;margin:0; }
     #big{margin:0;padding:0;height:100%;background:blue;position:absolute;top:100px;bottom:0;right:0;left:0;z-index:99;}
   .bird{top:300px !important; transition:  .5s;border-top:40px solid pink;}
   .hidden_info{background:lightgreen; width:90%;margin:0 5%;height:300px;position:fixed;top:-300px;z-index:1;}
+  .hidden_info_open{top:0 !important;}
   </style>
   
   
@@ -235,7 +236,9 @@ $(  event.currentTarget  ).toggleClass('rumble');
  
   <script>
 $(".menu_button").click(function(){
-    $("#big, .hidden_info").toggleClass("bird");
+    $("#big").toggleClass("bird");
+    $(".hidden_info").toggleClass("hidden_info_open");
+
 });
 </script>
 
