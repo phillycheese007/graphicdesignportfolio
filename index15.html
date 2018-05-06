@@ -124,7 +124,7 @@ body { font-family: Sans-Serif;margin:0; }
   .menubar_xpand{height:250px !important;transition:.5s;}
   
   .menu_bar .logo{float:left;margin-left:15px;line-height:40px}
-  .menu {position:relative;z-index:99;float:right;margin:0;margin-right:0;width:80%;height:440px;background:white;line-height:40px}
+  .menu {position:relative;z-index:99;float:right;margin:0;margin-right:0;width:80%;height:40px;background:white;line-height:40px}
   .menu_bar .menu li {
     font-family: 'Shadows Into Light', cursive;
     float:right;background:none;width:15%;margin-right:15px;font-size:20px;text-align:center;
@@ -132,7 +132,7 @@ body { font-family: Sans-Serif;margin:0; }
   
   #menu_wrapper { position: absolute;bottom:0;right:10px;width:100%;}
   
-  .contact_hidden{height:0%;width:100%;margin:0;border:2px solid black;}
+  .contact_hidden{height:100%;width:100%;margin:0;border:2px solid black;}
   .about_hidden{height:0%;width:100%;margin:0;border:2px solid black;}
   
   .hide{display:none}
@@ -301,7 +301,7 @@ $(".contact").click(function(){
     $(".menu_bar").addClass("menubar_xpand");
     $( this ).siblings().addClass("hide");
     $(".about_hidden").addClass("hide");
-    $(".contact_hidden").removeClass("hide").addClass("show_height");
+    $(".contact_hidden").removeClass("hide");
 });
 
     
