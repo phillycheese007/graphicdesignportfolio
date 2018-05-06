@@ -60,6 +60,17 @@ body { font-family: sans-serif;margin:0; }
   background: #C09;
   border: 12px solid white;
 }
+  
+.grid-item:after {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+  background: red;
+  z-index: -1;
+} 
 
 .grid-item--large {
   position:absolute !important;top:0;
