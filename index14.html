@@ -1,0 +1,382 @@
+<!doctype html>
+<html>
+<head>
+<meta name=”description” content="Portfolio of PDZN Design.">
+<meta name="keywords" content="Graphic Design, Illustration, Junior Designer">
+<meta name="author" content="Philip Dusel">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1 maximum-scale=1">
+<!--<link rel="stylesheet" href="/graphicdesignportfolio/css/packery-docs.css" media="screen">-->
+<link rel="stylesheet" href="/graphicdesignportfolio/css/mombo1.css" media="screen">
+
+
+<style>
+body{
+  background: rgba(255,255,255,1);
+background: -moz-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 0%, rgba(252,252,252,1) 72%, rgba(255,255,255,1) 100%);
+background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(0%, rgba(245,245,245,1)), color-stop(72%, rgba(252,252,252,1)), color-stop(100%, rgba(255,255,255,1)));
+background: -webkit-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 0%, rgba(252,252,252,1) 72%, rgba(255,255,255,1) 100%);
+background: -o-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 0%, rgba(252,252,252,1) 72%, rgba(255,255,255,1) 100%);
+background: -ms-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 0%, rgba(252,252,252,1) 72%, rgba(255,255,255,1) 100%);
+  }
+* { box-sizing: border-box; }
+
+/* force scrollbar, prevents initial gap */
+  
+html {
+  font-family: sans-serif; /* 1 */
+  line-height: 1.15; /* 2 */
+  -ms-text-size-adjust: 100%; /* 3 */
+  -webkit-text-size-adjust: 100%; /* 3 */
+  overflow-y: scroll; /* force scrollbar, prevents initial gap */
+}
+
+body { font-family: sans-serif;margin:0; }
+
+/* ---- grid ---- */
+
+.grid {
+  background: none;
+  width:90%;margin:0 5%;margin-bottom:100px
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .element-item ---- */
+
+/* 5 columns, percentage width 
+.grid-sizer,
+.grid-item {
+  width: 22%;
+}*/
+  
+.gutter-sizer { width: 4%; }
+  
+.grid-item {
+  overflow:hidden;    
+  float: left;
+  height: 350px;
+  background: #C09;
+  border: 1px solid black;border-inset:10px;   outline: 4px solid red;
+    outline-inset: 15px;
+}
+
+.grid-item--large {
+  position:absolute !important;top:0;
+  width: 100%;
+  height: auto;
+  background: pink;text-align:center; 
+}
+
+  
+@media only screen and (max-width: 400px) {
+.grid-sizer,
+.grid-item {
+  width: 100%;
+}
+  .image_boob{background:orange;width:100% !important;margin:0 !important;}
+  .image_boob img{width:100% ;}
+  
+  .image_boob .tall, .image_boob .wide{width:100% !important;margin:0 !important;}
+} 
+  
+
+
+
+@media only screen and (max-width: 1480px) and (min-width: 760px) {
+.grid-sizer,
+.grid-item {
+  width: 30.65%;
+}
+} 
+@media only screen and (max-width: 760px) and (min-width: 400px) {
+.grid-sizer,
+.grid-item {
+  width: 48%;
+}
+} 
+
+  
+  .image_boob{background:green;width:80%;margin:0 10%;display:block;transition:0}  
+
+  .image_boob .tall{width:60%;margin:0 20%;display:block;background:yellow}
+  .image_boob .wide{width:100%;margin:0;display:block;background:pink}
+  
+  .image_boob .tall img{width:100%;margin:0;}  
+  .image_boob .tall p{background:white;border:1px solid black;width:100%;margin:15px 0;height:150px;text-align:left;}  
+  .image_boob .wide p{background:white;border:1px solid black;width:100%;margin:15px 0;height:150px;text-align:left;}  
+  
+  .tall img, .wide img{}
+  
+.five_percent{margin:5%;margin-bottom:100px;}
+  hr{color:green;}
+  h1{font-size:15px;}
+  
+  .skewed img{margin-left:-100px;}
+  .skewed2 img{margin:-150px 150px 0 0;height:150%;}
+  .menu_button{background:red;width:40px;height:40px;position:absolute;top:30px;right:5%; z-index:999;}
+  
+    #big{margin:0;padding:0;height:100%;background:blue;position:absolute;top:100px;bottom:0;right:0;left:0;z-index:99;transition: .5s}
+  .bird{top:310px !important; transition:  .5s;}
+  .hidden_info{background:lightgreen; width:90%;margin:0 5%;height:300px;position:fixed;top:-300px;z-index:1;transition: .5s}
+  .hidden_info_open{top:0 !important; transition: .5s}
+  
+  
+  
+  
+ .con,
+ .special-con {
+   cursor: pointer;
+   display: inline-block;
+ }
+ 
+ .bar {
+   display: block;
+   height: 5px;
+   width: 50px;
+   background: #6FFFE9;
+   margin: 10px auto;
+ }
+ 
+ .con {
+   width: auto;
+   margin: 0 auto;
+   -webkit-transition: all .7s ease;
+   -moz-transition: all .7s ease;
+   -ms-transition: all .7s ease;
+   -o-transition: all .7s ease;
+   transition: all .7s ease;
+ }
+
+.con:hover .bar,.special-con:hover .bar {
+  background-color: #f92c8c;
+}
+ 
+ .col {
+   display: inline-block;
+   width: 24%;
+   text-align: center;
+   height: auto;
+   position: relative;
+ }
+ 
+ .middle {
+   margin: 0 auto;
+ }
+ 
+ .bar {
+   -webkit-transition: all .7s ease;
+   -moz-transition: all .7s ease;
+   -ms-transition: all .7s ease;
+   -o-transition: all .7s ease;
+   transition: all .7s ease;
+ }
+ 
+ .con:hover .top {
+   -webkit-transform: translateY(15px) rotateZ(45deg);
+   -moz-transform: translateY(15px) rotateZ(45deg);
+   -ms-transform: translateY(15px) rotateZ(45deg);
+   -o-transform: translateY(15px) rotateZ(45deg);
+   transform: translateY(15px) rotateZ(45deg);
+ }
+ 
+ .con:hover .bottom {
+   -webkit-transform: translateY(-15px) rotateZ(-45deg);
+   -moz-transform: translateY(-15px) rotateZ(-45deg);
+   -ms-transform: translateY(-15px) rotateZ(-45deg);
+   -o-transform: translateY(-15px) rotateZ(-45deg);
+   transform: translateY(-15px) rotateZ(-45deg);
+ }
+ 
+ .con:hover .middle {
+   width: 0;
+ }
+
+ 
+ 
+ 
+
+ .special-con {
+   margin: 0 auto;
+   -webkit-transition: all .7s ease;
+   -moz-transition: all .7s ease;
+   -ms-transition: all .7s ease;
+   -o-transition: all .7s ease;
+   transition: all .7s ease;
+ }
+
+
+ .ua {
+   position: absolute;
+   right: 30px;
+   bottom: 20px;
+   color: #6FFFE9;
+   font-size: 2em;
+ }
+ 
+ .fa {
+   -webkit-transition: all 1s ease;
+   -moz-transition: all 1s ease;
+   -ms-transition: all 1s ease;
+   -o-transition: all 1s ease;
+   transition: all 1s ease;
+ }
+ 
+ .ua:hover .fa {
+   color: #6FFFE9;
+   ;
+   -webkit-transform: scale(1.5);
+   -moz-transform: scale(1.5);
+   -ms-transform: scale(1.5);
+   -o-transform: scale(1.5);
+   transform: scale(1.5);
+   -webkit-transition: all 1s ease;
+   -moz-transition: all 1s ease;
+   -ms-transition: all 1s ease;
+   -o-transition: all 1s ease;
+   transition: all 1s ease;
+ }
+  
+  </style>
+  
+  
+</head>
+<body class="-page" data-page="">
+
+  <div class="menu_button">
+  <div class="col">
+    <div class="con">
+      <div class="bar top"></div>
+      <div class="bar middle"></div>
+      <div class="bar bottom"></div>
+    </div>
+  </div>
+  </div>
+  
+  
+  <div class="hidden_info">dddddddddddddddddfff ffff dddd</div>
+  
+  
+  
+
+  <div id="big">  
+<h1 class="five_percent">PDZN :)</h1> 
+    
+<div class="grid">
+  
+  <div class="gutter-sizer"></div>
+  <div class="grid-sizer"></div>
+   
+  
+  <div class="grid-item rumble">
+    <div class="tall skewed"><img src="/graphicdesignportfolio/images/queenlrg.jpg"></div>
+    <div class="tall"><p>hello pfapdf and kktk to the thick.</p></div>  
+    <div class="tall"><img class="img1" src="/graphicdesignportfolio/images/queenlrg.jpg"></div>
+    <div class="tall"><p>hello pfapdf and kktk to the thick.</p></div>  
+  </div>
+  
+  <div class="grid-item rumble">
+    <div class="tall skewed"><img src="/graphicdesignportfolio/images/pingpong1.jpg"></div>
+    <div class="tall"><p>hello pfapdf and kktk to the thick.</p></div>  
+    <div class="tall"><img src="/graphicdesignportfolio/images/pingpong2.jpg"></div>
+    <div class="tall"><p>hello pfapdf and kktk to the thick.</p></div>  
+  </div>
+  
+  <div class="grid-item rumble">
+    <div class="wide skewed2"><img src="/graphicdesignportfolio/images/la2.jpg"></div> 
+    <div class="wide"><p>hello pfapdf dddgfd fdfdf efe yuop lops and kktk to the thick.</p></div>  
+  </div>
+  
+  <div class="grid-item rumble">
+    <div class="tall skewed2"><img src="/graphicdesignportfolio/images/perrier.jpg"></div> 
+    <div class="tall"><p>hello pfapdf dddgfd fdfdf efe yuop lops and kktk to the thick.</p></div>  
+  </div>
+  
+  <div class="grid-item rumble">
+    <div class="wide skewed2"><img src="/graphicdesignportfolio/images/banana.jpg"></div> 
+    <div class="wide"><p>hello pfapdf dddgfd fdfdf efe yuop lops and kktk to the thick.</p></div>  
+  </div>
+  
+  <div class="grid-item rumble">
+    <div class="wide skewed2"><img src="/graphicdesignportfolio/images/pigeon.jpg"></div> 
+    <div class="wide"><p>hello pfapdf dddgfd fdfdf efe yuop lops and kktk to the thick.</p></div>  
+  </div>
+  
+  <div class="grid-item rumble">
+    <div class="wide skewed2"><img src="/graphicdesignportfolio/images/trippyphone2.jpg"></div> 
+    <div class="wide"><p>hello pfapdf dddgfd fdfdf efe yuop lops and kktk to the thick.</p></div>  
+  </div>
+
+  <div class="grid-item rumble">
+    <div class="wide skewed2"><img src="/graphicdesignportfolio/images/bottles.jpg"></div> 
+    <div class="wide"><p>hello pfapdf dddgfd fdfdf efe yuop lops and kktk to the thick.</p></div>  
+  </div>
+
+</div>
+
+
+
+</div><!--end of big-->
+  
+<!-- Packery does NOT require jQuery.
+  jQuery is only used for jQuery UI Draggable -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+<script src="/graphicdesignportfolio/js/packery-docs.min.js"></script>
+
+<script>
+var $grid = $('.grid').packery({
+  itemSelector: '.grid-item',
+   gutter: '.gutter-sizer',
+  columnWidth: '.grid-sizer',
+  percentPosition: true
+}); 
+  
+$grid.on( 'click', '.grid-item', function( event ) {
+  $grid.packery( 'fit', event.currentTarget, 10, 10 );
+       $("html, body").animate({ scrollTop: 0 }, "fast");
+    $(  event.currentTarget  ).siblings().removeClass('grid-item--large');
+      $(  event.currentTarget  ).siblings().removeClass('image_boob');
+  
+$(  event.currentTarget  ).siblings().addClass('rumble'); 
+$(  event.currentTarget  ).toggleClass('rumble');
+    $(  event.currentTarget  ).toggleClass('grid-item--large');
+  $( event.currentTarget ).toggleClass( "image_boob" );
+  
+  
+  // trigger layout after item size changes
+  $grid.packery('layout');
+   
+
+  
+});  
+  
+
+  
+</script>
+ 
+  <script>
+$(".menu_button").click(function(){
+    $("#big").toggleClass("bird");
+    $(".hidden_info").toggleClass("hidden_info_open");
+
+});
+</script>
+  
+<script> 
+  $(document).ready(function() {
+    $(".hidden_info").on("mouseleave", function() {
+        $(".hidden_info").toggleClass("hidden_info_open");
+        $("#big").toggleClass("bird");
+    });
+});
+</script>
+
+
+  
+</body>
+</html>
