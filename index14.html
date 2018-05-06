@@ -116,16 +116,16 @@ body { font-family: Sans-Serif;margin:0; }
   .skewed2 img{margin:-150px 150px 0 0;height:150%;}
 
   
-  .menu_bar {background:yellow;height:270px;line-height:40px;width:90%;margin:30px 5% 50px 5%;}
-  .menu_bar .logo{float:left;width:200px;margin-bottom:0;margin-left:10px;background:brown;font-size:20px;}
-  .menu_bar ul {position:absolute;bottom:0;}
+  .menu_bar {background:yellow;height:270px;line-height:40px;width:90%;margin:30px 5% 50px 5%;position:relative;}
+  .menu_bar .logo{float:left;width:200px;margin-left:10px;background:brown;font-size:20px;}
+  .menu_bar ul {}
   .menu_bar ul li {
     font-family: 'Shadows Into Light', cursive;
     float:right;background:grey;width:10%;font-size:20px;
   }
   
   
-
+  #wrapper { position: absolute; bottom: 3px;}
   
   </style>
   
@@ -138,7 +138,7 @@ body { font-family: Sans-Serif;margin:0; }
   
   <div class="menu_bar"> 
     <div class="logo">PDZN :)</div> 
-    <ul><li>Projects</li><li>About</li><li>contact</li></ul>
+    <div id="wrapper"><ul><li>Projects</li><li>About</li><li>contact</li></ul></div>
   </div>
     
   
