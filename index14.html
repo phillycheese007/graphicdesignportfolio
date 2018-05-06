@@ -295,9 +295,9 @@ $(".projects").click(function(){
   $(document).ready(function() {
     $(".menu_bar").on("mouseleave", function() {
         $( this ).removeClass("bird");
-    $(".about_hidden").addClass("hide");
-    $(".contact_hidden").addClass("hide");
-    $(".projects_hidden").addClass("hide");
+    $(".about_hidden").removeClass("show_height").addClass("hide");
+    $(".contact_hidden").removeClass("show_height").addClass("hide");
+    $(".projects_hidden").removeClass("show_height").addClass("hide");
     });
 });
 </script>
