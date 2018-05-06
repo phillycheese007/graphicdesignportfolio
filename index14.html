@@ -124,14 +124,14 @@ body { font-family: Sans-Serif;margin:0; }
   .menu_bar ul {width:100%;}
   .menu_bar ul li {
     font-family: 'Shadows Into Light', cursive;
-    float:right;background:grey;width:10%;font-size:20px;
+    float:right;background:grey;width:10%;margin-right:10px;font-size:20px;
   }
   
   
   #menu_wrapper { position: absolute; bottom: 3px;right:10px;width:50%;}
-  .projects_hidden{height:90%;width:90%;margin:5%;border:5px solid black;}
-  .contact_hidden{height:90%;width:90%;margin:20px 5%;border:5px solid black;}
-  .about_hidden{height:90%;width:90%;margin:20px 5%;border:5px solid black;}
+  .projects_hidden{height:90%;width:90%;margin:1% 5%;border:5px solid black;}
+  .contact_hidden{height:90%;width:90%;margin:1% 5%;border:5px solid black;}
+  .about_hidden{height:90%;width:90%;margin:1% 5%;border:5px solid black;}
   .hide{display:none;}
   </style>
   
@@ -263,7 +263,7 @@ $(  event.currentTarget  ).toggleClass('rumble');
 $(".about").click(function(){
     $(".menu_bar").addClass("bird");
     $( this ).siblings().addClass("hide");
-    $(".about_hidden").addClass("hide");
+    $(".projects_hidden").addClass("hide");
     $(".contact_hidden").addClass("hide");
     $(".about_hidden").removeClass("hide");
 });
@@ -293,6 +293,7 @@ $(".projects").click(function(){
         $( this ).removeClass("bird");
     $(".about_hidden").addClass("hide");
     $(".contact_hidden").addClass("hide");
+    $(".projects_hidden").addClass("hide");
     });
 });
 </script>
