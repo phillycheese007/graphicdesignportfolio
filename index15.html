@@ -132,7 +132,6 @@ body { font-family: Sans-Serif;margin:0; }
   
   #menu_wrapper { position: absolute;bottom:0;right:10px;width:100%;}
   
-  .projects_hidden{height:0%;width:100%;margin:0;border:2px solid black;}
   .contact_hidden{height:0%;width:100%;margin:0;border:2px solid black;}
   .about_hidden{height:0%;width:100%;margin:0;border:2px solid black;}
   
@@ -164,17 +163,12 @@ body { font-family: Sans-Serif;margin:0; }
     <div id="menu_wrapper">
       <div class="logo">PDZN :)</div>
       <ul class="menu">
-        <li> <a class="projects"> Projects </a></li>
         <li> <a class="about"> About </a></li>
         <li> <a class="contact"> Contact </a></li>
       </ul>
     </div>
     
     
-    
-    <div class="projects_hidden hide">
-        <div>projjjjjjj</div>
-    </div>
     <div class="about_hidden hide">
       <ul>
         
@@ -299,7 +293,6 @@ $(  event.currentTarget  ).toggleClass('rumble');
 $(".about").click(function(){
     $(".menu_bar").addClass("menubar_xpand");
     $( this ).siblings().addClass("hide");
-    $(".projects_hidden").addClass("hide");
     $(".contact_hidden").addClass("hide");
     $(".about_hidden").removeClass("hide").addClass("show_height");
 });
@@ -307,18 +300,10 @@ $(".about").click(function(){
 $(".contact").click(function(){
     $(".menu_bar").addClass("menubar_xpand");
     $( this ).siblings().addClass("hide");
-    $(".projects_hidden").addClass("hide");
     $(".about_hidden").addClass("hide");
     $(".contact_hidden").removeClass("hide").addClass("show_height");
 });
 
-$(".projects").click(function(){
-    $(".menu_bar").addClass("menubar_xpand");
-    $( this ).siblings().addClass("hide");
-    $(".contact_hidden").addClass("hide");
-    $(".about_hidden").addClass("hide");
-    $(".projects_hidden").removeClass("hide").addClass("show_height");
-});
     
 </script>
   
@@ -329,7 +314,6 @@ $(".projects").click(function(){
         $( this ).removeClass("menubar_xpand");
     $(".about_hidden").removeClass("show_height").addClass("hide");
     $(".contact_hidden").removeClass("show_height").addClass("hide");
-    $(".projects_hidden").removeClass("show_height").addClass("hide");
     });
 });
 </script>
