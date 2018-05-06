@@ -1,0 +1,268 @@
+---
+#maybe1
+---
+
+
+
+.parent:hover, .box:hover, .rumble:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s; 
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite; 
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/*-------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------*/
+
+
+
+body{
+background: rgba(255,255,255,1);
+background: -moz-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 0%, rgba(252,252,252,1) 72%, rgba(255,255,255,1) 100%);
+background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(0%, rgba(245,245,245,1)), color-stop(72%, rgba(252,252,252,1)), color-stop(100%, rgba(255,255,255,1)));
+background: -webkit-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 0%, rgba(252,252,252,1) 72%, rgba(255,255,255,1) 100%);
+background: -o-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 0%, rgba(252,252,252,1) 72%, rgba(255,255,255,1) 100%);
+background: -ms-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 0%, rgba(252,252,252,1) 72%, rgba(255,255,255,1) 100%);
+  }
+  
+  
+/*-------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------*/
+
+
+* { box-sizing: border-box; }
+
+html { overflow-y: scroll; /* force scrollbar, prevents initial gap */}
+
+body { font-family: Sans-Serif;margin:0;}
+
+ul{list-style-type:none;} 
+a {cursor:pointer;}
+
+h1{font-size:15px;}
+  
+/*-------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------*/
+
+
+.grid {
+  background: none;
+  width:90%;
+  margin:0 5%;
+  margin-bottom:100px;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+ 
+.gutter-sizer { width: 4%; }
+  
+.grid-item {
+  overflow:hidden;    
+  float: left;
+  height: 350px;
+  background: #C09;
+  /*border: 1px solid black;border-inset:10px;  */
+
+}
+
+.outaline{ 
+  outline: 1px solid grey;
+  outline-inset:10px;
+}
+
+.grid-item--large {
+  position:absolute !important;
+  top:0;
+  width: 100%;
+  height: auto;
+  background: pink;
+  text-align:center; 
+}
+
+/*-------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------*/
+
+
+@media only screen and (max-width: 400px) {
+  .grid-sizer, .grid-item {width: 100%;}
+  .big_image{
+    img{width:100%;}
+    background:orange;
+    width:100% !important;
+    margin:0 !important;
+  }
+  .tall, .wide{
+    width:100% !important;
+    margin:0 !important;
+  }
+} 
+  
+@media only screen and (max-width: 1480px) and (min-width: 760px) {
+  .grid-sizer, .grid-item {width: 30.65%;}
+} 
+
+@media only screen and (max-width: 760px) and (min-width: 400px) {
+  .grid-sizer, .grid-item {width: 48%;}
+} 
+
+
+/*-------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------*/
+
+
+
+
+/*----------------------- BBB .big_image --------------------*/
+/*----------------------- BBB .big_image --------------------*/
+
+.big_image{
+  background:none;
+  width:80%;
+  margin:0 10%;
+  display:block;
+  transition:0;
+  img{
+    width:100%;
+    margin:0;
+  }
+  p{  /*-------big image info box----*/
+    background:white;
+    border:1px solid black;
+    width:100%;margin:15px 0;
+    height:150px;
+    text-align:left;
+  } 
+  .tall{
+    background:yellow;
+    width:60%;
+    margin:0 20%;
+    display:block;
+  }
+  .wide{
+    background:pink;
+    width:90%;
+    margin:0 5%;
+    display:block;
+  }
+}
+
+/*----------------------- EEE .big_image --------------------*/
+/*----------------------- EEE .big_image --------------------*/
+
+
+
+/*--------------------------------------------------------------------------------------------------*/ 
+/*------------------------------------------------ BBB top menu ------------------------------------*/ 
+/*------------------------------------------------ BBB top menu ------------------------------------*/ 
+/*--------------------------------------------------------------------------------------------------*/ 
+  
+/*---------------- BBB .menubar_xpand ------------------*/ 
+/*---------------- BBB .menubar_xpand ------------------*/ 
+
+  .menubar_xpand{height:250px !important;border:1px solid lightgrey;transition:height .5s;}
+  
+/*---------------- EEE .menubar_xpand ------------------*/ 
+/*---------------- EEE .menubar_xpand ------------------*/ 
+
+
+/*--------------------- BBB .menu_bar ------------------*/
+/*--------------------- BBB .menu_bar ------------------*/
+
+.menu_bar {
+  background:none;
+  height:40px;
+  line-height:40px;
+  width:90%;
+  margin:30px 5% 150px 5%;
+  position:relative;
+  transition: height .5s;
+  #menu_wrapper { 
+    position:absolute;
+    bottom:-40px;
+    right:10px;
+    width:100%;
+    .logo{
+      float:left;
+      margin-left:15px;
+    }
+    .menu {
+      background:none;
+      position:relative;
+      z-index:99;
+      float:right;
+      margin:0;
+      margin-right:0;
+      width:80%;
+      height:40px;
+      li {
+        background:none;
+        font-family: 'Shadows Into Light', cursive;
+        float:right;
+        width:15%;
+        margin-right:15px;
+        font-size:20px;
+        text-align:center;
+      }
+    }/*----EE .menu----*/
+  }/*----EE #menu_wrapper----*/
+  .hide{display:none}
+  .contact_hidden, .about_hidden{height:83%;width:100%;margin:0;}
+  .about_hidden{
+    ul {
+      background:none;
+      width:100%;
+      height:100%;
+      margin:0;
+      padding:0;
+      li{
+        background:white;
+        border:1px solid black;
+        height:75%;
+        margin-top:10px;
+        transition:height.9s;
+        img{height:98%;margin:1% auto;} 
+      }/*----EE .about_hidden ul li----*/
+      li.right{position:absolute;right:50px; width: calc(100% - 500px);}
+    }/*----EE .about_hidden ul----*/
+  }/*----EE .about_hidden----*/
+  
+}
+
+/*--------------------- EEE .menu_bar ------------------*/ 
+/*--------------------- EEE .menu_bar ------------------*/ 
+
+
+
+  
+  
+/*--------------------------------------------------------------------------------------------------*/ 
+/*------------------------------------------------ EEE top menu ------------------------------------*/ 
+/*------------------------------------------------ EEE top menu ------------------------------------*/ 
+/*--------------------------------------------------------------------------------------------------*/ 
+
+
+
+
+  .about_hidden .right{position:absolute;right:50px; width: calc(100% - 500px);}
+  .about_hidden .right .bussy{background:lightgreen; margin:10px;height:100%;line-height:20px;display:none;}
+  .about_hidden .left{position:absolute;left:50px;width:150px;margin-top:20px;overflow:hidden;text-align:center;background:orange;}
+
