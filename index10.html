@@ -50,23 +50,12 @@ body { font-family: sans-serif;margin:0; }
 }
 
 .grid-item {
-     
-  position:relative;
+  overflow:hidden;    
   float: left;
   height: 350px;
   background: #C09;
+  border: 12px solid white;
 }
-  
-.grid-item:after {
-  content: '';
-  position: absolute;
-  top: -25px;
-  left: -25px;
-  right: -25px;
-  bottom: -25px;
-  background: blue;
-  z-index: 11;
-} 
 
 .grid-item--large {
   position:absolute !important;top:0;
