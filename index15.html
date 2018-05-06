@@ -152,6 +152,8 @@ body { font-family: Sans-Serif;margin:0; }
   .about_hidden .right{position:absolute;right:50px; width: calc(100% - 500px);}
   .about_hidden .right .bussy{background:lightgreen; margin:10px;height:100%;line-height:100%;display:none;}
   .about_hidden .left{position:absolute;left:50px;width:150px;margin-top:20px;overflow:hidden;text-align:center;background:orange;}
+  
+  .perrier img{ margin-left:-200px;}
   </style>
   
   
@@ -211,26 +213,26 @@ body { font-family: Sans-Serif;margin:0; }
    
   
   <div class="grid-item rumble">
-    <div class="tall"><img src="/graphicdesignportfolio/images/queenlrg.jpg"></div>
+    <div class="queensquality tall"><img src="/graphicdesignportfolio/images/queenlrg.jpg"></div>
     <div class="tall"><p>hello pfapdf and kktk to the thick.</p></div>  
     <div class="tall"><img class="img1" src="/graphicdesignportfolio/images/queenlrg.jpg"></div>
     <div class="tall"><p>hello pfapdf and kktk to the thick.</p></div>  
   </div>
   
   <div class="grid-item rumble">
-    <div class="tall"><img src="/graphicdesignportfolio/images/pingpong1.jpg"></div>
+    <div class="pingpong tall"><img src="/graphicdesignportfolio/images/pingpong1.jpg"></div>
     <div class="tall"><p>hello pfapdf and kktk to the thick.</p></div>  
     <div class="tall"><img src="/graphicdesignportfolio/images/pingpong2.jpg"></div>
     <div class="tall"><p>hello pfapdf and kktk to the thick.</p></div>  
   </div>
   
   <div class="grid-item rumble">
-    <div class="wide"><img src="/graphicdesignportfolio/images/la2.jpg"></div> 
+    <div class="la wide"><img src="/graphicdesignportfolio/images/la2.jpg"></div> 
     <div class="wide"><p>hello pfapdf dddgfd fdfdf efe yuop lops and kktk to the thick.</p></div>  
   </div>
   
   <div class="grid-item rumble">
-    <div class="tall"><img src="/graphicdesignportfolio/images/perrier.jpg"></div> 
+    <div class="perrier tall"><img src="/graphicdesignportfolio/images/perrier.jpg"></div> 
     <div class="tall"><p>hello pfapdf dddgfd fdfdf efe yuop lops and kktk to the thick.</p></div>  
   </div>
   
@@ -277,12 +279,12 @@ var $grid = $('.grid').packery({
 $grid.on( 'click', '.grid-item', function( event ) {
   $grid.packery( 'fit', event.currentTarget, 10, 10 );
        $("html, body").animate({ scrollTop: 0 }, "fast");
-    $(  event.currentTarget  ).siblings().addClass("skewed").removeClass('grid-item--large');
+    $(  event.currentTarget  ).siblings().removeClass('grid-item--large');
       $(  event.currentTarget  ).siblings().removeClass('image_boob');
   
 $(  event.currentTarget  ).siblings().addClass('rumble'); 
 $(  event.currentTarget  ).toggleClass('rumble');
-    $(  event.currentTarget  ).removeClass("skewed").toggleClass('grid-item--large');
+    $(  event.currentTarget  ).toggleClass('grid-item--large');
   $( event.currentTarget ).toggleClass( "image_boob" );
   
   
