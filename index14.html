@@ -132,10 +132,11 @@ body { font-family: Sans-Serif;margin:0; }
   
   
   #menu_wrapper { position: absolute; bottom: 3px;right:10px;width:50%;}
-  .projects_hidden{height:90%;width:90%;margin:1% 5%;border:5px solid black;opacity:1;}
-  .contact_hidden{height:90%;width:90%;margin:1% 5%;border:5px solid black;opacity:1;}
-  .about_hidden{height:90%;width:90%;margin:1% 5%;border:5px solid black;opacity:1;}
+  .projects_hidden{height:0%;width:90%;margin:1% 5%;border:5px solid black;opacity:1;}
+  .contact_hidden{height:0%;width:90%;margin:1% 5%;border:5px solid black;opacity:1;}
+  .about_hidden{height:0%;width:90%;margin:1% 5%;border:5px solid black;opacity:1;}
   .hide{display:none}
+  .show_height{height:90%;transition:.5s;}
   </style>
   
   
@@ -268,7 +269,7 @@ $(".about").click(function(){
     $( this ).siblings().addClass("hide");
     $(".projects_hidden").addClass("hide");
     $(".contact_hidden").addClass("hide");
-    $(".about_hidden").removeClass("hide");
+    $(".about_hidden").removeClass("hide").addClass("show_height");
 });
 
 $(".contact").click(function(){
@@ -276,7 +277,7 @@ $(".contact").click(function(){
     $( this ).siblings().addClass("hide");
     $(".projects_hidden").addClass("hide");
     $(".about_hidden").addClass("hide");
-    $(".contact_hidden").removeClass("hide");
+    $(".contact_hidden").removeClass("hide").addClass("show_height");
 });
 
 $(".projects").click(function(){
@@ -284,7 +285,7 @@ $(".projects").click(function(){
     $( this ).siblings().addClass("hide");
     $(".contact_hidden").addClass("hide");
     $(".about_hidden").addClass("hide");
-    $(".projects_hidden").removeClass("hide");
+    $(".projects_hidden").removeClass("hide").addClass("show_height");
 });
     
 </script>
