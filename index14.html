@@ -23,14 +23,10 @@ background: -ms-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(245,245,245,
 /* force scrollbar, prevents initial gap */
   
 html {
- font-family: 'Shadows Into Light', cursive;
-  line-height: 1.15; /* 2 */
-  -ms-text-size-adjust: 100%; /* 3 */
-  -webkit-text-size-adjust: 100%; /* 3 */
   overflow-y: scroll; /* force scrollbar, prevents initial gap */
 }
 
-body { font-family: 'Shadows Into Light', cursive;margin:0; }
+body { font-family: Sans-Serif;margin:0; }
 
   ul{list-style-type:none;}  
 /* ---- grid ---- */
@@ -122,7 +118,10 @@ body { font-family: 'Shadows Into Light', cursive;margin:0; }
   
   .menu_bar {background:yellow;height:40px;line-height:40px;width:90%;margin:30px 5% 50px 5%;}
   .menu_bar .logo{float:left;width:200px;margin:0;margin-left:10px;background:brown;font-size:20px;}
-  .menu_bar ul li {float:right;background:grey;width:10%;font-size:20px;}
+  .menu_bar ul li {
+    font-family: 'Shadows Into Light', cursive;
+    float:right;background:grey;width:10%;font-size:20px;
+  }
   
   
 
