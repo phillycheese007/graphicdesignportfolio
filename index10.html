@@ -54,7 +54,7 @@ body { font-family: sans-serif;margin:0; }
   float: left;
   height: 350px;
   background: #C09;
-  border: 12px solid white;margin-left:10px;
+  border: 12px solid white;
 }
 
 .grid-item--large {
@@ -106,7 +106,7 @@ body { font-family: sans-serif;margin:0; }
 .five_percent{margin:5%;}
   hr{color:green;}
   h1{font-size:15px;}
-  
+  .gutter-sizer { width: 4%; }
   
   </style>
   
@@ -118,6 +118,8 @@ body { font-family: sans-serif;margin:0; }
 <h1 class="five_percent">PDZN :)</h1>
 
 <div class="grid">
+    <div class="gutter-sizer"></div>
+
   <div class="grid-sizer"></div>
    
   
@@ -157,6 +159,7 @@ body { font-family: sans-serif;margin:0; }
 <script>
 var $grid = $('.grid').packery({
   itemSelector: '.grid-item',
+   gutter: '.gutter-sizer',
   columnWidth: '.grid-sizer',
   percentPosition: true
 }); 
