@@ -243,7 +243,13 @@ $(".about").click(function(){
 </script>
   
 
-
+<script> 
+  $(document).ready(function() {
+    $(".menu_bar").on("mouseleave", function() {
+        $( this ).toggleClass("bird");
+    });
+});
+</script>
 
   
 </body>
