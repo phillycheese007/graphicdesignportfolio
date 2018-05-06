@@ -61,7 +61,7 @@ body { font-family: sans-serif;margin:0; }
   position:absolute !important;top:0;
   width: 100%;
   height: auto;
-  background: pink;text-align:center; transition: width .01s;
+  background: pink;text-align:center; 
 }
 
   
@@ -199,7 +199,7 @@ $(  event.currentTarget  ).toggleClass('rumble');
   
   
   // trigger layout after item size changes
-  $grid.packery('layout');
+  $grid.packery.delay( 2000 ).('layout');
    
 
   
