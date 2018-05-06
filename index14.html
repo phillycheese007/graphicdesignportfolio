@@ -117,8 +117,11 @@ body { font-family: Sans-Serif;margin:0; }
   .skewed2 img{margin:-150px 150px 0 0;height:150%;}
 
   
-  .menu_bar {background:yellow;height:40px;line-height:40px;width:90%;margin:30px 5% 50px 5%;position:relative;}
-  .bird{height:200px !important;}
+  .menu_bar {
+    background:yellow;height:40px;line-height:40px;width:90%;margin:30px 5% 50px 5%;position:relative;
+    transition: height .5s;
+  }
+  .bird{height:200px !important;transition:.5s;}
   
   .menu_bar .logo{float:left;width:200px;margin-left:10px;background:brown;font-size:20px;}
   .menu_bar ul {width:100%;}
