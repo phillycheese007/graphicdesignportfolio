@@ -245,8 +245,9 @@ $(".menu_button").click(function(){
 <script> 
   $(document).ready(function() {
     $(".hidden_info").on("mouseleave", function() {
-        $(".hidden_info").removeClass("hidden_info_open")
-});
+        $(".hidden_info").toggleClass("hidden_info_open");
+        $("#big").toggleClass("bird");
+    });
 });
 </script>
 
