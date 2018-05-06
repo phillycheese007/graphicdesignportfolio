@@ -28,7 +28,8 @@ html {
 
 body { font-family: Sans-Serif;margin:0; }
 
-  ul{list-style-type:none;}  
+  ul{list-style-type:none;} 
+  a {cursor:pointer;}
 /* ---- grid ---- */
 
 .grid {
@@ -128,7 +129,10 @@ body { font-family: Sans-Serif;margin:0; }
   
   
   #wrapper { position: absolute; bottom: 3px;right:10px;width:50%;}
-  
+  .projects_hidden{}
+  .contact_hidden{}
+  .about_hidden{}
+  .hide{display:none;}
   </style>
   
   
@@ -140,7 +144,21 @@ body { font-family: Sans-Serif;margin:0; }
   
   <div class="menu_bar"> 
     <div class="logo">PDZN :)</div> 
-    <div id="wrapper"><ul><li>Projects</li><li> <a class="about">About</a> </li><li>contact</li></ul></div>
+    <div id="wrapper">
+      <ul>
+        <li><a class="projects">Projects</a></li>
+        <li> <a class="about">About</a> </li>
+        <li><a class="contact">Contact</a></li>
+      </ul>
+    </div>
+    
+    
+    
+    <div class="projects_hidden hide"><div>projjjjjjj</div></div>
+    <div class="about_hidden hide"><div>Abouuuuu</div></div>
+    <div class="contact_hidden hide"><div>Contaaaa</div></div>
+    
+    
   </div>
     
   
@@ -238,7 +256,7 @@ $(  event.currentTarget  ).toggleClass('rumble');
   <script>
 $(".about").click(function(){
     $(".menu_bar").toggleClass("bird");
-
+    $(".about_hidden").toggleClass("hide");
 });
 </script>
   
