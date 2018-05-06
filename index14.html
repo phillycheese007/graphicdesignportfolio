@@ -116,7 +116,9 @@ body { font-family: Sans-Serif;margin:0; }
   .skewed2 img{margin:-150px 150px 0 0;height:150%;}
 
   
-  .menu_bar {background:yellow;height:270px;line-height:40px;width:90%;margin:30px 5% 50px 5%;position:relative;}
+  .menu_bar {background:yellow;height:40px;line-height:40px;width:90%;margin:30px 5% 50px 5%;position:relative;}
+  .bird{height:200px !important;}
+  
   .menu_bar .logo{float:left;width:200px;margin-left:10px;background:brown;font-size:20px;}
   .menu_bar ul {width:100%;}
   .menu_bar ul li {
@@ -138,7 +140,7 @@ body { font-family: Sans-Serif;margin:0; }
   
   <div class="menu_bar"> 
     <div class="logo">PDZN :)</div> 
-    <div id="wrapper"><ul><li>Projects</li><li>About</li><li>contact</li></ul></div>
+    <div id="wrapper"><ul><li>Projects</li><li> <a class="about">About</a> </li><li>contact</li></ul></div>
   </div>
     
   
@@ -235,8 +237,7 @@ $(  event.currentTarget  ).toggleClass('rumble');
  
   <script>
 $(".about").click(function(){
-    $("#big").toggleClass("bird");
-    $(".hidden_info").toggleClass("hidden_info_open");
+    $(".menu_bar").toggleClass("bird");
 
 });
 </script>
