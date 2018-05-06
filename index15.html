@@ -60,9 +60,11 @@ body { font-family: Sans-Serif;margin:0; }
   height: 350px;
   background: #C09;
   /*border: 1px solid black;border-inset:10px;  */
-  outline: 1px solid grey; outline-inset:10px;
-}
 
+}
+outaline{
+    outline: 1px solid grey; outline-inset:10px;
+  }
 
   
   
@@ -103,7 +105,7 @@ body { font-family: Sans-Serif;margin:0; }
 } 
 
   
-  .image_boob{background:none;border:3px solid red !important;width:80%;margin:0 10%;display:block;transition:0}  
+  .image_boob{background:none;width:80%;margin:0 10%;display:block;transition:0}  
 
   .image_boob .tall{width:60%;margin:0 20%;display:block;background:yellow}
   .image_boob .wide{width:90%;margin:0 5%;display:block;background:pink}
@@ -290,6 +292,11 @@ $grid.on( 'click', '.grid-item', function( event ) {
   
 $(  event.currentTarget  ).siblings().addClass('rumble'); 
 $(  event.currentTarget  ).toggleClass('rumble');
+  
+  
+  $(  event.currentTarget  ).toggleClass('outaline');
+  
+  
     $(  event.currentTarget  ).toggleClass('grid-item--large');
   
   
