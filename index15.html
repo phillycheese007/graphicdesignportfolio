@@ -297,13 +297,14 @@ $(".about").click(function(){
     $( this ).siblings().addClass("hide");
     $(".contact_hidden").addClass("hide");
     $(".about_hidden").removeClass("hide");
-    $( ".about_hidden .right p" ).delay( 500 ).fadeIn( "slow" );
+    $( ".about_hidden .right p" ).delay( 400 ).fadeIn( "slow" );
 });
 
 $(".contact").click(function(){
     $(".menu_bar").addClass("menubar_xpand");
     $( this ).siblings().addClass("hide");
     $(".about_hidden").addClass("hide");
+    $( ".about_hidden .right p" ).hide();
     $(".contact_hidden").removeClass("hide");
 });
 
@@ -316,7 +317,7 @@ $(".contact").click(function(){
     $(".menu_bar").on("mouseleave", function() {
         $( this ).removeClass("menubar_xpand");
     $(".about_hidden").addClass("hide");
-    $( ".about_hidden .right p" ).delay( 50 ).fadeOut( "fast" );
+    $( ".about_hidden .right p" ).fadeOut( "fast" );
     $(".contact_hidden").addClass("hide");
     });
 });
