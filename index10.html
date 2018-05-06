@@ -25,7 +25,8 @@ html {
   overflow-y: scroll; /* force scrollbar, prevents initial gap */
 }
 
-body { font-family: sans-serif;margin:0; }
+body { font-family: sans-serif;margin:0;   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;}
 
 /* ---- grid ---- */
 
@@ -55,8 +56,6 @@ body { font-family: sans-serif;margin:0; }
   height: 350px;
   background: #C09;
   border: 1px solid black;    
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
 }
 
 .grid-item--large {
