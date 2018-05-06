@@ -145,10 +145,10 @@ body { font-family: Sans-Serif;margin:0; }
     height:75%;margin-top:10px; transition:height.9s;
   }
    
-  .about_hidden ul li img{height:100%;} 
+  .about_hidden ul li img{height:100%;margin:0 auto;} 
   .about_hidden .right{position:absolute;right:50px; width: calc(100% - 500px);}
   .about_hidden .right p{background:lightgreen; margin:10px;height:100%;display:none;}
-  .about_hidden .left{position:absolute;left:50px;width:130px;overflow:hidden;text-align:center;background:orange;}
+  .about_hidden .left{position:absolute;left:50px;width:150px;overflow:hidden;text-align:center;background:orange;}
   </style>
   
   
@@ -296,7 +296,7 @@ $(".about").click(function(){
     $( this ).siblings().addClass("hide");
     $(".contact_hidden").addClass("hide");
     $(".about_hidden").removeClass("hide");
-    $( ".about_hidden .right p" ).fadeIn( "slow" );
+    $( ".about_hidden .right p" ).delay( 2000 ).fadeIn( "slow" );
 });
 
 $(".contact").click(function(){
