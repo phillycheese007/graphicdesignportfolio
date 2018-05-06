@@ -147,7 +147,7 @@ body { font-family: Sans-Serif;margin:0; }
    
   .about_hidden ul li img{height:98%;margin:1% auto;} 
   .about_hidden .right{position:absolute;right:50px; width: calc(100% - 500px);}
-  .about_hidden .right p{background:lightgreen; margin:10px;height:100%;display:none;}
+  .about_hidden .right .bussy{background:lightgreen; margin:10px;height:100%;display:none;}
   .about_hidden .left{position:absolute;left:50px;width:150px;margin-top:20px;overflow:hidden;text-align:center;background:orange;}
   </style>
   
@@ -179,14 +179,14 @@ body { font-family: Sans-Serif;margin:0; }
         
         <li class="right">
           <div>
-            <p>
+            <div class="bussy">
               PDZN is a forward thinking Creative designer 
               focusing on creating print and digital media for 
               forward thinking brands. Founded in 2018 (just now!!) by Designer Philip Dusel, 
               PDZN works focus on the essentials with which to tell a brands unique story.
               PDZN functions as a artisitc and strategic problem solving resource for its clients.
               PDZN functions as a artisitc and strategic problem solving resource for its clients.
-            </p>
+            </div>
           </div>
         </li>
         
@@ -297,14 +297,14 @@ $(".about").click(function(){
     $( this ).siblings().addClass("hide");
     $(".contact_hidden").addClass("hide");
     $(".about_hidden").removeClass("hide");
-    $( ".about_hidden .right p" ).delay( 200 ).fadeIn( "slow" );
+    $( ".about_hidden .right .bussy" ).delay( 200 ).fadeIn( "slow" );
 });
 
 $(".contact").click(function(){
     $(".menu_bar").addClass("menubar_xpand");
     $( this ).siblings().addClass("hide");
     $(".about_hidden").addClass("hide");
-    $( ".about_hidden .right p" ).hide();
+    $( ".about_hidden .right .bussy" ).hide();
     $(".contact_hidden").removeClass("hide");
 });
 
@@ -317,7 +317,7 @@ $(".contact").click(function(){
     $(".menu_bar").on("mouseleave", function() {
         $( this ).removeClass("menubar_xpand");
     $(".about_hidden").addClass("hide");
-    $( ".about_hidden .right p" ).fadeOut( "fast" );
+    $( ".about_hidden .right .bussy" ).fadeOut( "fast" );
     $(".contact_hidden").addClass("hide");
     });
 });
