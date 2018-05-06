@@ -124,7 +124,7 @@ body { font-family: sans-serif;margin:0; }
   
 </head>
 <body class="-page" data-page="">
-
+<div id="big">
 
   <h1 class="five_percent">PDZN :)</h1> <div class="menu_button">iii</div>
 
@@ -179,7 +179,8 @@ body { font-family: sans-serif;margin:0; }
 
 </div>
 
-
+  </div><!--end of big-->
+  
   
 <!-- Packery does NOT require jQuery.
   jQuery is only used for jQuery UI Draggable -->
@@ -220,7 +221,7 @@ $(  event.currentTarget  ).toggleClass('rumble');
  
   <script>
 $(".menu_button").click(function(){
-    $(".grid").animate({top: '250px'});
+    $("#big").animate({top: '250px'});
 });
 </script>
 
