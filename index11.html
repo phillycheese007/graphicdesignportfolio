@@ -79,25 +79,27 @@ body { font-family: sans-serif;margin:0; }
 } 
   
 
-  
-@media only screen and (max-width: 2000px)  {
-.grid-sizer,
-.grid-item {
-  width: 23%;
+  @media only screen and (min-width: 960px) {
+.grid-item {width: 20%;}
+.grid-sizer {width: 20%;} 
+} 
+@media only screen and (max-width: 960px) {
+.grid-item {width: 25%;}
+.grid-sizer {width: 25%;} 
 }
-}
-@media only screen and (max-width: 800px)  {
-.grid-sizer,
-.grid-item {
-  width: 31.33%;
-}
-}
-@media only screen and (max-width: 600px)  {
-.grid-sizer,
-.grid-item {
-  width: 48%;
-}
-}
+@media only screen and (max-width: 800px) {
+.grid-item {width: 33%;}
+.grid-sizer {width: 33%;} 
+} 
+@media only screen and (max-width: 560px) {
+.grid-item {width: 50%;}
+.grid-sizer {width: 50%;} 
+} 
+@media only screen and (max-width: 400px) {
+.grid-item {width: 100%;}
+.grid-sizer {width: 100%;} 
+grid-item--large img {text-align:Center;width:100%;margin:0 auto;}
+} 
   
   .image_boob{background:green;width:80%;margin:0 10%;display:block;}  
 
