@@ -64,6 +64,10 @@ body { font-family: Sans-Serif;margin:0; }
   outline-inset: 15px;
 }
 
+  .outaline{  outline: 1px solid black;
+  outline-inset: 15px;
+  }
+  
   
 .grid-item--large {
   position:absolute !important;top:0;
@@ -290,8 +294,8 @@ $(  event.currentTarget  ).siblings().addClass('rumble');
 $(  event.currentTarget  ).toggleClass('rumble');
     $(  event.currentTarget  ).toggleClass('grid-item--large');
   
-    $( event.currentTarget ).css('outline', 'none');    
-   $( event.currentTarget ).siblings().css('outline', '1px solid black');
+    $( event.currentTarget ).toggleClass('outaline');    
+   $( event.currentTarget ).siblings().addClass('outaline');
   
 
   
