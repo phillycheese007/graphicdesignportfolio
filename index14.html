@@ -118,128 +118,13 @@ body { font-family: sans-serif;margin:0; }
   
   .skewed img{margin-left:-100px;}
   .skewed2 img{margin:-150px 150px 0 0;height:150%;}
-  .menu_button{background:red;width:40px;height:40px;position:absolute;top:30px;right:5%; z-index:999;}
+
   
-    #big{margin:0;padding:0;height:100%;background:blue;position:absolute;top:100px;bottom:0;right:0;left:0;z-index:99;transition: .5s}
-  .bird{top:310px !important; transition:  .5s;}
-  .hidden_info{background:lightgreen; width:90%;margin:0 5%;height:300px;position:fixed;top:-300px;z-index:1;transition: .5s}
-  .hidden_info_open{top:0 !important; transition: .5s}
+
   
   
   
-  
- .con,
- .special-con {
-   cursor: pointer;
-   display: inline-block;
- }
- 
- .bar {
-   display: block;
-   height: 5px;
-   width: 50px;
-   background: #6FFFE9;
-   margin: 10px auto;
- }
- 
- .con {
-   width: auto;
-   margin: 0 auto;
-   -webkit-transition: all .7s ease;
-   -moz-transition: all .7s ease;
-   -ms-transition: all .7s ease;
-   -o-transition: all .7s ease;
-   transition: all .7s ease;
- }
 
-.con:hover .bar,.special-con:hover .bar {
-  background-color: #f92c8c;
-}
- 
- .col {
-   display: inline-block;
-   width: 24%;
-   text-align: center;
-   height: auto;
-   position: relative;
- }
- 
- .middle {
-   margin: 0 auto;
- }
- 
- .bar {
-   -webkit-transition: all .7s ease;
-   -moz-transition: all .7s ease;
-   -ms-transition: all .7s ease;
-   -o-transition: all .7s ease;
-   transition: all .7s ease;
- }
- 
- .con:hover .top {
-   -webkit-transform: translateY(15px) rotateZ(45deg);
-   -moz-transform: translateY(15px) rotateZ(45deg);
-   -ms-transform: translateY(15px) rotateZ(45deg);
-   -o-transform: translateY(15px) rotateZ(45deg);
-   transform: translateY(15px) rotateZ(45deg);
- }
- 
- .con:hover .bottom {
-   -webkit-transform: translateY(-15px) rotateZ(-45deg);
-   -moz-transform: translateY(-15px) rotateZ(-45deg);
-   -ms-transform: translateY(-15px) rotateZ(-45deg);
-   -o-transform: translateY(-15px) rotateZ(-45deg);
-   transform: translateY(-15px) rotateZ(-45deg);
- }
- 
- .con:hover .middle {
-   width: 0;
- }
-
- 
- 
- 
-
- .special-con {
-   margin: 0 auto;
-   -webkit-transition: all .7s ease;
-   -moz-transition: all .7s ease;
-   -ms-transition: all .7s ease;
-   -o-transition: all .7s ease;
-   transition: all .7s ease;
- }
-
-
- .ua {
-   position: absolute;
-   right: 30px;
-   bottom: 20px;
-   color: #6FFFE9;
-   font-size: 2em;
- }
- 
- .fa {
-   -webkit-transition: all 1s ease;
-   -moz-transition: all 1s ease;
-   -ms-transition: all 1s ease;
-   -o-transition: all 1s ease;
-   transition: all 1s ease;
- }
- 
- .ua:hover .fa {
-   color: #6FFFE9;
-   ;
-   -webkit-transform: scale(1.5);
-   -moz-transform: scale(1.5);
-   -ms-transform: scale(1.5);
-   -o-transform: scale(1.5);
-   transform: scale(1.5);
-   -webkit-transition: all 1s ease;
-   -moz-transition: all 1s ease;
-   -ms-transition: all 1s ease;
-   -o-transition: all 1s ease;
-   transition: all 1s ease;
- }
   
   </style>
   
@@ -247,23 +132,10 @@ body { font-family: sans-serif;margin:0; }
 </head>
 <body class="-page" data-page="">
 
-  <div class="menu_button">
-  <div class="col">
-    <div class="con">
-      <div class="bar top"></div>
-      <div class="bar middle"></div>
-      <div class="bar bottom"></div>
-    </div>
-  </div>
-  </div>
-  
-  
-  <div class="hidden_info">dddddddddddddddddfff ffff dddd</div>
-  
+
   
   
 
-  <div id="big">  
 <h1 class="five_percent">PDZN :)</h1> 
     
 <div class="grid">
@@ -320,7 +192,7 @@ body { font-family: sans-serif;margin:0; }
 
 
 
-</div><!--end of big-->
+
   
 <!-- Packery does NOT require jQuery.
   jQuery is only used for jQuery UI Draggable -->
@@ -359,22 +231,7 @@ $(  event.currentTarget  ).toggleClass('rumble');
   
 </script>
  
-  <script>
-$(".menu_button").click(function(){
-    $("#big").toggleClass("bird");
-    $(".hidden_info").toggleClass("hidden_info_open");
 
-});
-</script>
-  
-<script> 
-  $(document).ready(function() {
-    $(".hidden_info").on("mouseleave", function() {
-        $(".hidden_info").toggleClass("hidden_info_open");
-        $("#big").toggleClass("bird");
-    });
-});
-</script>
 
 
   
