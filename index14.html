@@ -142,12 +142,12 @@ body { font-family: Sans-Serif;margin:0; }
   
   .about_hidden ul li{
     background:white;border:1px solid black;
-    position:absolute;right:0;height:180px;width:48%;margin-top:10px;
+    height:180px;width:48%;margin-top:10px;
   }
-  
-  .about_hidden ul li + li{left:0;}
-  
+   
   .about_hidden ul li img{height:100%;} 
+  .right{position:absolute:right:0;}
+  .left{position:absolute;left:0;}
   </style>
   
   
@@ -174,15 +174,18 @@ body { font-family: Sans-Serif;margin:0; }
     </div>
     <div class="about_hidden hide">
       <ul>
-        <li>
-          <img src="/graphicdesignportfolio/images/Smiley_face.jpg">
-        </li>
-        <li>
+        
+        <li class="left">
           <div>
             long paragraph about me nad the three theorp 
             and the car toonel bar so there gores to op long vert to nail nupoor 
           </div>
         </li>
+        
+        <li class="right">
+          <img src="/graphicdesignportfolio/images/Smiley_face.jpg">
+        </li>
+        
       </ul>
     </div>
     <div class="contact_hidden hide">
