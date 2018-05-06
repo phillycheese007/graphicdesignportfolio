@@ -175,13 +175,7 @@ h1{font-size:15px;}
 /*------------------------------------------------ BBB top menu ------------------------------------*/ 
 /*--------------------------------------------------------------------------------------------------*/ 
   
-/*---------------- BBB .menubar_xpand ------------------*/ 
-/*---------------- BBB .menubar_xpand ------------------*/ 
-
-  .menubar_xpand{height:250px !important;border:1px solid lightgrey;transition:height .5s;}
-  
-/*---------------- EEE .menubar_xpand ------------------*/ 
-/*---------------- EEE .menubar_xpand ------------------*/ 
+.menubar_xpand{height:250px !important;border:1px solid lightgrey;transition:height .5s;}
 
 
 /*--------------------- BBB .menu_bar ------------------*/
@@ -241,7 +235,27 @@ h1{font-size:15px;}
         transition:height.9s;
         img{height:98%;margin:1% auto;} 
       }/*----EE .about_hidden ul li----*/
-      li.right{position:absolute;right:50px; width: calc(100% - 500px);}
+      .right{
+        position:absolute;
+        right:50px; 
+        width: calc(100% - 500px);
+        .bussy{
+          background:lightgreen;
+          margin:10px;
+          height:100%;
+          line-height:20px;
+          display:none;
+        }
+      }/*----EE .about_hidden ul .right----*/
+      .left{
+        position:absolute;
+        left:50px;
+        width:150px;
+        margin-top:20px;
+        overflow:hidden;
+        text-align:center;
+        background:orange;
+      }/*----EE .about_hidden ul .left----*/
     }/*----EE .about_hidden ul----*/
   }/*----EE .about_hidden----*/
   
@@ -262,7 +276,4 @@ h1{font-size:15px;}
 
 
 
-  .about_hidden .right{position:absolute;right:50px; width: calc(100% - 500px);}
-  .about_hidden .right .bussy{background:lightgreen; margin:10px;height:100%;line-height:20px;display:none;}
-  .about_hidden .left{position:absolute;left:50px;width:150px;margin-top:20px;overflow:hidden;text-align:center;background:orange;}
 
