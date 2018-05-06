@@ -291,7 +291,11 @@ $grid.on( 'click', '.grid-item', function( event ) {
 $(  event.currentTarget  ).siblings().addClass('rumble'); 
 $(  event.currentTarget  ).toggleClass('rumble');
     $(  event.currentTarget  ).toggleClass('grid-item--large');
-     $( ".grid-item" ).toggleClass('griditem_outline');
+  
+     $( event.currentTarget ).siblings().addClass('griditem_outline');
+     $( event.currentTarget ).addClass('griditem_outline');
+     $( event.currentTarget ).toggleClass('griditem_outline');
+  
   $( event.currentTarget ).toggleClass( "image_boob" );
   
   
@@ -329,7 +333,6 @@ $(".contact").click(function(){
         $( this ).removeClass("menubar_xpand");
     $(".about_hidden").addClass("hide");
     $( ".about_hidden .right .bussy" ).fadeOut( "fast" );
-    $(".contact_hidden").addClass("hide");
     });
 });
 </script>
