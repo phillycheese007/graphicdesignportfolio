@@ -117,7 +117,8 @@ body { font-family: Sans-Serif;margin:0; }
 
   
   .menu_bar {background:yellow;height:270px;line-height:40px;width:90%;margin:30px 5% 50px 5%;}
-  .menu_bar .logo{float:left;width:200px;margin:0;margin-left:10px;background:brown;font-size:20px;}
+  .menu_bar .logo{float:left;width:200px;margin-bottom:0;margin-left:10px;background:brown;font-size:20px;}
+  .menu_bar ul {position:absolute;bottom:0;}
   .menu_bar ul li {
     font-family: 'Shadows Into Light', cursive;
     float:right;background:grey;width:10%;font-size:20px;
@@ -228,13 +229,18 @@ $(  event.currentTarget  ).toggleClass('rumble');
   $grid.packery('layout');
    
 
-  
 });  
-  
-
-  
+    
 </script>
  
+  <script>
+$(".about").click(function(){
+    $("#big").toggleClass("bird");
+    $(".hidden_info").toggleClass("hidden_info_open");
+
+});
+</script>
+  
 
 
 
