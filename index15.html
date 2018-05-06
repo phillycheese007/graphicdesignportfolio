@@ -59,13 +59,9 @@ body { font-family: Sans-Serif;margin:0; }
   float: left;
   height: 350px;
   background: #C09;
-  border: 1px solid black;border-inset:10px;   
+  border: 1px solid black;border-inset:5px;   
 }
 
-.griditem_outline{
-  outline: 1px solid red;
-  outline-inset: 15px;
-}
   
 .grid-item--large {
   position:absolute !important;top:0;
@@ -292,9 +288,7 @@ $(  event.currentTarget  ).siblings().addClass('rumble');
 $(  event.currentTarget  ).toggleClass('rumble');
     $(  event.currentTarget  ).toggleClass('grid-item--large');
   
-     $( event.currentTarget ).siblings().addClass('griditem_outline');
-     $( event.currentTarget ).addClass('griditem_outline');
-     $( event.currentTarget ).toggleClass('griditem_outline');
+
   
   $( event.currentTarget ).toggleClass( "image_boob" );
   
