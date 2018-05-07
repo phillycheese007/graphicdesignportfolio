@@ -362,7 +362,7 @@ $transition_speed: .5s;
 @media only screen and (max-width: 400px) {
   
   .about_hidden .right{
-    background:green;border:10px solid brown;
+    background:green;border:10px solid brown !important;
     margin:30px 5% 150px 5%;
     width:90% !important;
   }
