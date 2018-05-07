@@ -148,14 +148,14 @@ $grid.on( 'click', '.grid-item', function( event ) {
   
   
   if ( $( this ).hasClass( "big_image" ) ) {
-    $(".grid-item img").addClass(); //hey for positioning
+    $( event.currentTarget ).find( "img" ).addClass(); //hey for positioning
     $( event.currentTarget ).removeClass('big_image').addClass('outaline');
     setTimeout(function(){
       $( event.currentTarget ).addClass('rumble');
     }, 600);
   }
   else{
-    $(".grid-item img").removeClass(); //hey for positioning
+    $( event.currentTarget ).find( "img" ).removeClass(); //hey for positioning
     $( event.currentTarget ).addClass('big_image').removeClass('outaline').removeClass('rumble');  
   }
 
