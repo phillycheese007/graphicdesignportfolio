@@ -142,16 +142,16 @@ $grid.on( 'click', '.grid-item', function( event ) {
   
   
   if ( $( this ).hasClass( "big_image" ) ) {
-    $( event.currentTarget ).removeClass('big_image').removeClass('grid-item--large');
+    $( event.currentTarget ).removeClass('big_image').removeClass('grid-item--large').addClass('outaline');
     setTimeout(function(){
-      $( event.currentTarget ).addClass('outaline');
+      $( event.currentTarget ).addClass('rumble');
     }, 600);
   }
   else{
     $( event.currentTarget )
       .addClass('big_image')
       .addClass('grid-item--large')
-      .removeClass('outaline'); // former rumble
+      .removeClass('outaline').removeClass('rumble'); 
   }
 
 
