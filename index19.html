@@ -148,7 +148,7 @@ $grid.on( 'click', '.grid-item', function( event ) {
   $grid.packery('layout');
    
   $( event.currentTarget ).siblings().addClass('rumble'); 
-  $( event.currentTarget ).removeClass('rumble');
+  $( event.currentTarget ).toggleClass('rumble');
   
 });  
 
