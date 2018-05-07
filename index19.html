@@ -149,11 +149,7 @@ $grid.on( 'click', '.grid-item', function( event ) {
   
   
   
-  if($( ".grid-item" ).hasClass("big_image")){
-    $( ".grid-item" ).click(function(){
-      $( this ).removeClass('rumble').addClass('rumble');
-    });
-  }
+
   
   // trigger layout after item size changes
   $grid.packery('layout');
