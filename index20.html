@@ -156,24 +156,22 @@ $grid.on( 'click', '.grid-item', function( event ) {
   $grid.packery( 'fit', event.currentTarget, 10, 10 );
   $("html, body").animate({ scrollTop: 0 }, "fast");
 
-  $( event.currentTarget ).toggleClass('outaline');
+
    
  
   
 
   
-  $( event.currentTarget ).siblings().click(function(){
-    $( event.currentTarget ).addClass('outaline');
-  }); 
+
   
 
  
   if ( $( this ).hasClass( "big_image" ) ) {
-    $( event.currentTarget ).removeClass('big_image');
+    $( event.currentTarget ).removeClass('big_image').addClass('outaline');
     $( event.currentTarget ).removeClass('grid-item--large');
   }
   else{
-    $( event.currentTarget ).addClass('big_image');
+    $( event.currentTarget ).addClass('big_image').removeClass('outaline');
     $( event.currentTarget ).addClass('grid-item--large');
   }
 
