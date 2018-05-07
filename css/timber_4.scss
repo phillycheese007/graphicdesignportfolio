@@ -286,8 +286,8 @@ $transition_speed: .5s;
 /*--------------------------------------------------------------------------------------------------*/ 
 .parent:hover, .box:hover, .rumble:hover {
   /* Start the shake animation and make the animation last for 0.5 seconds */
-  animation: shake 0.3s; 
-  animation-delay: .4s;
+  animation: shake 0.4s; 
+  animation-delay: .2s;
   /* When the animation is finished, start again */
   animation-iteration-count: infinite; 
 }
