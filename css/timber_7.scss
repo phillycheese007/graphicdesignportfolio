@@ -257,9 +257,9 @@ $transition_speed: .5s;
 } 
 
 .about_hidden .right{
-  background:lightblue;
+  background:lightgreen;
   position:absolute;
-  margin-right:0;
+  margin-left:200px;
   width: calc(90% - 200px);
 }
 
