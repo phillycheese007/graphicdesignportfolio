@@ -147,7 +147,13 @@ $grid.on( 'click', '.grid-item', function( event ) {
   $( event.currentTarget ).siblings().addClass('rumble'); 
   $( event.currentTarget ).toggleClass('rumble');
   
-
+  
+  
+  if($( ".grid-item" ).hasClass("big_image")){
+    $( ".grid-item" ).click(function(){
+      $( this ).addClass('pug');
+    });
+  }
   
   // trigger layout after item size changes
   $grid.packery('layout');
@@ -155,11 +161,7 @@ $grid.on( 'click', '.grid-item', function( event ) {
 
 });  
 
-  if($( ".grid-item" ).hasClass("big_image")){
-    $( ".grid-item" ).click(function(){
-      $( this ).addClass('rumble, pug');
-    });
-  } 
+ 
   
   
 $(".about").click(function(){
