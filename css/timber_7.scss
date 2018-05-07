@@ -94,14 +94,6 @@ body { font-family: Sans-Serif;margin:0;background:yellow;}
   .image_boob{background:orange;width:100% !important;margin:0 !important;}
   .image_boob img{width:100% ;}
   .image_boob .tall, .image_boob .wide{width:100% !important;margin:0 !important;}
-  
-  .about_hidden .right{
-    background:green;border:10px solid red;
-    position:relative;
-    margin:0 auto;
-    width:100%;
-  }
-  .about_hidden .left{display:none;}
 } 
   
 @media only screen and (max-width: 1480px) and (min-width: 760px) {
@@ -252,7 +244,7 @@ $transition_speed: .5s;
 .contact_hidden{height:83%;width:100%;margin:0;}
 .about_hidden{height:83%;width:100%;margin:0;}
   
-.about_hidden ul {background:none;width:100%;height:100%;margin:0;padding:0;}
+.about_hidden ul {background:orange;width:100%;height:100%;margin:0;padding:0;}
   
 .about_hidden ul li{
   background:white;border:1px solid black;
@@ -265,13 +257,14 @@ $transition_speed: .5s;
 } 
 
 .about_hidden .right{
+  background:white;
   position:absolute;
-  right:50px;
-  width: calc(100% - 500px);
+  margin:0 auto;
+  width:100%;
 }
 
 .about_hidden .left{
-  
+  display:none;
   position:absolute;
   left:50px;
   width:150px;
@@ -362,11 +355,11 @@ $transition_speed: .5s;
 @media only screen and (max-width: 400px) {
   
   .about_hidden .right{
-    background:brown !important;
-    margin:0 auto !important;
-    width:40vw !important;
+
   }
-  .about_hidden .left{display:none;}
+  .about_hidden .left{
+
+  }
   
   .menu_bar .menu li {
     margin-right:15vw;font-size:25px;
