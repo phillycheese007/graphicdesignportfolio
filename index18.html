@@ -120,12 +120,13 @@
 
   
 <!-- Packery does NOT require jQuery.
-  jQuery is only used for jQuery UI Draggable -->
+jQuery is only used for jQuery UI Draggable -->
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
 <script src="/graphicdesignportfolio/js/packery-docs.min.js"></script>
 
 <script>
+  
 var $grid = $('.grid').packery({
   itemSelector: '.grid-item',
    gutter: '.gutter-sizer',
@@ -135,57 +136,45 @@ var $grid = $('.grid').packery({
   
 $grid.on( 'click', '.grid-item', function( event ) {
   $grid.packery( 'fit', event.currentTarget, 10, 10 );
-       $("html, body").animate({ scrollTop: 0 }, "fast");
-    $(  event.currentTarget  ).siblings().removeClass('grid-item--large');
-      $(  event.currentTarget  ).siblings().removeClass('big_image');
+  $("html, body").animate({ scrollTop: 0 }, "fast");
+  $( event.currentTarget ).siblings().removeClass('grid-item--largqe');
+  $( event.currentTarget ).siblings().removeClass('big_image');
+  $( event.currentTarget ).siblings().addClass('rumble'); 
+  $( event.currentTarget ).toggleClass('rumble');
+  $( event.currentTarget ).toggleClass('outaline');
   
-$(  event.currentTarget  ).siblings().addClass('rumble'); 
-$(  event.currentTarget  ).toggleClass('rumble');
-  
-
-  
-  
-  $(  event.currentTarget  ).toggleClass('outaline');
-  
-  $(  event.currentTarget ).siblings().click(function(){
-    $(  event.currentTarget  ).addClass('outaline');
+  $( event.currentTarget ).siblings().click(function(){
+    $( event.currentTarget ).addClass('outaline');
   }); 
   
-  
-  
-    $(  event.currentTarget  ).toggleClass('grid-item--large');
-  
-  
-
-  
+  $(  event.currentTarget  ).toggleClass('grid-item--large');
   $( event.currentTarget ).toggleClass( "big_image" );
-  
   
   // trigger layout after item size changes
   $grid.packery('layout');
    
-
 });  
     
 </script>
  
-  <script>
-$(".about").click(function(){
+  
+  
+  
+<script>
+  $(".about").click(function(){
     $(".menu_bar").addClass("menubar_xpand");
     $( this ).siblings().addClass("hide");
     $(".contact_hidden").addClass("hide");
     $(".about_hidden").removeClass("hide");
     $( ".about_hidden .right .bussy" ).delay( 270 ).fadeIn( "fast" );
 });
-
+  
 $(".contact").click(function(){
     $(".menu_bar").addClass("menubar_xpand");
     $( this ).siblings().addClass("hide");
     $(".about_hidden").addClass("hide");
     $(".contact_hidden").removeClass("hide");
 });
-
-    
 </script>
   
 
