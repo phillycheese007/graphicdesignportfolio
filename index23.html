@@ -158,12 +158,13 @@ $grid.on( 'click', '.grid-item', function( event ) {
     $( event.currentTarget ).removeClass('big_image').addClass('outaline');
 
     
-  $(  event.currentTarget ).siblings().click(function(){
+  $(  this ).siblings().click(function(){
       $( event.currentTarget ).addClass('rumble');
   }); 
     
     setTimeout(function(){
       $( event.currentTarget ).addClass('rumble');
+      $( event.currentTarget ).siblings().addClass('rumble');
     }, 600);
   }
   else{
