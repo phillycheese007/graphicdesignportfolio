@@ -169,8 +169,15 @@ $grid.on( 'click', '.grid-item', function( event ) {
   }); 
   
   $(  event.currentTarget  ).toggleClass('grid-item--large');
-  $( event.currentTarget ).toggleClass( "big_image" ).toggleClass('rumble');
+  $( event.currentTarget ).toggleClass( "big_image" );
  
+  
+  
+
+    setTimeout(function(){
+        $( event.currentTarget ).toggleClass('pug');
+    }, 1000);
+
   
   
   // trigger layout after item size changes
