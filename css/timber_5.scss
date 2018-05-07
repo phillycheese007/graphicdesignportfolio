@@ -22,7 +22,7 @@ html {
   overflow-y: scroll; /* force scrollbar, prevents initial gap */
 }
 
-body { font-family: Sans-Serif;margin:0;background:white;}
+body { font-family: Sans-Serif;margin:0;background:red;}
 
   ul{list-style-type:none;} 
   a {cursor:pointer;}
@@ -70,14 +70,7 @@ body { font-family: Sans-Serif;margin:0;background:white;}
   outline-inset:10px;
 }*/
 
-.grid-item--large {
-  position:absolute !important;
-  top:0;
-  width: 100%;
-  height: auto;
-  background: pink;
-  text-align:center; 
-}
+
 
 /*--------------------------------------------------------------------------------------------------*/ 
 /*------------------------------------------------ EEE grid ----------------------------------------*/ 
@@ -137,8 +130,12 @@ body { font-family: Sans-Serif;margin:0;background:white;}
 /*------------------------------------------------ BBB big image -----------------------------------*/ 
 /*--------------------------------------------------------------------------------------------------*/ 
 
+
+
 .big_image{
   background:none;
+  position:absolute !important;
+  top:0;
   width:80%;
   margin:0 10%;
   display:block;
@@ -156,6 +153,7 @@ body { font-family: Sans-Serif;margin:0;background:white;}
     background:pink;
   }
 }  
+
 
 .big_image img{width:100%;margin:0;}
 .big_image .tall p{background:white;border:1px solid black;width:100%;margin:15px 0;height:150px;text-align:left;}  
