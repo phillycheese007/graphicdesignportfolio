@@ -204,11 +204,10 @@ $transition_speed: .5s;
 
 
 .menu_bar {
-  background:green;
+  background:pink;
   height:40px;
-  width:100%;
-  /*margin:30px 5% 150px 5%;*/
-  margin:0;
+  width:90%;
+  margin:30px 5% 150px 5%;
   position:relative;
   transition: $transition_speed;
 } 
