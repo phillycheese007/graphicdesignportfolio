@@ -201,7 +201,7 @@ $transition_speed: .5s;
 
 .menubar_xpand {
   height:250px !important;
-  border:1px solid lightgrey;
+  border-bottom:1px solid black;
   transition:height $transition_speed;
 }
   
