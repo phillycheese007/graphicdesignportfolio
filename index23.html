@@ -156,7 +156,11 @@ $grid.on( 'click', '.grid-item', function( event ) {
   if ( $( this ).hasClass( "big_image" ) ) {
     $( event.currentTarget ).find( "img" ).addClass("muffin_positioner"); //hey for positioning
     $( event.currentTarget ).removeClass('big_image').addClass('outaline');
-    $( event.currentTarget ).siblings().addClass('rumble');
+
+  $(  event.currentTarget ).siblings().click(function(){
+      $( event.currentTarget ).addClass('rumble');
+  }); 
+    
     setTimeout(function(){
       $( event.currentTarget ).addClass('rumble');
     }, 600);
@@ -168,6 +172,7 @@ $grid.on( 'click', '.grid-item', function( event ) {
   }
 
 
+  
   // trigger layout after item size changes
   $grid.packery('layout');
    
