@@ -167,13 +167,6 @@ $grid.on( 'click', '.grid-item', function( event ) {
   $( event.currentTarget ).toggleClass( "big_image" );
  
   
-  if ($(".grid_item").width() < 460) {
-   alert('Less than 960');
-   $(  event.currentTarget  ).addClass('rumble, pug');
-}
-else {
-   alert('More than 960');
-}
   
   // trigger layout after item size changes
   $grid.packery('layout');
@@ -210,6 +203,20 @@ $(".menu_bar").on("mouseleave", function() {
  
   
   
+<script>
+  
+    if ($(".grid_item").width() < 460) {
+      $grid.on( 'click', '.grid-item', function( event ) {
+        $(  event.currentTarget  ).removeClass('rumble');
+        $(  event.currentTarget  ).removeClass('pug');
+      }); 
+}
+else {
+        $(  event.currentTarget  ).addClass('rumble');
+        $(  event.currentTarget  ).addClass('pug');
+}
+
+</script>
   
 
   
