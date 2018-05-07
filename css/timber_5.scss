@@ -22,7 +22,7 @@ html {
   overflow-y: scroll; /* force scrollbar, prevents initial gap */
 }
 
-body { font-family: Sans-Serif;margin:0;background:red;}
+body { font-family: Sans-Serif;margin:0;background:green;}
 
   ul{list-style-type:none;} 
   a {cursor:pointer;}
@@ -130,12 +130,17 @@ body { font-family: Sans-Serif;margin:0;background:red;}
 /*------------------------------------------------ BBB big image -----------------------------------*/ 
 /*--------------------------------------------------------------------------------------------------*/ 
 
-
+.grid-item--large {
+  position:absolute !important;
+  top:0;
+  width: 100%;
+  height: auto;
+  background: pink;
+  text-align:center; 
+}
 
 .big_image{
   background:none;
-  position:absolute !important;
-  top:0;
   width:80%;
   margin:0 10%;
   display:block;
