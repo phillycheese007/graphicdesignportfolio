@@ -113,7 +113,7 @@ body { font-family: Sans-Serif;margin:0; background:yellow;}
 /*--------------------------------------------------------------------------------------------------*/ 
 
   
-.image_boob{
+.big_image{
   background:none;
   width:80%;
   margin:0 10%;
@@ -133,16 +133,12 @@ body { font-family: Sans-Serif;margin:0; background:yellow;}
   }
 }  
 
-.image_boob img{width:100%;margin:0;}
-.image_boob .tall p{background:white;border:1px solid black;width:100%;margin:15px 0;height:150px;text-align:left;}  
-.image_boob .wide p{background:white;border:1px solid black;width:100%;margin:15px 0;height:150px;text-align:left;}  
+.big_image img{width:100%;margin:0;}
+.big_image .tall p{background:white;border:1px solid black;width:100%;margin:15px 0;height:150px;text-align:left;}  
+.big_image .wide p{background:white;border:1px solid black;width:100%;margin:15px 0;height:150px;text-align:left;}  
 
-  
-  hr{color:green;}
-  h1{font-size:15px;}
-  
-  .skewed img{margin-left:-100px;width:100%;}
-  .skewed2 img{margin:-150px 150px 0 0;height:150%;}
+
+
 
   
   .menu_bar {
