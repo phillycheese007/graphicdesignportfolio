@@ -153,33 +153,22 @@ var $grid = $('.grid').packery({
 }); 
   
 $grid.on( 'click', '.grid-item', function( event ) {
-  $grid.packery( 'fit', event.currentTarget, 10, 10 );
+  $grid.packery( 'fit', event.currentTarget, 10, 10 );/*-- basis for gallery--*/
+  
   $("html, body").animate({ scrollTop: 0 }, "fast");
-
-
-   
- 
   
-
   
-
-  
-
- 
   if ( $( this ).hasClass( "big_image" ) ) {
-    $( event.currentTarget ).removeClass('big_image').addClass('outaline');
-    $( event.currentTarget ).removeClass('grid-item--large');
+    $( event.currentTarget ).removeClass('big_image').removeClass('grid-item--large').addClass('outaline');
     setTimeout(function(){
       $( event.currentTarget ).addClass('rumble');
     }, 600);
   }
   else{
-    $( event.currentTarget ).removeClass('rumble').addClass('big_image').addClass('grid-item--large');
-    $( event.currentTarget ).removeClass('outaline');
+    $( event.currentTarget )
+      .removeClass('rumble').addClass('big_image')
+      .addClass('grid-item--large').removeClass('outaline');
   }
-
- 
-
 
 
   // trigger layout after item size changes
@@ -204,11 +193,9 @@ $(".contact").click(function(){
   $(".contact_hidden").removeClass("hide");
 });
   
-
 $(".menu_bar").on("mouseleave", function() {
   $( this ).removeClass("menubar_xpand");
-  $(".about_hidden").addClass("hide");
-  $(".contact_hidden").addClass("hide");
+  $(".about_hidden, .contact_hidden").addClass("hide");
   $( ".about_hidden .right .bussy" ).fadeOut( "fast" );
 });
 
