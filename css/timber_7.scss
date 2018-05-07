@@ -244,7 +244,7 @@ $transition_speed: .5s;
 .contact_hidden{height:83%;width:100%;margin:0;}
 .about_hidden{height:83%;width:100%;margin:0;}
   
-.about_hidden ul {background:orange;width:100%;height:100%;margin:0;padding:0;}
+.about_hidden ul {background:none;width:100%;height:100%;margin:0;padding:0;}
   
 .about_hidden ul li{
   background:white;border:1px solid black;
@@ -261,7 +261,7 @@ $transition_speed: .5s;
   position:absolute;
   margin-left:200px;
   width: calc(92% - 200px);
-  p{margin:10px;text-indent:5px;}
+  p{margin:10px;text-indent:5px;line-height:30px;}
 }
 .about_hidden .right .fadein{margin:10px 5%;background:blue;}
 
