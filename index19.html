@@ -139,7 +139,7 @@ $grid.on( 'click', '.grid-item', function( event ) {
   $( event.currentTarget ).toggleClass('outaline');
   
   $( event.currentTarget ).siblings().click(function(){
-    $( event.currentTarget ).addClass('outaline');
+    $( event.currentTarget ).removeClass('rumble').addClass('outaline').addClass('rumble');
   }); 
   
   $(  event.currentTarget  ).toggleClass('grid-item--large');
