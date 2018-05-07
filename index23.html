@@ -149,6 +149,7 @@ $grid.on( 'click', '.grid-item', function( event ) {
   
   $("html, body").animate({ scrollTop: 0 }, "fast");
   $( event.currentTarget ).siblings().removeClass('big_image');
+  $( event.currentTarget ).siblings().addClass('rumble');
   $( event.currentTarget ).siblings().find( "img" ).addClass('muffin_positioner');
   
   if ( $( this ).hasClass( "big_image" ) ) {
