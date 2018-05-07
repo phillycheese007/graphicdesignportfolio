@@ -99,6 +99,7 @@ body { font-family: Sans-Serif;margin:0; background:yellow;}
     width: 30.65%;
   }
 } 
+
 @media only screen and (max-width: 760px) and (min-width: 400px) {
   .grid-sizer,
   .grid-item {
@@ -112,18 +113,30 @@ body { font-family: Sans-Serif;margin:0; background:yellow;}
 /*--------------------------------------------------------------------------------------------------*/ 
 
   
-  .image_boob{background:none;width:80%;margin:0 10%;display:block;transition:0}  
+.image_boob{
+  background:none;
+  width:80%;
+  margin:0 10%;
+  display:block;
+  transition:0;
+  .tall{
+    width:60%;
+    margin:0 20%;
+    display:block;
+    background:lightyellow;
+   }
+  .wide{
+    width:90%;
+    margin:0 5%;
+    display:block;
+    background:pink;
+  }
+}  
 
-  .image_boob .tall{width:60%;margin:0 20%;display:block;background:yellow}
-  .image_boob .wide{width:90%;margin:0 5%;display:block;background:pink}
-  
-  .image_boob .tall img{width:100%;margin:0;} 
-  .image_boob .wide img{width:100%;margin:0;}
-  
-  .image_boob .tall p{background:white;border:1px solid black;width:100%;margin:15px 0;height:150px;text-align:left;}  
-  .image_boob .wide p{background:white;border:1px solid black;width:100%;margin:15px 0;height:150px;text-align:left;}  
-  
-  .tall img, .wide img{}
+.image_boob img{width:100%;margin:0;}
+.image_boob .tall p{background:white;border:1px solid black;width:100%;margin:15px 0;height:150px;text-align:left;}  
+.image_boob .wide p{background:white;border:1px solid black;width:100%;margin:15px 0;height:150px;text-align:left;}  
+
   
   hr{color:green;}
   h1{font-size:15px;}
