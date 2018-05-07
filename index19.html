@@ -148,7 +148,11 @@ $grid.on( 'click', '.grid-item', function( event ) {
   $grid.packery('layout');
    
   $( event.currentTarget ).siblings().addClass('rumble'); 
-  $( event.currentTarget ).delay( 1000 ).toggleClass('rumble');
+  $( event.currentTarget ).toggleClass('rumble');
+  
+if($( event.currentTarget ).hasClass("big_image")){
+  $( event.currentTarget ).addClass('pug');
+}
   
 });  
 
