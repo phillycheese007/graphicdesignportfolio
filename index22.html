@@ -148,11 +148,10 @@ $grid.on( 'click', '.grid-item', function( event ) {
   $grid.packery( 'fit', event.currentTarget, 10, 10 );/*-- basis for gallery--*/
   
   $("html, body").animate({ scrollTop: 0 }, "fast");
-  
+  $( event.currentTarget ).siblings().removeClass('big_image');
   
   if ( $( this ).hasClass( "big_image" ) ) {
     $( event.currentTarget ).find( "img" ).addClass("muffin_positioner"); //hey for positioning
-    $( event.currentTarget ).siblings().removeClass('big_image');
     $( event.currentTarget ).removeClass('big_image').addClass('outaline');
     setTimeout(function(){
       $( event.currentTarget ).addClass('rumble');
