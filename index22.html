@@ -148,6 +148,7 @@ $grid.on( 'click', '.grid-item', function( event ) {
     }, 600);
   }
   else{
+    $(".grid-item img").removeClass();
     $( event.currentTarget ).addClass('big_image').removeClass('outaline').removeClass('rumble');  
   }
 
@@ -157,7 +158,7 @@ $grid.on( 'click', '.grid-item', function( event ) {
    
 });  
 
-  
+
   
 $(".about").click(function(){
   $(".menu_bar").addClass("menubar_xpand");
