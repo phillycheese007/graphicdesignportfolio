@@ -32,7 +32,7 @@
         <li class="left"><img src="/graphicdesignportfolio/images/pingpong2.jpg"></li>
         <li class="right">
           <div>
-            <div class="bussy">
+            <div class="fadein_text">
               PDZN is a forward thinking Creative designer 
               focusing on creating print and digital media for 
               forward thinking brands. Founded in 2018 (just now!!) by Designer Philip Dusel, 
@@ -157,7 +157,7 @@ $(".about").click(function(){
   $( this ).siblings().addClass("hide");
   $(".contact_hidden").addClass("hide");
   $(".about_hidden").removeClass("hide");
-  $( ".about_hidden .right .bussy" ).delay( 270 ).fadeIn( "fast" );
+  $( ".about_hidden .right .fadein_text" ).delay( 270 ).fadeIn( "fast" );
 });
   
 $(".contact").click(function(){
@@ -172,7 +172,7 @@ $(".menu_bar").on("mouseleave", function() {
   $( this ).removeClass("menubar_xpand");
   $(".about_hidden").addClass("hide");
   $(".contact_hidden").addClass("hide");
-  $( ".about_hidden .right .bussy" ).fadeOut( "fast" );
+  $( ".about_hidden .right .fadein_text" ).fadeOut( "fast" );
 });
 
   
