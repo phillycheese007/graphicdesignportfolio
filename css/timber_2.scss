@@ -6,11 +6,11 @@
 /*-------------------------------------------------------------------------------------*/
 body{
   background: rgba(255,255,255,1);
-background: -moz-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 0%, rgba(252,252,252,1) 72%, rgba(255,255,255,1) 100%);
-background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(0%, rgba(245,245,245,1)), color-stop(72%, rgba(252,252,252,1)), color-stop(100%, rgba(255,255,255,1)));
-background: -webkit-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 0%, rgba(252,252,252,1) 72%, rgba(255,255,255,1) 100%);
-background: -o-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 0%, rgba(252,252,252,1) 72%, rgba(255,255,255,1) 100%);
-background: -ms-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 0%, rgba(252,252,252,1) 72%, rgba(255,255,255,1) 100%);
+  background: -moz-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 0%, rgba(252,252,252,1) 72%, rgba(255,255,255,1) 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(0%, rgba(245,245,245,1)), color-stop(72%, rgba(252,252,252,1)), color-stop(100%, rgba(255,255,255,1)));
+  background: -webkit-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 0%, rgba(252,252,252,1) 72%, rgba(255,255,255,1) 100%);
+  background: -o-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 0%, rgba(252,252,252,1) 72%, rgba(255,255,255,1) 100%);
+  background: -ms-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 0%, rgba(252,252,252,1) 72%, rgba(255,255,255,1) 100%);
   }
 * { box-sizing: border-box; }
 
@@ -20,7 +20,7 @@ html {
   overflow-y: scroll; /* force scrollbar, prevents initial gap */
 }
 
-body { font-family: Sans-Serif;margin:0; background:red; }
+body { font-family: Sans-Serif;margin:0; background:orange; }
 
   ul{list-style-type:none;} 
   a {cursor:pointer;}
@@ -94,17 +94,50 @@ body { font-family: Sans-Serif;margin:0; background:red; }
 /*------------------------------------------------ BBB top menu ------------------------------------*/ 
 /*--------------------------------------------------------------------------------------------------*/ 
   
-
+.menubar_xpand{height:250px !important;border:1px solid lightgrey;transition:height .5s;}
 
 /*--------------------- BBB .menu_bar ------------------*/
 /*--------------------- BBB .menu_bar ------------------*/
 
-
+.menu_bar {
+  background:none;height:40px;width:90%;margin:30px 5% 150px 5%;position:relative;
+  transition: height .5s;
+}
 
 /*--------------------- EEE .menu_bar ------------------*/ 
 /*--------------------- EEE .menu_bar ------------------*/ 
 
+  
+  .menu_bar .logo{float:left;margin-left:15px;line-height:40px}
+  .menu {
+    position:relative;z-index:99;float:right;margin:0;margin-right:0;width:80%;height:40px;
+    background:none;line-height:40px
+  }
+  .menu_bar .menu li {
+    font-family: 'Shadows Into Light', cursive;
+    float:right;background:none;width:15%;margin-right:15px;font-size:20px;text-align:center;
+  }
+  
+  #menu_wrapper { position: absolute;bottom:-40px;right:10px;width:100%;}
+  
+  .contact_hidden{height:83%;width:100%;margin:0;}
+  .about_hidden{height:83%;width:100%;margin:0;}
+  
+  .hide{display:none}
 
+  
+  .about_hidden ul {background:none;width:100%;height:100%;margin:0;padding:0;}
+  
+  .about_hidden ul li{
+    background:white;border:1px solid black;
+    height:75%;margin-top:10px; transition:height.9s;
+  }
+   
+  .about_hidden ul li img{height:98%;margin:1% auto;} 
+  .about_hidden .right{position:absolute;right:50px; width: calc(100% - 500px);}
+  .about_hidden .right .bussy{background:lightgreen; margin:10px;height:100%;line-height:30px;display:none;}
+  .about_hidden .left{position:absolute;left:50px;width:150px;margin-top:20px;overflow:hidden;text-align:center;background:orange;}
+  
 
 /*--------------------------------------------------------------------------------------------------*/ 
 /*------------------------------------------------ EEE top menu ------------------------------------*/ 
@@ -135,6 +168,18 @@ body { font-family: Sans-Serif;margin:0; background:red; }
 
 /*----------------------- EEE .big_image --------------------*/
 /*----------------------- EEE .big_image --------------------*/
+
+  .image_boob{background:none;width:80%;margin:0 10%;display:block;transition:0}  
+
+  .image_boob .tall{width:60%;margin:0 20%;display:block;background:yellow}
+  .image_boob .wide{width:90%;margin:0 5%;display:block;background:pink}
+  
+  .image_boob .tall img{width:100%;margin:0;} 
+  .image_boob .wide img{width:100%;margin:0;}
+  
+  .image_boob .tall p{background:white;border:1px solid black;width:100%;margin:15px 0;height:150px;text-align:left;}  
+  .image_boob .wide p{background:white;border:1px solid black;width:100%;margin:15px 0;height:150px;text-align:left;}  
+  
 
 
 /*--------------------------------------------------------------------------------------------------*/ 
@@ -219,18 +264,8 @@ body { font-family: Sans-Serif;margin:0; background:red; }
 
 
   
-  .image_boob{background:none;width:80%;margin:0 10%;display:block;transition:0}  
 
-  .image_boob .tall{width:60%;margin:0 20%;display:block;background:yellow}
-  .image_boob .wide{width:90%;margin:0 5%;display:block;background:pink}
-  
-  .image_boob .tall img{width:100%;margin:0;} 
-  .image_boob .wide img{width:100%;margin:0;}
-  
-  .image_boob .tall p{background:white;border:1px solid black;width:100%;margin:15px 0;height:150px;text-align:left;}  
-  .image_boob .wide p{background:white;border:1px solid black;width:100%;margin:15px 0;height:150px;text-align:left;}  
-  
-  .tall img, .wide img{}
+
   
   hr{color:green;}
   h1{font-size:15px;}
@@ -238,44 +273,7 @@ body { font-family: Sans-Serif;margin:0; background:red; }
   .skewed img{margin-left:-100px;width:100%;}
   .skewed2 img{margin:-150px 150px 0 0;height:150%;}
 
-  
-  .menu_bar {
-    background:none;height:40px;width:90%;margin:30px 5% 150px 5%;position:relative;
-    transition: height .5s;
-  }
-  .menubar_xpand{height:250px !important;border:1px solid lightgrey;transition:height .5s;}
-  
-  .menu_bar .logo{float:left;margin-left:15px;line-height:40px}
-  .menu {
-    position:relative;z-index:99;float:right;margin:0;margin-right:0;width:80%;height:40px;
-    background:none;line-height:40px
-  }
-  .menu_bar .menu li {
-    font-family: 'Shadows Into Light', cursive;
-    float:right;background:none;width:15%;margin-right:15px;font-size:20px;text-align:center;
-  }
-  
-  #menu_wrapper { position: absolute;bottom:-40px;right:10px;width:100%;}
-  
-  .contact_hidden{height:83%;width:100%;margin:0;}
-  .about_hidden{height:83%;width:100%;margin:0;}
-  
-  .hide{display:none}
-
-  
-  .about_hidden ul {background:none;width:100%;height:100%;margin:0;padding:0;}
-  
-  .about_hidden ul li{
-    background:white;border:1px solid black;
-    height:75%;margin-top:10px; transition:height.9s;
-  }
-   
-  .about_hidden ul li img{height:98%;margin:1% auto;} 
-  .about_hidden .right{position:absolute;right:50px; width: calc(100% - 500px);}
-  .about_hidden .right .bussy{background:lightgreen; margin:10px;height:100%;line-height:30px;display:none;}
-  .about_hidden .left{position:absolute;left:50px;width:150px;margin-top:20px;overflow:hidden;text-align:center;background:orange;}
-  
-
+ 
 
 
 
