@@ -165,6 +165,15 @@ $grid.on( 'click', '.grid-item', function( event ) {
   
   $(  event.currentTarget  ).toggleClass('grid-item--large');
   $( event.currentTarget ).toggleClass( "big_image" );
+ 
+  
+  if ($(".grid_item").width() < 460) {
+   alert('Less than 960');
+   $(  event.currentTarget  ).addClass('rumble, pup');
+}
+else {
+   alert('More than 960');
+}
   
   // trigger layout after item size changes
   $grid.packery('layout');
