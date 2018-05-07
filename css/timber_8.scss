@@ -158,9 +158,9 @@ body { font-family: Sans-Serif;margin:0;background:yellow;}
 .big_image img{width:100%;margin:0;}
 
 .big_image p{
--webkit-box-shadow: inset 2px 0px 20px 20px rgba(255,255,0,1);
--moz-box-shadow: inset 2px 0px 20px 20px rgba(255,255,0,1);
-box-shadow: inset 2px 0px 20px 20px rgba(255,255,0,1);
+-webkit-box-shadow: inset 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: inset 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 .big_image .tall p{width:100%;margin:30px 0;height:150px;text-align:left;}  
