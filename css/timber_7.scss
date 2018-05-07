@@ -257,10 +257,11 @@ $transition_speed: .5s;
 } 
 
 .about_hidden .right{
-  background:lightgreen;
+  background:lightyellow;
   position:absolute;
   margin-left:200px;
   width: calc(92% - 200px);
+  p{margin:10px;text-indent:5px;}
 }
 
 .about_hidden .left{
@@ -269,7 +270,6 @@ $transition_speed: .5s;
   margin-left:5%;
   width:200px;
   display:visible;
-  p{margin:10px;text-indent:5px;}
 }
 
 /*--------------------------------------------------------------------------------------------------*/ 
