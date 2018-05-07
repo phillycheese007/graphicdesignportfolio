@@ -160,7 +160,7 @@ $grid.on( 'click', '.grid-item', function( event ) {
   $( event.currentTarget ).toggleClass('outaline');
   
   $(  event.currentTarget  ).siblings().addClass('rumble'); 
-  $(  event.currentTarget  ).toggleClass('rumble');
+ 
   
 
   
@@ -169,7 +169,7 @@ $grid.on( 'click', '.grid-item', function( event ) {
   }); 
   
   $(  event.currentTarget  ).toggleClass('grid-item--large');
-  $( event.currentTarget ).toggleClass( "big_image" );
+  $( event.currentTarget ).toggleClass( "big_image" ).toggleClass('rumble');
  
   
   
