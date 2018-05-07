@@ -149,20 +149,20 @@ $grid.on( 'click', '.grid-item', function( event ) {
   
   $("html, body").animate({ scrollTop: 0 }, "fast");
   $( event.currentTarget ).siblings().removeClass('big_image');
-
+    $( event.currentTarget ).siblings().addClass('rumble');
   $( event.currentTarget ).siblings().find( "img" ).addClass('muffin_positioner');
   
   if ( $( this ).hasClass( "big_image" ) ) {
     $( event.currentTarget ).find( "img" ).addClass("muffin_positioner"); //hey for positioning
     $( event.currentTarget ).removeClass('big_image').addClass('outaline');
-    $( event.currentTarget ).siblings().addClass('rumble');
     setTimeout(function(){
       $( event.currentTarget ).addClass('rumble');
     }, 600);
   }
   else{
     $( event.currentTarget ).find( "img" ).removeClass("muffin_positioner"); //hey for positioning
-    $( event.currentTarget ).addClass('big_image').removeClass('outaline').removeClass('rumble');  
+    $( event.currentTarget ).addClass('big_image').removeClass('outaline').removeClass('rumble');
+    $( event.currentTarget ).siblings().addClass('rumble');
   }
 
 
