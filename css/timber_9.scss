@@ -210,7 +210,7 @@ $transition_speed: .5s;
 } 
 
 .menubar_xpand {
-  height:250px !important;
+  height:23vw !important;
   border-bottom:1px solid black;
   transition:height $transition_speed;
 }
@@ -363,9 +363,7 @@ $transition_speed: .5s;
 /*-----------------------################------#####---------#######---------------------######---------------------------*/
 
 @media only screen and (max-width: 750px) {
-  .menubar_xpand {
-  height:450px !important;
-  }
+
 }
 
 @media only screen and (max-width: 450px) {
@@ -377,9 +375,7 @@ $transition_speed: .5s;
     width:100%;
   }
   
-  .menubar_xpand {
-  height:650px !important;
-  }
+
   
   .about_hidden .left{
     display:none;
