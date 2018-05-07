@@ -174,8 +174,9 @@ $grid.on( 'click', '.grid-item', function( event ) {
   
 
     setTimeout(function(){
-        $( event.currentTarget ).toggleClass('rumble, pug');
-    }, 1000);
+        $( event.currentTarget ).removeClass('rumble');
+        $( event.currentTarget ).addClass('pug');
+    }, 300);
 
   
   
