@@ -158,8 +158,7 @@ $grid.on( 'click', '.grid-item', function( event ) {
   $( event.currentTarget ).siblings().removeClass('grid-item--large');
   $( event.currentTarget ).siblings().removeClass('big_image');
   $( event.currentTarget ).toggleClass('outaline');
-  
-  $(  event.currentTarget  ).siblings().addClass('rumble'); 
+   
  
   
 
@@ -175,7 +174,7 @@ $grid.on( 'click', '.grid-item', function( event ) {
   
 
     setTimeout(function(){
-        $( event.currentTarget ).toggleClass('pug');
+        $( event.currentTarget ).toggleClass('rumble, pug');
     }, 1000);
 
   
