@@ -257,10 +257,10 @@ $transition_speed: .5s;
 } 
 
 .about_hidden .right{
-  background:white;
+  background:lightblue;
   position:absolute;
-  margin:0 auto;
-  width:100%;
+  margin-right:50%;
+  width:50%;
 }
 
 .about_hidden .left{
@@ -352,13 +352,17 @@ $transition_speed: .5s;
 /*-----------------------################------#####---------#######---------------------########-------------------------*/
 /*-----------------------################------#####---------#######---------------------######---------------------------*/
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 750px) {
   
-  .about_hidden .right{
-
-  }
+.about_hidden .right{
+  background:white;
+  position:absolute;
+  margin:0 auto;
+  width:100%;
+}
+  
   .about_hidden .left{
-
+    display:none;
   }
   
   .menu_bar .menu li {
