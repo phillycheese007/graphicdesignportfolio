@@ -173,22 +173,17 @@ $grid.on( 'click', '.grid-item', function( event ) {
   
 
  
-    if ( $( this ).hasClass( "rumble" ) ) {
- 
-        $( event.currentTarget ).removeClass('rumble');
- 
-    }
- else{
+  if ( $( this ).hasClass( "rumble" ) ) {
+    $( event.currentTarget ).removeClass('rumble');
+  }
+  else{
     setTimeout(function(){
       $( event.currentTarget ).addClass('pug');
       $( event.currentTarget ).addClass('rumble');
     }, 600);
-   
-     }
+  }
 
 
-
-  
   // trigger layout after item size changes
   $grid.packery('layout');
    
