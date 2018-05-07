@@ -11,15 +11,16 @@
   
 <style>
   
-  .muffin{border:20px solid green;}
-.muffin.queensquality{width:100px;margin-top:200px;}
-.muffin.pingpong{width:800px;margin-top:-100px;}
-.muffin.trippyphone{width:500px;margin-top:500px;}
-.muffin.pigeon{width:500px;margin-top:100px;}
-.muffin.la{width:600px;margin-top:100px;}
-.muffin.banana{width:300px;margin-right:100px;}
-.muffin.bottles{width:600px;margin-top:100px;}
-.muffin.perrier{width:500px;margin-left:100px;}
+.muffin_positioner{border:20px solid green;}
+  
+.muffin_positioner.queensquality{width:100px;margin-top:200px;}
+.muffin_positioner.pingpong{width:800px;margin-top:-100px;}
+.muffin_positioner.trippyphone{width:500px;margin-top:500px;}
+.muffin_positioner.pigeon{width:500px;margin-top:100px;}
+.muffin_positioner.la{width:600px;margin-top:100px;}
+.muffin_positioner.banana{width:300px;margin-right:100px;}
+.muffin_positioner.bottles{width:600px;margin-top:100px;}
+.muffin_positioner.perrier{width:500px;margin-left:100px;}
 
 </style>
   
@@ -79,46 +80,46 @@
     <div class="grid-sizer"></div>
    
     <div class="grid-item outaline rumble">
-      <div class="tall"><img class="muffin queensquality" src="/graphicdesignportfolio/images/queenlrg.jpg"></div>
+      <div class="tall"><img class="muffin_positioner queensquality" src="/graphicdesignportfolio/images/queenlrg.jpg"></div>
       <div class="tall"><p>hello pfapdf and kktk to the thick.</p></div>  
       <div class="tall"><img class="img1" src="/graphicdesignportfolio/images/queenlrg.jpg"></div>
       <div class="tall"><p>hello pfapdf and kktk to the thick.</p></div>  
     </div>
   
     <div class="grid-item outaline rumble">
-      <div class="tall"><img class="muffin pingpong" src="/graphicdesignportfolio/images/pingpong1.jpg"></div>
+      <div class="tall"><img class="muffin_positioner pingpong" src="/graphicdesignportfolio/images/pingpong1.jpg"></div>
       <div class="tall"><p>hello pfapdf and kktk to the thick.</p></div>  
       <div class="tall"><img src="/graphicdesignportfolio/images/pingpong2.jpg"></div>
       <div class="tall"><p>hello pfapdf and kktk to the thick.</p></div>  
     </div>
   
     <div class="grid-item outaline rumble">
-      <div class="la wide"><img class="muffin la" src="/graphicdesignportfolio/images/la2.jpg"></div> 
+      <div class="la wide"><img class="muffin_positioner la" src="/graphicdesignportfolio/images/la2.jpg"></div> 
       <div class="wide"><p>hello pfapdf dddgfd fdfdf efe yuop lops and kktk to the thick.</p></div>  
     </div>
   
     <div class="grid-item outaline rumble">
-      <div class="tall"><img class="muffin perrier" src="/graphicdesignportfolio/images/perrier.jpg"></div> 
+      <div class="tall"><img class="muffin_positioner perrier" src="/graphicdesignportfolio/images/perrier.jpg"></div> 
       <div class="tall"><p>hello pfapdf dddgfd fdfdf efe yuop lops and kktk to the thick.</p></div>  
     </div>
   
     <div class="grid-item outaline rumble">
-      <div class="wide"><img class="muffin banana" src="/graphicdesignportfolio/images/banana.jpg"></div> 
+      <div class="wide"><img class="muffin_positioner banana" src="/graphicdesignportfolio/images/banana.jpg"></div> 
       <div class="wide"><p>hello pfapdf dddgfd fdfdf efe yuop lops and kktk to the thick.</p></div>  
     </div>
   
     <div class="grid-item outaline rumble">
-      <div class="wide"><img class="muffin pigeon" src="/graphicdesignportfolio/images/pigeon.jpg"></div> 
+      <div class="wide"><img class="muffin_positioner pigeon" src="/graphicdesignportfolio/images/pigeon.jpg"></div> 
       <div class="wide"><p>hello pfapdf dddgfd fdfdf efe yuop lops and kktk to the thick.</p></div>  
     </div>
   
     <div class="grid-item outaline rumble">
-      <div class="wide"><img class="muffin trippyphone" src="/graphicdesignportfolio/images/trippyphone2.jpg"></div> 
+      <div class="wide"><img class="muffin_positioner trippyphone" src="/graphicdesignportfolio/images/trippyphone2.jpg"></div> 
       <div class="wide"><p>hello pfapdf dddgfd fdfdf efe yuop lops and kktk to the thick.</p></div>  
     </div>
 
     <div class="grid-item outaline rumble">
-      <div class="wide"><img class="muffin bottles" src="/graphicdesignportfolio/images/bottles.jpg"></div> 
+      <div class="wide"><img class="muffin_positioner bottles" src="/graphicdesignportfolio/images/bottles.jpg"></div> 
       <div class="wide"><p>hello pfapdf dddgfd fdfdf efe yuop lops and kktk to the thick.</p></div>  
     </div>
 
@@ -150,14 +151,14 @@ $grid.on( 'click', '.grid-item', function( event ) {
   
   
   if ( $( this ).hasClass( "big_image" ) ) {
-    $( event.currentTarget ).find( "img" ).addClass("muffin"); //hey for positioning
+    $( event.currentTarget ).find( "img" ).addClass("muffin_positioner"); //hey for positioning
     $( event.currentTarget ).removeClass('big_image').addClass('outaline');
     setTimeout(function(){
       $( event.currentTarget ).addClass('rumble');
     }, 600);
   }
   else{
-    $( event.currentTarget ).find( "img" ).removeClass("muffin"); //hey for positioning
+    $( event.currentTarget ).find( "img" ).removeClass("muffin_positioner"); //hey for positioning
     $( event.currentTarget ).addClass('big_image').removeClass('outaline').removeClass('rumble');  
   }
 
