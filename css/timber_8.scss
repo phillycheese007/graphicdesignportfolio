@@ -200,7 +200,7 @@ $transition_speed: .5s;
 } 
 
 .menubar_xpand {
-  height:auto !important;
+  height:250px !important;
   border-bottom:1px solid black;
   transition:height $transition_speed;
 }
@@ -362,7 +362,7 @@ $transition_speed: .5s;
   }
   
   .menubar_xpand {
-  height:auto !important;
+  height:450 !important;
   }
   
   .about_hidden .left{
