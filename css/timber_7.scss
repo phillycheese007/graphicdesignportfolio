@@ -264,11 +264,12 @@ $transition_speed: .5s;
 }
 
 .about_hidden .left{
-  background:darkgreen;
+  background:darkred;
   position:absolute;
   margin-left:5%;
   width:200px;
   display:visible;
+  p{margin:10px;text-indent:5px;}
 }
 
 /*--------------------------------------------------------------------------------------------------*/ 
