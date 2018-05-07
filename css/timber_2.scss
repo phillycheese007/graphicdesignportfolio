@@ -26,7 +26,7 @@ html {
   overflow-y: scroll; /* force scrollbar, prevents initial gap */
 }
 
-body { font-family: Sans-Serif;margin:0; background:purple;}
+body { font-family: Sans-Serif;margin:0; background:yellow;}
 
   ul{list-style-type:none;} 
   a {cursor:pointer;}
@@ -76,33 +76,40 @@ body { font-family: Sans-Serif;margin:0; background:purple;}
   background: pink;text-align:center; 
 }
 
-  
+
+
+/*--------------------------------------------------------------------------------------------------*/ 
+/*------------------------------------------------ BBB media queries -------------------------------*/ 
+/*------------------------------------------------ BBB media queries -------------------------------*/ 
+/*--------------------------------------------------------------------------------------------------*/ 
+
 @media only screen and (max-width: 400px) {
-.grid-sizer,
-.grid-item {
-  width: 100%;
-}
+  .grid-sizer,
+  .grid-item {
+    width: 100%;
+  }
   .image_boob{background:orange;width:100% !important;margin:0 !important;}
   .image_boob img{width:100% ;}
-  
   .image_boob .tall, .image_boob .wide{width:100% !important;margin:0 !important;}
 } 
   
-
-
-
 @media only screen and (max-width: 1480px) and (min-width: 760px) {
-.grid-sizer,
-.grid-item {
-  width: 30.65%;
-}
+  .grid-sizer,
+  .grid-item {
+    width: 30.65%;
+  }
 } 
 @media only screen and (max-width: 760px) and (min-width: 400px) {
-.grid-sizer,
-.grid-item {
-  width: 48%;
-}
+  .grid-sizer,
+  .grid-item {
+    width: 48%;
+  }
 } 
+
+/*--------------------------------------------------------------------------------------------------*/ 
+/*------------------------------------------------ EEE media queries -------------------------------*/ 
+/*------------------------------------------------ EEE media queries -------------------------------*/ 
+/*--------------------------------------------------------------------------------------------------*/ 
 
   
   .image_boob{background:none;width:80%;margin:0 10%;display:block;transition:0}  
@@ -280,10 +287,6 @@ body { font-family: Sans-Serif;margin:0; background:purple;}
   /*-*/
  /*-*/
 /*-*/
-/*--------------------------------------------------------------------------------------------------*/ 
-/*------------------------------------------------ BBB media queries -------------------------------*/ 
-/*------------------------------------------------ BBB media queries -------------------------------*/ 
-/*--------------------------------------------------------------------------------------------------*/ 
 
 
 
