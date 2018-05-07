@@ -161,12 +161,15 @@ $grid.on( 'click', '.grid-item', function( event ) {
 
 });  
 
+  
   if($( ".grid-item" ).hasClass("big_image")){
     $( ".grid-item" ).click(function(){
       setTimeout(function(){
        $( this ).toggleClass('pug');
       }, 500);
   });
+  });
+  
   
   
 $(".about").click(function(){
