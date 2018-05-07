@@ -11,8 +11,14 @@
   
 <style>
   
-
-
+.queensquality{width:100px;margin-top:200px;}
+.trippyphone{width:500px;margin-top:500px;}
+.pigeon{width:500px;margin-top:500px;}
+.la{width:500px;margin-top:500px;}
+.banana{width:300px;margin-right:500px;}
+.bottles{width:500px;margin-top:500px;}
+.perrier{width:500px;margin-left:500px;}
+.pingpong{width:800px;margin-top:-500px;}
 </style>
   
 <body class="-page" data-page="">
@@ -78,39 +84,39 @@
     </div>
   
     <div class="grid-item outaline rumble">
-      <div class="pingpong tall"><img src="/graphicdesignportfolio/images/pingpong1.jpg"></div>
+      <div class="tall"><img class="pingpong" src="/graphicdesignportfolio/images/pingpong1.jpg"></div>
       <div class="tall"><p>hello pfapdf and kktk to the thick.</p></div>  
       <div class="tall"><img src="/graphicdesignportfolio/images/pingpong2.jpg"></div>
       <div class="tall"><p>hello pfapdf and kktk to the thick.</p></div>  
     </div>
   
     <div class="grid-item outaline rumble">
-      <div class="la wide"><img src="/graphicdesignportfolio/images/la2.jpg"></div> 
+      <div class="la wide"><img class="la" src="/graphicdesignportfolio/images/la2.jpg"></div> 
       <div class="wide"><p>hello pfapdf dddgfd fdfdf efe yuop lops and kktk to the thick.</p></div>  
     </div>
   
     <div class="grid-item outaline rumble">
-      <div class="perrier tall"><img src="/graphicdesignportfolio/images/perrier.jpg"></div> 
+      <div class="tall"><img class="perrier" src="/graphicdesignportfolio/images/perrier.jpg"></div> 
       <div class="tall"><p>hello pfapdf dddgfd fdfdf efe yuop lops and kktk to the thick.</p></div>  
     </div>
   
     <div class="grid-item outaline rumble">
-      <div class="banana wide"><img src="/graphicdesignportfolio/images/banana.jpg"></div> 
+      <div class="wide"><img class="banana" src="/graphicdesignportfolio/images/banana.jpg"></div> 
       <div class="wide"><p>hello pfapdf dddgfd fdfdf efe yuop lops and kktk to the thick.</p></div>  
     </div>
   
     <div class="grid-item outaline rumble">
-      <div class="wide"><img src="/graphicdesignportfolio/images/pigeon.jpg"></div> 
+      <div class="wide"><img class="pigeon" src="/graphicdesignportfolio/images/pigeon.jpg"></div> 
       <div class="wide"><p>hello pfapdf dddgfd fdfdf efe yuop lops and kktk to the thick.</p></div>  
     </div>
   
     <div class="grid-item outaline rumble">
-      <div class="wide"><img src="/graphicdesignportfolio/images/trippyphone2.jpg"></div> 
+      <div class="wide"><img class="trippyphone" src="/graphicdesignportfolio/images/trippyphone2.jpg"></div> 
       <div class="wide"><p>hello pfapdf dddgfd fdfdf efe yuop lops and kktk to the thick.</p></div>  
     </div>
 
     <div class="grid-item outaline rumble">
-      <div class="wide"><img src="/graphicdesignportfolio/images/bottles.jpg"></div> 
+      <div class="wide"><img class="bottles" src="/graphicdesignportfolio/images/bottles.jpg"></div> 
       <div class="wide"><p>hello pfapdf dddgfd fdfdf efe yuop lops and kktk to the thick.</p></div>  
     </div>
 
@@ -142,13 +148,14 @@ $grid.on( 'click', '.grid-item', function( event ) {
   
   
   if ( $( this ).hasClass( "big_image" ) ) {
+    $(".grid-item img").addClass(); //hey for positioning
     $( event.currentTarget ).removeClass('big_image').addClass('outaline');
     setTimeout(function(){
       $( event.currentTarget ).addClass('rumble');
     }, 600);
   }
   else{
-    $(".grid-item img").removeClass(); //hey
+    $(".grid-item img").removeClass(); //hey for positioning
     $( event.currentTarget ).addClass('big_image').removeClass('outaline').removeClass('rumble');  
   }
 
