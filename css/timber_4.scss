@@ -188,7 +188,11 @@ body { font-family: Sans-Serif;margin:0; background:lightgreen;}
 
 /*--------------------- EEE .menu_bar ------------------*/ 
 /*--------------------- EEE .menu_bar ------------------*/ 
+@mixin trans($radius) {
+  transition: $radius;
+}
 
+.box { @include trans(2s); }
 
 .menu_bar {
   background:none;
@@ -196,7 +200,7 @@ body { font-family: Sans-Serif;margin:0; background:lightgreen;}
   width:90%;
   margin:30px 5% 150px 5%;
   position:relative;
-  transition: height .5s;
+  @include trans(2s);
 } 
 
 .menubar_xpand {
