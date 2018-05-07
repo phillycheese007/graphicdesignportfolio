@@ -152,6 +152,7 @@ $grid.on( 'click', '.grid-item', function( event ) {
   
   if ( $( this ).hasClass( "big_image" ) ) {
     $( event.currentTarget ).find( "img" ).addClass("muffin_positioner"); //hey for positioning
+    $( event.currentTarget ).siblings().removeClass('big_image');
     $( event.currentTarget ).removeClass('big_image').addClass('outaline');
     setTimeout(function(){
       $( event.currentTarget ).addClass('rumble');
