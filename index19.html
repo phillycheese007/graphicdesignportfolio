@@ -155,8 +155,7 @@ var $grid = $('.grid').packery({
 $grid.on( 'click', '.grid-item', function( event ) {
   $grid.packery( 'fit', event.currentTarget, 10, 10 );
   $("html, body").animate({ scrollTop: 0 }, "fast");
-  $( event.currentTarget ).siblings().removeClass('grid-item--large');
-  $( event.currentTarget ).siblings().removeClass('big_image');
+
   $( event.currentTarget ).toggleClass('outaline');
    
  
@@ -167,10 +166,16 @@ $grid.on( 'click', '.grid-item', function( event ) {
     $( event.currentTarget ).addClass('outaline');
   }); 
   
-  $(  event.currentTarget  ).toggleClass('grid-item--large');
-  $( event.currentTarget ).toggleClass( "big_image" );
+
  
-  
+  if ( $( this ).hasClass( "big_image" ) ) {
+    $( event.currentTarget ).removeClass('big_image');
+    $( event.currentTarget ).removeClass('grid-item--large');
+  }
+  else{
+    $( event.currentTarget ).addClass('big_image');
+    $( event.currentTarget ).addClass('grid-item--large');
+  }
 
  
   if ( $( this ).hasClass( "rumble" ) ) {
@@ -178,7 +183,6 @@ $grid.on( 'click', '.grid-item', function( event ) {
   }
   else{
     setTimeout(function(){
-      $( event.currentTarget ).addClass('pug');
       $( event.currentTarget ).addClass('rumble');
     }, 600);
   }
