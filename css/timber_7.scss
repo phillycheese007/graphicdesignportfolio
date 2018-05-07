@@ -262,12 +262,12 @@ $transition_speed: .5s;
   position:absolute;
   margin-left:200px;
   width: calc(92% - 200px);
-  p{margin:10px;text-indent:5px;line-height:30px;}
+  p{margin:10px;text-indent:5px;line-height:50px;}
 }
-.about_hidden .right .fadein{margin:10px 5%;background:blue;}
+.about_hidden .right .fadein{margin:10px 5%;background:none;line-height:50px;}
 
 .about_hidden .left{
-  background:darkred;
+  background:none;
   position:absolute;
   margin-left:5%;
   width:200px;
