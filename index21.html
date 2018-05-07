@@ -130,7 +130,7 @@ jQuery is only used for jQuery UI Draggable -->
   
 var $grid = $('.grid').packery({
   itemSelector: '.grid-item',
-   gutter: '.gutter-sizer',
+  gutter: '.gutter-sizer',
   columnWidth: '.grid-sizer',
   percentPosition: true
 }); 
@@ -142,16 +142,13 @@ $grid.on( 'click', '.grid-item', function( event ) {
   
   
   if ( $( this ).hasClass( "big_image" ) ) {
-    $( event.currentTarget ).removeClass('big_image').removeClass('grid-item--large').addClass('outaline');
+    $( event.currentTarget ).removeClass('big_image').addClass('outaline');
     setTimeout(function(){
       $( event.currentTarget ).addClass('rumble');
     }, 600);
   }
   else{
-    $( event.currentTarget )
-      .addClass('big_image')
-      .addClass('grid-item--large')
-      .removeClass('outaline').removeClass('rumble'); 
+    $( event.currentTarget ).addClass('big_image').removeClass('outaline, rumble'); 
   }
 
 
