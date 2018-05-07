@@ -147,7 +147,8 @@ $grid.on( 'click', '.grid-item', function( event ) {
   // trigger layout after item size changes
   $grid.packery('layout');
    
-
+  $( event.currentTarget ).siblings().addClass('rumble'); 
+  $( event.currentTarget ).removeClass('rumble');
   
 });  
 
