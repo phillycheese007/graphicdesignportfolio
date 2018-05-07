@@ -10,12 +10,26 @@
 </head>
   
 <style>
-.parent:hover, .box:hover, .rumble:hover {
+  
+
+.outaline {
+  outline: 1px solid grey; 
+  outline-inset:10px;
+} 
+  
+.outaline:hover {
     /* Start the shake animation and make the animation last for 0.5 seconds */
     animation: shake 0.5s; 
     /* When the animation is finished, start again */
     animation-iteration-count: infinite; 
 }
+  
+  
+/*.parent:hover, .box:hover, .rumble:hover {
+    animation: shake 0.5s; 
+    animation-iteration-count: infinite; 
+}
+  */
 
 @keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
@@ -159,15 +173,17 @@ $grid.on( 'click', '.grid-item', function( event ) {
   
   
   if ( $( this ).hasClass( "big_image" ) ) {
-    $( event.currentTarget ).removeClass('big_image').removeClass('grid-item--large').addClass('outaline');
+    $( event.currentTarget ).removeClass('big_image').removeClass('grid-item--large');
     setTimeout(function(){
-      $( event.currentTarget ).addClass('rumble');
+      $( event.currentTarget ).addClass('outaline');
     }, 600);
   }
   else{
     $( event.currentTarget )
-      .removeClass('rumble').addClass('big_image')
-      .addClass('grid-item--large').removeClass('outaline');
+
+         .addClass('big_image')
+      .addClass('grid-item--large')
+      .removeClass('outaline');
   }
 
 
