@@ -363,9 +363,9 @@ $transition_speed: .5s;
   
   .about_hidden .right{
     background:green;border:10px solid blue;
-    position:relative !important;
-    margin:0 auto !important;
-    width:100% !important;
+    position:absolute !important;
+    margin:0 5% !important;
+    width:90% !important;
   }
   .about_hidden .left{display:none;}
   
