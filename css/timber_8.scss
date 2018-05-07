@@ -260,7 +260,7 @@ $transition_speed: .5s;
 .about_hidden .right{
   background:none;border:1px solid black;
   position:absolute;
-  margin-left:200px;
+  margin-left: calc(200px + 5%);
   width: calc(92% - 200px);
   p{margin:10px;text-indent:5px;}
 }
