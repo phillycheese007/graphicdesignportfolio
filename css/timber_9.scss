@@ -363,6 +363,12 @@ $transition_speed: .5s;
 /*-----------------------################------#####---------#######---------------------######---------------------------*/
 
 @media only screen and (max-width: 750px) {
+  .menubar_xpand {
+  height:450 !important;
+  }
+}
+
+@media only screen and (max-width: 450px) {
   
   .about_hidden .right{
     background:white;
