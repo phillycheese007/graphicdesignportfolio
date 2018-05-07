@@ -22,7 +22,7 @@ html {
   overflow-y: scroll; /* force scrollbar, prevents initial gap */
 }
 
-body { font-family: Sans-Serif;margin:0; background:lightblue;}
+body { font-family: Sans-Serif;margin:0; background:lightyellow;}
 
   ul{list-style-type:none;} 
   a {cursor:pointer;}
@@ -188,11 +188,9 @@ body { font-family: Sans-Serif;margin:0; background:lightblue;}
 
 /*--------------------- EEE .menu_bar ------------------*/ 
 /*--------------------- EEE .menu_bar ------------------*/ 
-@mixin trans($radius) {
-  transition: $radius;
-}
+$transition_speed: .5s;
 
-.box { @include trans(2s); }
+
 
 .menu_bar {
   background:none;
@@ -200,13 +198,13 @@ body { font-family: Sans-Serif;margin:0; background:lightblue;}
   width:90%;
   margin:30px 5% 150px 5%;
   position:relative;
-  @include trans(2s);
+  transition: $transition_speed;
 } 
 
 .menubar_xpand {
   height:250px !important;
   border:1px solid lightgrey;
-  transition:height .5s;
+  transition:height $transition_speed;
 }
   
 .menu_bar .logo{
@@ -246,7 +244,7 @@ body { font-family: Sans-Serif;margin:0; background:lightblue;}
   
 .about_hidden ul li{
   background:white;border:1px solid black;
-  height:75%;margin-top:10px; transition:height.9s;
+  height:75%;margin-top:10px; transition:height $transition_speed;
 }
    
 .about_hidden ul li img{
