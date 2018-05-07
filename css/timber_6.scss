@@ -86,37 +86,7 @@ body { font-family: Sans-Serif;margin:0;background:yellow;}
 /*------------------------------------------------ BBB media queries -------------------------------*/ 
 /*--------------------------------------------------------------------------------------------------*/ 
 
-@media only screen and (max-width: 400px) {
-  .grid-sizer,
-  .grid-item {
-    width: 100%;
-  }
-  .image_boob{background:orange;width:100% !important;margin:0 !important;}
-  .image_boob img{width:100% ;}
-  .image_boob .tall, .image_boob .wide{width:100% !important;margin:0 !important;}
-  
-  .about_hidden .right{
-    background:green;border:10px solid red;
-    position:relative;
-    margin:0;
-    width:100%;
-  }
-  .about_hidden .left{display:none;}
-} 
-  
-@media only screen and (max-width: 1480px) and (min-width: 760px) {
-  .grid-sizer,
-  .grid-item {
-    width: 30.65%;
-  }
-} 
 
-@media only screen and (max-width: 760px) and (min-width: 400px) {
-  .grid-sizer,
-  .grid-item {
-    width: 48%;
-  }
-} 
 
 
 
@@ -223,7 +193,7 @@ $transition_speed: .5s;
   z-index:99;
   float:left;
   margin:0;
-  margin-left:0;
+  margin-left:10px;
   width:30%;
   height:40px;
   background:none;
@@ -236,7 +206,7 @@ $transition_speed: .5s;
   float:right;
   margin:0;
   margin-right:0;
-  width:40%;
+  width:60%;
   height:40px;
   background:purple;
   line-height:40px
@@ -363,5 +333,35 @@ $transition_speed: .5s;
 /*-----------------------################------#####--------########--------------------#####---######--------------------*/
 /*-----------------------################------#####---------#######---------------------########-------------------------*/
 /*-----------------------################------#####---------#######---------------------######---------------------------*/
-.pug{border:20px solid green;}
+@media only screen and (max-width: 400px) {
+  .grid-sizer,
+  .grid-item {
+    width: 100%;
+  }
+  .image_boob{background:orange;width:100% !important;margin:0 !important;}
+  .image_boob img{width:100% ;}
+  .image_boob .tall, .image_boob .wide{width:100% !important;margin:0 !important;}
+  
+  .about_hidden .right{
+    background:green;border:10px solid red;
+    position:relative;
+    margin:0;
+    width:100%;
+  }
+  .about_hidden .left{display:none;}
+} 
+  
+@media only screen and (max-width: 1480px) and (min-width: 760px) {
+  .grid-sizer,
+  .grid-item {
+    width: 30.65%;
+  }
+} 
+
+@media only screen and (max-width: 760px) and (min-width: 400px) {
+  .grid-sizer,
+  .grid-item {
+    width: 48%;
+  }
+} 
 
