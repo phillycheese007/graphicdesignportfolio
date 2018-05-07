@@ -94,6 +94,14 @@ body { font-family: Sans-Serif;margin:0;background:yellow;}
   .image_boob{background:orange;width:100% !important;margin:0 !important;}
   .image_boob img{width:100% ;}
   .image_boob .tall, .image_boob .wide{width:100% !important;margin:0 !important;}
+  
+  .about_hidden .right{
+    background:green;border:10px solid red;
+    position:relative;
+    margin:0;
+    width:100%;
+  }
+  .about_hidden .left{display:none;}
 } 
   
 @media only screen and (max-width: 1480px) and (min-width: 760px) {
@@ -109,6 +117,11 @@ body { font-family: Sans-Serif;margin:0;background:yellow;}
     width: 48%;
   }
 } 
+
+
+
+
+
 
 /*--------------------------------------------------------------------------------------------------*/ 
 /*------------------------------------------------ EEE media queries -------------------------------*/ 
@@ -257,6 +270,7 @@ $transition_speed: .5s;
 }
 
 .about_hidden .left{
+  
   position:absolute;
   left:50px;
   width:150px;
