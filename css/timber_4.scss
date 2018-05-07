@@ -22,7 +22,7 @@ html {
   overflow-y: scroll; /* force scrollbar, prevents initial gap */
 }
 
-body { font-family: Sans-Serif;margin:0;background:blue;}
+body { font-family: Sans-Serif;margin:0;background:brown;}
 
   ul{list-style-type:none;} 
   a {cursor:pointer;}
@@ -331,6 +331,6 @@ $transition_speed: .5s;
 /*-----------------------################------#####--------########--------------------#####---######--------------------*/
 /*-----------------------################------#####---------#######---------------------########-------------------------*/
 /*-----------------------################------#####---------#######---------------------######---------------------------*/
-
+.pug{border:20px solid green;}
 
 
