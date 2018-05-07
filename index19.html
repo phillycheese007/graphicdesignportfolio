@@ -151,7 +151,7 @@ $grid.on( 'click', '.grid-item', function( event ) {
   
   if($( ".grid-item" ).hasClass("big_image")){
     $( ".grid-item" ).click(function(){
-      $( this ).addClass('rumble');
+      $( this ).removeClass('rumble').addClass('rumble');
     });
   }
   
@@ -191,7 +191,6 @@ $(".menu_bar").on("mouseleave", function() {
 
   
 </script>
- 
   
   
   
