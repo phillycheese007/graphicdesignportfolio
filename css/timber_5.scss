@@ -22,7 +22,7 @@ html {
   overflow-y: scroll; /* force scrollbar, prevents initial gap */
 }
 
-body { font-family: Sans-Serif;margin:0;background:red;}
+body { font-family: Sans-Serif;margin:0;background:yellow;}
 
   ul{list-style-type:none;} 
   a {cursor:pointer;}
@@ -135,11 +135,9 @@ body { font-family: Sans-Serif;margin:0;background:red;}
 .big_image{
   position:absolute !important;
   top:0;
-  width: 100%;
   height: auto;
   background: pink;
   text-align:center; 
-  
   background:none;
   width:80%;
   margin:0 10%;
