@@ -150,9 +150,9 @@ $grid.on( 'click', '.grid-item', function( event ) {
   $( event.currentTarget ).siblings().addClass('rumble'); 
   $( event.currentTarget ).toggleClass('rumble');
   
-if($( event.currentTarget ).hasClass("big_image")){
-  $( event.currentTarget ).addClass('pug');
-}
+  if($( event.currentTarget ).hasClass("big_image")){
+    $( event.currentTarget ).addClass('pug');
+  }
   
 });  
 
