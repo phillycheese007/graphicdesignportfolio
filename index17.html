@@ -104,12 +104,12 @@
   </div>
   
   <div class="grid-item outaline rumble">
-    <div class="wide skewed2"><img src="/graphicdesignportfolio/images/trippyphone2.jpg"></div> 
+    <div class="wide"><img src="/graphicdesignportfolio/images/trippyphone2.jpg"></div> 
     <div class="wide"><p>hello pfapdf dddgfd fdfdf efe yuop lops and kktk to the thick.</p></div>  
   </div>
 
   <div class="grid-item outaline rumble">
-    <div class="wide skewed2"><img src="/graphicdesignportfolio/images/bottles.jpg"></div> 
+    <div class="wide"><img src="/graphicdesignportfolio/images/bottles.jpg"></div> 
     <div class="wide"><p>hello pfapdf dddgfd fdfdf efe yuop lops and kktk to the thick.</p></div>  
   </div>
 
@@ -137,7 +137,7 @@ $grid.on( 'click', '.grid-item', function( event ) {
   $grid.packery( 'fit', event.currentTarget, 10, 10 );
        $("html, body").animate({ scrollTop: 0 }, "fast");
     $(  event.currentTarget  ).siblings().removeClass('grid-item--large');
-      $(  event.currentTarget  ).siblings().removeClass('image_boob');
+      $(  event.currentTarget  ).siblings().removeClass('big_image');
   
 $(  event.currentTarget  ).siblings().addClass('rumble'); 
 $(  event.currentTarget  ).toggleClass('rumble');
@@ -158,7 +158,7 @@ $(  event.currentTarget  ).toggleClass('rumble');
   
 
   
-  $( event.currentTarget ).toggleClass( "image_boob" );
+  $( event.currentTarget ).toggleClass( "big_image" );
   
   
   // trigger layout after item size changes
