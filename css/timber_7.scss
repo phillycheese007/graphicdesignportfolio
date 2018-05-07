@@ -252,22 +252,22 @@ $transition_speed: .5s;
 }
    
 .about_hidden ul li img{
-  height:98%;
-  margin:1% auto;
+  height:96%;
+  margin:2% auto;
 } 
 
 .about_hidden .right{
   background:lightblue;
   position:absolute;
-  margin-left:50%;
-  width:50%;
+  margin-right:0;
+  width: calc(90% - 200px);
 }
 
 .about_hidden .left{
   background:darkgreen;
   position:absolute;
-  margin-right:50%;
-  width:50%;
+  margin-left:5%;
+  width:200px;
   display:visible;
 }
 
