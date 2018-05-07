@@ -159,6 +159,11 @@ $grid.on( 'click', '.grid-item', function( event ) {
   $( event.currentTarget ).siblings().removeClass('big_image');
   $( event.currentTarget ).toggleClass('outaline');
   
+  $(  event.currentTarget  ).siblings().addClass('rumble'); 
+  $(  event.currentTarget  ).toggleClass('rumble');
+  
+
+  
   $( event.currentTarget ).siblings().click(function(){
     $( event.currentTarget ).addClass('outaline');
   }); 
@@ -203,20 +208,7 @@ $(".menu_bar").on("mouseleave", function() {
  
   
   
-<script>
-  
-    if ($(".grid_item").width() < 460) {
-      $grid.on( 'click', '.grid-item', function( event ) {
-        $(  event.currentTarget  ).removeClass('rumble');
-        $(  event.currentTarget  ).removeClass('pug');
-      }); 
-}
-else {
-        $(  event.currentTarget  ).addClass('rumble');
-        $(  event.currentTarget  ).addClass('pug');
-}
 
-</script>
   
 
   
