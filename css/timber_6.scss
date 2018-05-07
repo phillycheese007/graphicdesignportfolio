@@ -220,8 +220,14 @@ $transition_speed: .5s;
 }
   
 .menu_bar .logo{
+  position:relative;
+  z-index:99;
   float:left;
-  margin-left:15px;
+  margin:0;
+  margin-left:0;
+  width:30%;
+  height:40px;
+  background:none;
   line-height:40px
 }
 
@@ -231,9 +237,9 @@ $transition_speed: .5s;
   float:right;
   margin:0;
   margin-right:0;
-  width:80%;
+  width:40%;
   height:40px;
-  background:none;
+  background:red;
   line-height:40px
 }
 
