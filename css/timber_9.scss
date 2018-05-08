@@ -211,8 +211,7 @@ $transition_speed: .5s;
 
 .menubar_xpand {
   /*height:23vw !important;*/
-display: block;
-overflow: visible;
+height:auto;
 min-height: 300px !important;
   
   border-bottom:1px solid black;
