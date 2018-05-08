@@ -406,11 +406,29 @@ $transition_speed: .5s;
 @media only screen and (max-width: 550px) {
   .menubar_xpand {height:390px !important;}
 }
-@media only screen and (max-width: 500px) {
+
+@media only screen and (max-width: 500px) {/*------------------*/
   .menubar_xpand {height:300px !important;}
   .about_hidden .left{display:none;}
  .about_hidden .right{background:none;position:absolute;margin:0 auto;width:100%;}
-}
+  
+.big_image{
+  width:94%;
+  margin:0 3%;
+  .tall{
+    width:86%;
+    margin:0 7%;
+    margin:0 auto;
+   }
+  .wide{
+    width:90%;
+    margin:0 5%;
+    margin:0 auto;
+  }
+} 
+  
+}/*------------------*/
+
 @media only screen and (max-width: 400px) {
   .menubar_xpand {height:300px !important;}
   .about_hidden .left{display:none;}
