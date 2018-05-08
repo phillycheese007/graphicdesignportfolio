@@ -22,7 +22,7 @@ html {
   overflow-y: scroll; /* force scrollbar, prevents initial gap */
 }
 
-body { font-family: Sans-Serif;margin:0;background:yellow;}
+body { font-family: Sans-Serif;margin:0;background:red;}
 
   ul{list-style-type:none;} 
   a {cursor:pointer;}
@@ -210,7 +210,10 @@ $transition_speed: .5s;
 } 
 
 .menubar_xpand {
-  height:23vw !important;
+  /*height:23vw !important;*/
+display: block;
+overflow: auto;
+  
   border-bottom:1px solid black;
   transition:height $transition_speed;
 }
