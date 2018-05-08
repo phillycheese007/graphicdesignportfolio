@@ -91,19 +91,14 @@ body { font-family: Sans-Serif;margin:0;background:yellow;}
   .grid-item {
     width: 30.65%;
   }
-  .menubar_xpand {height:300px !important;}
 } 
 
-@media only screen and (max-width: 600px) and (min-width: 450px) {
-  .menubar_xpand {height:500px !important;}
-}
 
 @media only screen and (max-width: 760px) and (min-width: 450px) {
   .grid-sizer,
   .grid-item {
     width: 48%;
   }
-  .menubar_xpand {height:550px !important;}
 } 
 
 @media only screen and (max-width: 450px) {
@@ -114,8 +109,29 @@ body { font-family: Sans-Serif;margin:0;background:yellow;}
   .image_boob{background:orange;width:100% !important;margin:0 !important;}
   .image_boob img{width:100% ;}
   .image_boob .tall, .image_boob .wide{width:100% !important;margin:0 !important;}
-  .menubar_xpand {height:550px !important;}
 } 
+
+
+@media only screen and (min-width: 800px) {
+  .menubar_xpand {height:270px !important;}
+}
+@media only screen and (max-width: 800px) {
+  .menubar_xpand {height:300px !important;}
+}
+@media only screen and (max-width: 700px) {
+  .menubar_xpand {height:400px !important;}
+}
+@media only screen and (max-width: 600px) {
+  .menubar_xpand {height:450px !important;}
+}
+@media only screen and (max-width: 500px) {
+  .menubar_xpand {height:550px !important;}
+}
+@media only screen and (max-width: 400px) {
+  .menubar_xpand {height:450px !important;}
+}
+
+
 
 /*--------------------------------------------------------------------------------------------------*/ 
 /*------------------------------------------------ EEE media queries -------------------------------*/ 
@@ -369,11 +385,9 @@ $transition_speed: .5s;
 /*-----------------------################------#####---------#######---------------------########-------------------------*/
 /*-----------------------################------#####---------#######---------------------######---------------------------*/
 
-@media only screen and (max-width: 750px) {
 
-}
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 400px) {
   
   .about_hidden .right{
     background:white;
