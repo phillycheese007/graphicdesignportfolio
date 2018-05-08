@@ -126,9 +126,13 @@ body { font-family: Sans-Serif;margin:0;background:yellow;}
 }
 @media only screen and (max-width: 500px) {
   .menubar_xpand {height:550px !important;}
+  .about_hidden .left{display:none;}
+ .about_hidden .right{background:white;position:absolute;margin:0 auto;width:100%;}
 }
 @media only screen and (max-width: 400px) {
   .menubar_xpand {height:450px !important;}
+  .about_hidden .left{display:none;}
+ .about_hidden .right{background:white;position:absolute;margin:0 auto;width:100%;}
 }
 
 
@@ -389,19 +393,9 @@ $transition_speed: .5s;
 
 @media only screen and (max-width: 400px) {
   
-  .about_hidden .right{
-    background:white;
-    position:absolute;
-    margin:0 auto;
-    width:100%;
-  }
+ 
   
 
-  
-  .about_hidden .left{
-    display:none;
-  }
-  
   .menu_bar .menu li {
     margin-right:15vw;font-size:25px;
   } 
@@ -420,3 +414,7 @@ $transition_speed: .5s;
  }  
   
 }
+
+
+
+
