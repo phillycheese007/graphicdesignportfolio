@@ -264,7 +264,7 @@ $transition_speed: .5s;
 }
    
 .about_hidden ul li img{
-  height:180px;width:200px;
+  height:100%;max-width:200px;
   margin:2% auto;
 } 
 
@@ -403,10 +403,12 @@ $transition_speed: .5s;
   .menubar_xpand {height:450px !important;}
 }
 @media only screen and (max-width: 500px) {
-  .menubar_xpand {height:550px !important;}
+  .menubar_xpand {height:300px !important;}
+  .about_hidden .left{display:none;}
+ .about_hidden .right{background:none;position:absolute;margin:0 auto;width:100%;}
 }
 @media only screen and (max-width: 400px) {
-  .menubar_xpand {height:350px !important;}
+  .menubar_xpand {height:300px !important;}
   .about_hidden .left{display:none;}
  .about_hidden .right{background:none;position:absolute;margin:0 auto;width:100%;}
 }
