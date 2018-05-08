@@ -366,38 +366,26 @@ $transition_speed: .5s;
 
 
 @media only screen and (max-width: 400px) {
-  
- 
-  
 
-  .menu_bar {
-background:red !important;
-  } 
+  .big_image{
+    width:98%;
+    margin:0 1%;
+     .tall{
+       width:100%;
+       margin:0;
+     }
+     .wide{
+       width:100%;
+       margin:0;
+     }
+  }  
   
-.big_image{
-  width:98%;
-  margin:0 1%;
-   .tall{
-     width:100%;
-     margin:0;
-   }
-   .wide{
-     width:100%;
-     margin:0;
-   }
- }  
-.menu {
-  background:purple  !important;
-  position:relative;
-  z-index:99;
-  float:right;
-  margin:0;
+  .menu {
   margin-right:0 !important;
-  width:30%  !important;min-width:190px  !important;
-  height:40px;
-  background:none;
-  line-height:40px
-}
+  width:30%  !important;
+  min-width:190px  !important;
+  }
+  
 }
 
 
