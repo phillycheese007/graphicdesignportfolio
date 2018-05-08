@@ -86,6 +86,22 @@ body { font-family: Sans-Serif;margin:0;background:yellow;}
 /*------------------------------------------------ BBB media queries -------------------------------*/ 
 /*--------------------------------------------------------------------------------------------------*/ 
 
+@media only screen and (max-width: 1480px) and (min-width: 760px) {
+  .grid-sizer,
+  .grid-item {
+    width: 30.65%;
+  }
+  .menubar_xpand {height:300px !important;}
+} 
+
+@media only screen and (max-width: 760px) and (min-width: 400px) {
+  .grid-sizer,
+  .grid-item {
+    width: 48%;
+  }
+  .menubar_xpand {height:450px !important;}
+} 
+
 @media only screen and (max-width: 400px) {
   .grid-sizer,
   .grid-item {
@@ -94,20 +110,7 @@ body { font-family: Sans-Serif;margin:0;background:yellow;}
   .image_boob{background:orange;width:100% !important;margin:0 !important;}
   .image_boob img{width:100% ;}
   .image_boob .tall, .image_boob .wide{width:100% !important;margin:0 !important;}
-} 
-  
-@media only screen and (max-width: 1480px) and (min-width: 760px) {
-  .grid-sizer,
-  .grid-item {
-    width: 30.65%;
-  }
-} 
-
-@media only screen and (max-width: 760px) and (min-width: 400px) {
-  .grid-sizer,
-  .grid-item {
-    width: 48%;
-  }
+  .menubar_xpand {height:550px !important;}
 } 
 
 /*--------------------------------------------------------------------------------------------------*/ 
@@ -210,10 +213,7 @@ $transition_speed: .5s;
 } 
 
 .menubar_xpand {
-  /*height:23vw !important;*/
-height:auto;
-min-height: 300px !important;
-  
+ /* height: 300px !important;  */
   border-bottom:1px solid black;
   transition:height $transition_speed;
 }
