@@ -94,15 +94,19 @@ body { font-family: Sans-Serif;margin:0;background:yellow;}
   .menubar_xpand {height:300px !important;}
 } 
 
-@media only screen and (max-width: 760px) and (min-width: 400px) {
+@media only screen and (max-width: 600px) and (min-width: 450px) {
+  .menubar_xpand {height:500px !important;}
+}
+
+@media only screen and (max-width: 760px) and (min-width: 450px) {
   .grid-sizer,
   .grid-item {
     width: 48%;
   }
-  .menubar_xpand {height:450px !important;}
+  .menubar_xpand {height:550px !important;}
 } 
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   .grid-sizer,
   .grid-item {
     width: 100%;
