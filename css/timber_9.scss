@@ -391,13 +391,17 @@ $transition_speed: .5s;
 }
 
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 800px) {/*------------------*/
   .menubar_xpand {height:270px !important;}
-}
+  .big_image{width:70%;margin:0 15%;
+    .tall{width:86%;margin:0 7%;margin:0 auto;}
+    .wide{width:90%;margin:0 5%;margin:0 auto;}
+  } 
+}/*------------------*/
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {/*------------------*/
   .menubar_xpand {height:290px !important;}
-}
+}/*------------------*/
 
 @media only screen and (max-width: 700px) {/*------------------*/
   .menubar_xpand {height:320px !important;}
@@ -409,18 +413,10 @@ $transition_speed: .5s;
 
 @media only screen and (max-width: 600px) {/*------------------*/
   .menubar_xpand {height:350px !important;}
-  .big_image{width:86%;margin:0 7%;
-    .tall{width:86%;margin:0 7%;margin:0 auto;}
-    .wide{width:90%;margin:0 5%;margin:0 auto;}
-  } 
 }/*------------------*/
 
 @media only screen and (max-width: 550px) {/*------------------*/
   .menubar_xpand {height:390px !important;}
-  .big_image{width:90%;margin:0 5%;
-    .tall{width:86%;margin:0 7%;margin:0 auto;}
-    .wide{width:90%;margin:0 5%;margin:0 auto;}
-  } 
 }/*------------------*/
 
 @media only screen and (max-width: 500px) {/*------------------*/
@@ -436,6 +432,6 @@ $transition_speed: .5s;
 @media only screen and (max-width: 400px) {
   .menubar_xpand {height:300px !important;}
   .about_hidden .left{display:none;}
- .about_hidden .right{background:none;position:absolute;margin:0 auto;width:100%;}
+  .about_hidden .right{background:none;position:absolute;margin:0 auto;width:100%;}
 }
 
