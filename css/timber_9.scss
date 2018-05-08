@@ -111,32 +111,6 @@ body { font-family: Sans-Serif;margin:0;background:yellow;}
   .image_boob .tall, .image_boob .wide{width:100% !important;margin:0 !important;}
 } 
 
-
-@media only screen and (min-width: 800px) {
-  .menubar_xpand {height:270px !important;}
-}
-@media only screen and (max-width: 800px) {
-  .menubar_xpand {height:300px !important;}
-}
-@media only screen and (max-width: 700px) {
-  .menubar_xpand {height:400px !important;}
-}
-@media only screen and (max-width: 600px) {
-  .menubar_xpand {height:450px !important;}
-}
-@media only screen and (max-width: 500px) {
-  .menubar_xpand {height:550px !important;}
-  .about_hidden .left{display:none;}
- .about_hidden .right{background:red;position:absolute;margin:0 auto;width:100%;}
-}
-@media only screen and (max-width: 400px) {
-  .menubar_xpand {height:450px !important;}
-  .about_hidden .left{display:none;}
- .about_hidden .right{background:red;position:absolute;margin:0 auto;width:100%;}
-}
-
-
-
 /*--------------------------------------------------------------------------------------------------*/ 
 /*------------------------------------------------ EEE media queries -------------------------------*/ 
 /*------------------------------------------------ EEE media queries -------------------------------*/ 
@@ -416,5 +390,26 @@ $transition_speed: .5s;
 }
 
 
-
+@media only screen and (min-width: 800px) {
+  .menubar_xpand {height:270px !important;}
+}
+@media only screen and (max-width: 800px) {
+  .menubar_xpand {height:300px !important;}
+}
+@media only screen and (max-width: 700px) {
+  .menubar_xpand {height:400px !important;}
+}
+@media only screen and (max-width: 600px) {
+  .menubar_xpand {height:450px !important;}
+}
+@media only screen and (max-width: 500px) {
+  .menubar_xpand {height:550px !important;}
+  .about_hidden .left{display:none;}
+ .about_hidden .right{background:red;position:absolute;margin:0 auto;width:100%;}
+}
+@media only screen and (max-width: 400px) {
+  .menubar_xpand {height:450px !important;}
+  .about_hidden .left{display:none;}
+ .about_hidden .right{background:red;position:absolute;margin:0 auto;width:100%;}
+}
 
