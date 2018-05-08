@@ -386,7 +386,18 @@ background:red !important;width:45vw !important;
      margin:0;
    }
  }  
-  
+.menu {
+  background:purple;
+  position:relative;
+  z-index:99;
+  float:right;
+  margin:0;
+  margin-right:0;
+  width:60%;min-width:200px;
+  height:40px;
+  background:none;
+  line-height:40px
+}
 }
 
 
