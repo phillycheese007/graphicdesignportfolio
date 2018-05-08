@@ -22,7 +22,7 @@ html {
   overflow-y: scroll; /* force scrollbar, prevents initial gap */
 }
 
-body { font-family: Sans-Serif;margin:0;background:red;}
+body { font-family: Sans-Serif;margin:0;background:yellow;}
 
   ul{list-style-type:none;} 
   a {cursor:pointer;}
@@ -213,6 +213,7 @@ $transition_speed: .5s;
   /*height:23vw !important;*/
 display: block;
 overflow: auto;
+min-height: 100% !important;
   
   border-bottom:1px solid black;
   transition:height $transition_speed;
