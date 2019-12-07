@@ -30,5 +30,30 @@ convert -background green -fill #ffcc00 -pointsize 10 -fill black -gravity North
 document.getElementById("demo").innerHTML = inactive + hover;
 </script>
 
+ 
+ 
+ <!DOCTYPE html>
+<html>
+<body>
+
+<p id="sus1"></p>
+<p id="sus2"></p>
+<p id="sus3"></p>
+
+
+<script>
+function myFunction(name) {
+  return 'convert' + '&nbsp' + '-background' + '&nbsp' + 'green' + '&nbsp' + '-fill' + '&nbsp' + '#ffcc00' + '&nbsp' + '-pointsize' + '&nbsp' + '10' + '&nbsp' + '-fill' + '&nbsp' + 'black' + '&nbsp' + '-gravity' + '&nbsp' + 'NorthWest' + '&nbsp' + 'caption:"m"' + '&nbsp' + '-flatten' + '&nbsp' + name + '.png' ;
+}
+document.getElementById("sus1").innerHTML = myFunction("John");
+document.getElementById("sus2").innerHTML = myFunction("John");
+</script>
+
+</body>
+</html>
+
+ 
+ 
+ 
 </body>
 </html>
