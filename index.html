@@ -1,91 +1,33 @@
 <!DOCTYPE html>
 <html>
 <body>
-<style>
-.bert{background:red;text-color:blue;}
-</style>
-<h2>JavaScript Variables</h2>
-
-
-
-
-<div class="bert">
-<br>
-<br>
-convert -background green -fill #ffcc00 -pointsize 10 -fill black -gravity NorthWest caption:"m" -flatten minactive.png
-</div>
-
-<p id="demo"></p>
-
-<script>
- var inactive = 
-'convert' + '&nbsp' + '-background' + '&nbsp' + 'green' + '&nbsp' + '-fill' + '&nbsp' + '#ffcc00' + '&nbsp' + '-pointsize' + '&nbsp' + '10' + '&nbsp' + '-fill' + '&nbsp' + 'black' + '&nbsp' + '-gravity' + '&nbsp' + 'NorthWest' + '&nbsp' + 'caption:"m"' + '&nbsp' + '-flatten' + '&nbsp' + 'minactive.png'
-
- var hover = 
-'convert' + '&nbsp' + '-background' + '&nbsp' + 'yellow' + '&nbsp' + '-fill' + '&nbsp' + '#ffcc00' + '&nbsp' + '-pointsize' + '&nbsp' + '10' + '&nbsp' + '-fill' + '&nbsp' + 'black' + '&nbsp' + '-gravity' + '&nbsp' + 'NorthWest' + '&nbsp' + 'caption:"m"' + '&nbsp' + '-flatten' + '&nbsp' + 'minactive.png'
-
- var clicked = 
-'convert' + '&nbsp' + '-background' + '&nbsp' + 'red' + '&nbsp' + '-fill' + '&nbsp' + '#ffcc00' + '&nbsp' + '-pointsize' + '&nbsp' + '10' + '&nbsp' + '-fill' + '&nbsp' + 'black' + '&nbsp' + '-gravity' + '&nbsp' + 'NorthWest' + '&nbsp' + 'caption:"m"' + '&nbsp' + '-flatten' + '&nbsp' + 'minactive.png'
-;
-document.getElementById("demo").innerHTML = inactive + hover;
-</script>
-
- 
- 
- 
- 
- 
- 
- 
- <!DOCTYPE html>
-<html>
-<body>
 
 <p>List all array items, with keys and values:</p>
 
 <p id="demo"></p>
 
 <script>
-var fruits = ["apple", "orange", "cherry"];
-fruits.forEach(myFunction);
+var inactive = ["sus4", "m", "Maj"];
+inactive.forEach(myFunction);
 
 function myFunction(item, index) {
-  document.getElementById("demo").innerHTML += index + ':' + item +'&nbsp' + '-background' + '&nbsp' + 'green' + '&nbsp' + '-fill' + '&nbsp' + '#ffcc00' + '&nbsp' + '-pointsize' + '&nbsp' + '10' + '&nbsp' + '-fill' + '&nbsp' + 'black' + '&nbsp' + '-gravity' + '&nbsp' + 'NorthWest' + '&nbsp' + 'caption:"m"' + '&nbsp' + '-flatten' + '&nbsp' + name + '.png' + '<br>'; 
+  document.getElementById("demo").innerHTML += 'convert' + '&nbsp' + '-background' + '&nbsp' + 'green' + '&nbsp' + '-fill' + '&nbsp' + '#ffcc00' + '&nbsp' + '-pointsize' + '&nbsp' + '10' + '&nbsp' + '-fill' + '&nbsp' + 'black' + '&nbsp' + '-gravity' + '&nbsp' + 'NorthWest' + '&nbsp' + 'caption:"m"' + '&nbsp' + '-flatten' + '&nbsp' + item + '.png' + '<br>'; 
 }
 </script>
 
-</body>
-</html>
-
- 
- 
- 
- 
- 
- 
- 
- <!DOCTYPE html>
-<html>
-<body>
-
-<p id="sus1"></p>
-<p id="sus2"></p>
-<p id="sus3"></p>
 
 
 <script>
-function myFunction(name) {
-  return 'convert' + '&nbsp' + '-background' + '&nbsp' + 'green' + '&nbsp' + '-fill' + '&nbsp' + '#ffcc00' + '&nbsp' + '-pointsize' + '&nbsp' + '10' + '&nbsp' + '-fill' + '&nbsp' + 'black' + '&nbsp' + '-gravity' + '&nbsp' + 'NorthWest' + '&nbsp' + 'caption:"m"' + '&nbsp' + '-flatten' + '&nbsp' + name + '.png' ;
+
+var hover = ["sus4", "m", "Maj"];
+hover.forEach(myFunction);
+
+function myFunction(item, index) {
+  document.getElementById("demo").innerHTML += 'convert' + '&nbsp' + '-background' + '&nbsp' + 'red' + '&nbsp' + '-fill' + '&nbsp' + '#ffcc00' + '&nbsp' + '-pointsize' + '&nbsp' + '10' + '&nbsp' + '-fill' + '&nbsp' + 'black' + '&nbsp' + '-gravity' + '&nbsp' + 'NorthWest' + '&nbsp' + 'caption:"m"' + '&nbsp' + '-flatten' + '&nbsp' + item + '.png' + '<br>'; 
 }
-document.getElementById("sus1").innerHTML = myFunction("John");
-document.getElementById("sus2").innerHTML = myFunction("John");
 </script>
 
-</body>
-</html>
 
- 
- 
- 
+
 </body>
 </html>
