@@ -8,24 +8,26 @@
 
 <script>
 var inactive = ["sus4", "m", "Maj"];
+
 inactive.forEach(myFunction);
 
+
+
+
 function myFunction(item, index) {
-  document.getElementById("demo").innerHTML += 'convert' + '&nbsp' + '-background' + '&nbsp' + 'green' + '&nbsp' + '-fill' + '&nbsp' + '#ffcc00' + '&nbsp' + '-pointsize' + '&nbsp' + '10' + '&nbsp' + '-fill' + '&nbsp' + 'black' + '&nbsp' + '-gravity' + '&nbsp' + 'NorthWest' + '&nbsp' + 'caption:"m"' + '&nbsp' + '-flatten' + '&nbsp' + item + '.png' + '<br>'; 
+  document.getElementById("demo").innerHTML += 
+  'convert' + '&nbsp' + '-background' + '&nbsp' + 'green' + '&nbsp' + '-fill' + '&nbsp' + '#ffcc00' + '&nbsp' + '-pointsize' + '&nbsp' + '10' + '&nbsp' + '-fill' + '&nbsp' + 'black' + '&nbsp' + '-gravity' + '&nbsp' + 'NorthWest' + '&nbsp' + 'caption:"m"' + '&nbsp' + '-flatten' + '&nbsp' + item + 'inactive' + '.png' + '<br>' + 'convert' + '&nbsp' + '-background' + '&nbsp' + 'red' + '&nbsp' + '-fill' + '&nbsp' + '#ffcc00' + '&nbsp' + '-pointsize' + '&nbsp' + '10' + '&nbsp' + '-fill' + '&nbsp' + 'black' + '&nbsp' + '-gravity' + '&nbsp' + 'NorthWest' + '&nbsp' + 'caption:"m"' + '&nbsp' + '-flatten' + '&nbsp' + item + 'hover' + '.png' + '<br>' +  'convert' + '&nbsp' + '-background' + '&nbsp' + 'purple' + '&nbsp' + '-fill' + '&nbsp' + '#ffcc00' + '&nbsp' + '-pointsize' + '&nbsp' + '10' + '&nbsp' + '-fill' + '&nbsp' + 'black' + '&nbsp' + '-gravity' + '&nbsp' + 'NorthWest' + '&nbsp' + 'caption:"m"' + '&nbsp' + '-flatten' + '&nbsp' + item + 'selected' + '.png' + '<br>'  
+  
+  ; 
 }
+
+
+
 </script>
 
 
 
-<script>
 
-var hover = ["sus4", "m", "Maj"];
-hover.forEach(myFunction);
-
-function myFunction(item, index) {
-  document.getElementById("demo").innerHTML += 'convert' + '&nbsp' + '-background' + '&nbsp' + 'red' + '&nbsp' + '-fill' + '&nbsp' + '#ffcc00' + '&nbsp' + '-pointsize' + '&nbsp' + '10' + '&nbsp' + '-fill' + '&nbsp' + 'black' + '&nbsp' + '-gravity' + '&nbsp' + 'NorthWest' + '&nbsp' + 'caption:"m"' + '&nbsp' + '-flatten' + '&nbsp' + item + '.png' + '<br>'; 
-}
-</script>
 
 
 
