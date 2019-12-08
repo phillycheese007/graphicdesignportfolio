@@ -1,3 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#demo{background:pink;}
+#title{font-size:40px;background:green;}
+</style>
+</head>
+<body>
+
+
+
+
 
 <p id="title">COPY BELOW</p>
 
@@ -32,9 +45,9 @@ chordnames.forEach(myFunction);
 
 function myFunction(item, index) {
   document.getElementById("demo").innerHTML += 
-  'convert' + '&nbsp' + '-background' + '&nbsp' + InactiveButtonColor + '&nbsp' + '-fill' + '&nbsp' + '#ffcc00' + '&nbsp' + '-size'  + '&nbsp' + 'x12' + '&nbsp' + '-pointsize' + '&nbsp' + '10' + '&nbsp' + '-fill' + '&nbsp' + 'black' + '&nbsp' + '-gravity' + '&nbsp' + 'NorthWest' + '&nbsp' + 'caption:' +  item  + '' + '&nbsp' + '-flatten' + '&nbsp' + item + 'inactive' + '.png' + '<br>' + 'convert' + '&nbsp' + '-background' + '&nbsp' + HoverButtonColor + '&nbsp' + '-fill' + '&nbsp' + '#ffcc00' + '&nbsp' + '-size' + '&nbsp' + 'x12' + '&nbsp' + '-pointsize' + '&nbsp' + '10' + '&nbsp' + '-fill' + '&nbsp' + 'black' + '&nbsp' + '-gravity' + '&nbsp' + 'NorthWest' + '&nbsp' + 'caption:' +  item  + '' +  '&nbsp' + '-flatten' + '&nbsp' + item + 'hover' + '.png' + '<br>' +  'convert' + '&nbsp' + '-background' + '&nbsp' + ClickedButtonColor + '&nbsp' + '-fill' + '&nbsp' + '#ffcc00' + '&nbsp' +  '-size' + '&nbsp' + 'x12' + '&nbsp' + '-pointsize' + '&nbsp' + '10' + '&nbsp' + '-fill' + '&nbsp' + 'black' + '&nbsp' + '-gravity' + '&nbsp' + 'NorthWest' + '&nbsp' + 'caption:' +  item  + '' + '&nbsp' + '-flatten' + '&nbsp' + item + 'selected' + '.png' + '<br>' + '<br>'
+  'convert' + '&nbsp' + '-background' + '&nbsp' + InactiveButtonColor + '&nbsp' + '-fill' + '&nbsp' + '#ffcc00' + '&nbsp' + '-size'  + '&nbsp' + 'x32' + '&nbsp' + '-pointsize' + '&nbsp' + '10' + '&nbsp' + '-fill' + '&nbsp' + 'black' + '&nbsp' + '-gravity' + '&nbsp' + 'NorthWest' + '&nbsp' + 'caption:' +  item  + '' + '&nbsp' + '-flatten' + '&nbsp' + item + 'inactive' + '.png' + '<br>' + 'convert' + '&nbsp' + '-background' + '&nbsp' + HoverButtonColor + '&nbsp' + '-fill' + '&nbsp' + '#ffcc00' + '&nbsp' + '-size' + '&nbsp' + 'x32' + '&nbsp' + '-pointsize' + '&nbsp' + '10' + '&nbsp' + '-fill' + '&nbsp' + 'black' + '&nbsp' + '-gravity' + '&nbsp' + 'NorthWest' + '&nbsp' + 'caption:' +  item  + '' +  '&nbsp' + '-flatten' + '&nbsp' + item + 'hover' + '.png' + '<br>' +  'convert' + '&nbsp' + '-background' + '&nbsp' + ClickedButtonColor + '&nbsp' + '-fill' + '&nbsp' + '#ffcc00' + '&nbsp' +  '-size' + '&nbsp' + 'x32' + '&nbsp' + '-pointsize' + '&nbsp' + '10' + '&nbsp' + '-fill' + '&nbsp' + 'black' + '&nbsp' + '-gravity' + '&nbsp' + 'NorthWest' + '&nbsp' + 'caption:' +  item  + '' + '&nbsp' + '-flatten' + '&nbsp' + item + 'selected' + '.png' + '<br>' + '<br>'
   
-  + 'montage' + '&nbsp' + item + 'inactive' + '.png' + '&nbsp' + item + 'hover' + '.png' + '&nbsp' + item + 'selected' + '.png' + '&nbsp' +  '-resize' + '&nbsp' + '40x' + '&nbsp' + '-tile' + '&nbsp' + 'x1' + '&nbsp' + '-border' + '&nbsp' + '1' + '&nbsp' + '-geometry' + '&nbsp' + '+1+1' + '&nbsp'  +  'C' + ':' + '\\Users\\phill\\Documents\\icons\\' +   item  + '.jpg' + '<br><br>'
+  + 'montage' + '&nbsp' + item + 'inactive' + '.png' + '&nbsp' + item + 'hover' + '.png' + '&nbsp' + item + 'selected' + '.png' + '&nbsp' +  '-resize' + '&nbsp' + 'x20' + '&nbsp' + '-tile' + '&nbsp' + 'x1' + '&nbsp' + '-border' + '&nbsp' + '1' + '&nbsp' + '-geometry' + '&nbsp' + '+1+1' + '&nbsp'  +  'C' + ':' + '\\Users\\phill\\Documents\\icons\\' +   item  + '.jpg' + '<br><br>'
  
   
   ; 
@@ -52,3 +65,4 @@ function myFunction(item, index) {
 
 </body>
 </html>
+
