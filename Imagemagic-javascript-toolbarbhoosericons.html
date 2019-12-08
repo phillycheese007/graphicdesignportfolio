@@ -20,10 +20,13 @@
 //global variables 
 
 
-var InactiveButtonColor = "white"; 
+var InactiveButtonColor = "LightGreen"; 
 var HoverButtonColor = "green"; 
 var ClickedButtonColor = "blue";
-var SamePageButtonColor ="white"
+
+var HomeInactiveButtonColor = "white"; 
+var HomeHoverButtonColor = "white"; 
+var HomeClickedButtonColor = "white";
 
 //global variables 
 
@@ -33,7 +36,7 @@ var SamePageButtonColor ="white"
 
 var chordnames = [
 
-"1" , "2" , "3" , "4" , "5" ,"6" , "7"
+"1" , "2" , "3" , "4" , "5" ,"6" , "7" , "1home" , "2home" , "3home" , "4home" , "5home" , "6home" , "7home"
 
 ];
 
@@ -46,10 +49,14 @@ chordnames.forEach(myFunction);
 
 function myFunction(item, index) {
   document.getElementById("demo").innerHTML += 
-  'convert' + '&nbsp' + '-background' + '&nbsp' + InactiveButtonColor + '&nbsp' + '-fill' + '&nbsp' + '#ffcc00' + '&nbsp' + '-size'  + '&nbsp' + '14x13' + '&nbsp' + '-pointsize' + '&nbsp' + '9' + '&nbsp' + '-fill' + '&nbsp' + 'black' + '&nbsp' + '-gravity' + '&nbsp' + 'center' + '&nbsp' + 'caption:' +  item  + '' + '&nbsp' + '-flatten' + '&nbsp' + item + 'inactive' + '.png' + '<br>' + 'convert' + '&nbsp' + '-background' + '&nbsp' + HoverButtonColor + '&nbsp' + '-fill' + '&nbsp' + '#ffcc00' + '&nbsp' + '-size' + '&nbsp' + '14x13' + '&nbsp' + '-pointsize' + '&nbsp' + '9' + '&nbsp' + '-fill' + '&nbsp' + 'black' + '&nbsp' + '-gravity' + '&nbsp' + 'center' + '&nbsp' + 'caption:' +  item  + '' +  '&nbsp' + '-flatten' + '&nbsp' + item + 'hover' + '.png' + '<br>' +  'convert' + '&nbsp' + '-background' + '&nbsp' + ClickedButtonColor + '&nbsp' + '-fill' + '&nbsp' + '#ffcc00' + '&nbsp' +  '-size' + '&nbsp' + '14x13' + '&nbsp' + '-pointsize' + '&nbsp' + '9' + '&nbsp' + '-fill' + '&nbsp' + 'black' + '&nbsp' + '-gravity' + '&nbsp' + 'center' + '&nbsp' + 'caption:' +  item  + '' + '&nbsp' + '-flatten' + '&nbsp' + item + 'selected' + '.png' +  '<br>' +  'convert' + '&nbsp' + '-background' + '&nbsp' + SamePageButtonColor + '&nbsp' + '-fill' + '&nbsp' + '#ffcc00' + '&nbsp' +  '-size' + '&nbsp' + '14x13' + '&nbsp' + '-pointsize' + '&nbsp' + '9' + '&nbsp' + '-fill' + '&nbsp' + 'red' + '&nbsp' + '-gravity' + '&nbsp' + 'center' + '&nbsp' + 'caption:' +  item  + '' + '&nbsp' + '-flatten' + '&nbsp' + item + 'samepage' + '.png' + '<br>' + '<br>'
- 
-  + 'montage' + '&nbsp' + item + 'inactive' + '.png' + '&nbsp' + item + 'hover' + '.png' + '&nbsp' + item + 'selected' + '.png' + '&nbsp' +  '&nbsp' + '-tile' + '&nbsp' + 'x1' + '&nbsp'  + '-geometry' + '&nbsp' + '+1+1' + '&nbsp'  + '-background' + '&nbsp' + 'black' + '&nbsp' + '-border' + '&nbsp' + '1x1' + '&nbsp' +  'C' + ':' + '\\Users\\phill\\Documents\\icons\\' +   item  + '.png' + '<br><br>'
- 
+  'convert' + '&nbsp' + '-background' + '&nbsp' + InactiveButtonColor + '&nbsp' + '-fill' + '&nbsp' + '#ffcc00' + '&nbsp' + '-size'  + '&nbsp' + '14x13' + '&nbsp' + '-pointsize' + '&nbsp' + '9' + '&nbsp' + '-fill' + '&nbsp' + 'black' + '&nbsp' + '-gravity' + '&nbsp' + 'center' + '&nbsp' + 'caption:' +  item  + '' + '&nbsp' + '-flatten' + '&nbsp' + item + 'inactive' + '.png' + '<br>' + 'convert' + '&nbsp' + '-background' + '&nbsp' + HoverButtonColor + '&nbsp' + '-fill' + '&nbsp' + '#ffcc00' + '&nbsp' + '-size' + '&nbsp' + '14x13' + '&nbsp' + '-pointsize' + '&nbsp' + '9' + '&nbsp' + '-fill' + '&nbsp' + 'black' + '&nbsp' + '-gravity' + '&nbsp' + 'center' + '&nbsp' + 'caption:' +  item  + '' +  '&nbsp' + '-flatten' + '&nbsp' + item + 'hover' + '.png' + '<br>' +  'convert' + '&nbsp' + '-background' + '&nbsp' + ClickedButtonColor + '&nbsp' + '-fill' + '&nbsp' + '#ffcc00' + '&nbsp' +  '-size' + '&nbsp' + '14x13' + '&nbsp' + '-pointsize' + '&nbsp' + '9' + '&nbsp' + '-fill' + '&nbsp' + 'black' + '&nbsp' + '-gravity' + '&nbsp' + 'center' + '&nbsp' + 'caption:' +  item  + '' + '&nbsp' + '-flatten' + '&nbsp' + item + 'selected' + '.png' + '<br>' 
+  +
+    'convert' + '&nbsp' + '-background' + '&nbsp' + InactiveButtonColor + '&nbsp' + '-fill' + '&nbsp' + '#ffcc00' + '&nbsp' + '-size'  + '&nbsp' + '14x13' + '&nbsp' + '-pointsize' + '&nbsp' + '9' + '&nbsp' + '-fill' + '&nbsp' + 'black' + '&nbsp' + '-gravity' + '&nbsp' + 'center' + '&nbsp' + 'caption:' +  item  + '' + '&nbsp' + '-flatten' + '&nbsp' + item + 'inactive' + '.png' + '<br>' + 'convert' + '&nbsp' + '-background' + '&nbsp' + HoverButtonColor + '&nbsp' + '-fill' + '&nbsp' + '#ffcc00' + '&nbsp' + '-size' + '&nbsp' + '14x13' + '&nbsp' + '-pointsize' + '&nbsp' + '9' + '&nbsp' + '-fill' + '&nbsp' + 'black' + '&nbsp' + '-gravity' + '&nbsp' + 'center' + '&nbsp' + 'caption:' +  item  + '' +  '&nbsp' + '-flatten' + '&nbsp' + item + 'hover' + '.png' + '<br>' +  'convert' + '&nbsp' + '-background' + '&nbsp' + ClickedButtonColor + '&nbsp' + '-fill' + '&nbsp' + '#ffcc00' + '&nbsp' +  '-size' + '&nbsp' + '14x13' + '&nbsp' + '-pointsize' + '&nbsp' + '9' + '&nbsp' + '-fill' + '&nbsp' + 'black' + '&nbsp' + '-gravity' + '&nbsp' + 'center' + '&nbsp' + 'caption:' +  item  + '' + '&nbsp' + '-flatten' + '&nbsp' + item + 'selected' + '.png' + '<br><br>' + 
+    
+    
+    'montage' + '&nbsp' + item + 'inactive' + '.png' + '&nbsp' + item + 'hover' + '.png' + '&nbsp' + item + 'selected' + '.png' + '&nbsp' +  '&nbsp' + '-tile' + '&nbsp' + 'x1' + '&nbsp'  + '-geometry' + '&nbsp' + '+1+1' + '&nbsp'  + '-background' + '&nbsp' + 'black' + '&nbsp' + '-border' + '&nbsp' + '1x1' + '&nbsp' +  'C' + ':' + '\\Users\\phill\\Documents\\icons\\' +   item  +  'home' +'.png' + '<br>'
+    +
+     'montage' + '&nbsp' + item + 'inactive' + '.png' + '&nbsp' + item + 'hover' + '.png' + '&nbsp' + item + 'selected' + '.png' + '&nbsp' +  '&nbsp' + '-tile' + '&nbsp' + 'x1' + '&nbsp'  + '-geometry' + '&nbsp' + '+1+1' + '&nbsp'  + '-background' + '&nbsp' + 'black' + '&nbsp' + '-border' + '&nbsp' + '1x1' + '&nbsp' +  'C' + ':' + '\\Users\\phill\\Documents\\icons\\' +   item  +  'home' +'.png' + '<br><br>'
   
   ; 
 }
