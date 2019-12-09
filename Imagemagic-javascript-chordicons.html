@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,9 +21,13 @@
 //global variables 
 
 
-var InactiveButtonColor = "yellow"; 
-var HoverButtonColor = "pink"; 
-var ClickedButtonColor = "purple"; 
+var ChordInactiveButtonColor = "yellow"; 
+var  ChordHoverButtonColor = "pink"; 
+var  ChordClickedButtonColor = "purple"; 
+
+var ArpeggioInactiveButtonColor = "orange"; 
+var  ArpeggioHoverButtonColor = "green"; 
+var  ArpeggioClickedButtonColor = "blue"; 
 
 //global variables 
 
@@ -32,8 +37,7 @@ var ClickedButtonColor = "purple";
 
 var chordnames = [
 
-"sus4", "sus2", "mMaj11" , "mMaj9" , "mMaj13" , "m11" , "mMajadd13" , "mMajadd11", "mMaj7" , "13" , "mll" , "m9b5" , "m9" , "m7b9" , "m7b5" , "m7add13" , "m7add11" , "m7" , "m6add9" , "m6" , "m" , "oct" , "Maj13" , "m7b9" , "m7b5" , "m7add13" , "m7add11" , "m7" , "m6add9" , "m6" , "m" , "oct" , "Maj13" , "Maj11" , "Maj9sus4" , "Maj9#11" , "Maj9#5" , "Maj9" , "Maj7b5" , "Maj7add13" , "Maj7#11" , "Maj7#5" , "Maj7" , "Maj" , "Dim7" , "Dim" , "Aug7" , "Aug" , "13b9" , "13b5b9" , "13#9" , "1311b9" , "119sus4" , "9b13" , "9b5" , "9#11" , "9#5" , "9" , "7sus4" , "7b9" , "7b5b9" ,"7b5#9" , "7b5" , "7add13" , "7add11" , "7#11" , "7#9" , "7#5b9" , "7#5" , "7" , "6sus4" , "6/9" , "6" , "5"
-
+"sus4", "sus2", "mMaj11" , "mMaj9" , "mMaj13" , "m11" , "mMajadd13" , "mMajadd11", "mMaj7" , "13" , "mll" , "m9b5" , "m9" , "m7b9" , "m7b5" , "m7add13" , "m7add11" , "m7" , "m6add9" , "m6" , "m" , "oct" , "Maj13" , "m7b9" , "m7b5" , "m7add13" , "m7add11" , "m7" , "m6add9" , "m6" , "m" , "m13" , "oct" , "Maj13" , "Maj11" , "Maj9sus4" , "Maj9#11" , "Maj9#5" , "Maj9" , "Maj7b5" , "Maj7add13" , "Maj7#11" , "Maj7#5" , "Maj7" , "Maj" , "Dim7" , "Dim" , "Aug7" , "Aug" , "13b9" , "13b5b9" , "13#9" , "1311b9" , "119sus4" , "9b13" , "9b5" , "9#11" , "9#5" , "9" , "7sus4" , "7b9" , "7b5b9" ,"7b5#9" , "7b5" , "7add13" , "7add11" , "7#11" , "7#9" , "7#5b9" , "7#5" , "7" , "6sus4" , "6/9" , "6" , "5" , "11" , "9sus4" , "7#5#9" , "7#5" , "7" , "6slash9" , "6" , "5" , "pedal-minpor" , "pedal-major" ,  "invert-pedal-minor" ,  "invert-pedal-major" ,  "bass-5ths" ,  "bass-4ths"
 ];
 
 
@@ -45,9 +49,15 @@ chordnames.forEach(myFunction);
 
 function myFunction(item, index) {
   document.getElementById("demo").innerHTML += 
-  'convert' + '&nbsp' + '-background' + '&nbsp' + InactiveButtonColor + '&nbsp' + '-fill' + '&nbsp' + '#ffcc00' + '&nbsp' + '-size'  + '&nbsp' + 'x13' + '&nbsp' + '-pointsize' + '&nbsp' + '9' + '&nbsp' + '-fill' + '&nbsp' + 'black' + '&nbsp' + '-gravity' + '&nbsp' + 'NorthWest' + '&nbsp' + 'caption:' +  item  + '' + '&nbsp' + '-flatten' + '&nbsp' + item + 'inactive' + '.png' + '<br>' + 'convert' + '&nbsp' + '-background' + '&nbsp' + HoverButtonColor + '&nbsp' + '-fill' + '&nbsp' + '#ffcc00' + '&nbsp' + '-size' + '&nbsp' + 'x13' + '&nbsp' + '-pointsize' + '&nbsp' + '9' + '&nbsp' + '-fill' + '&nbsp' + 'black' + '&nbsp' + '-gravity' + '&nbsp' + 'NorthWest' + '&nbsp' + 'caption:' +  item  + '' +  '&nbsp' + '-flatten' + '&nbsp' + item + 'hover' + '.png' + '<br>' +  'convert' + '&nbsp' + '-background' + '&nbsp' + ClickedButtonColor + '&nbsp' + '-fill' + '&nbsp' + '#ffcc00' + '&nbsp' +  '-size' + '&nbsp' + 'x13' + '&nbsp' + '-pointsize' + '&nbsp' + '9' + '&nbsp' + '-fill' + '&nbsp' + 'black' + '&nbsp' + '-gravity' + '&nbsp' + 'NorthWest' + '&nbsp' + 'caption:' +  item  + '' + '&nbsp' + '-flatten' + '&nbsp' + item + 'selected' + '.png' + '<br>' + '<br>'
+  'convert' + '&nbsp' + '-background' + '&nbsp' +  ChordInactiveButtonColor + '&nbsp' + '-fill' + '&nbsp' + '#ffcc00' + '&nbsp' + '-size'  + '&nbsp' + 'x13' + '&nbsp' + '-pointsize' + '&nbsp' + '9' + '&nbsp' + '-fill' + '&nbsp' + 'black' + '&nbsp' + '-gravity' + '&nbsp' + 'NorthWest' + '&nbsp' + 'caption:' +  item  + '' + '&nbsp' + '-flatten' + '&nbsp' + 'Chord_' + item + 'inactive' + '.png' + '<br>' + 'convert' + '&nbsp' + '-background' + '&nbsp' +  ChordHoverButtonColor + '&nbsp' + '-fill' + '&nbsp' + '#ffcc00' + '&nbsp' + '-size' + '&nbsp' + 'x13' + '&nbsp' + '-pointsize' + '&nbsp' + '9' + '&nbsp' + '-fill' + '&nbsp' + 'black' + '&nbsp' + '-gravity' + '&nbsp' + 'NorthWest' + '&nbsp' + 'caption:' +  item  + '' +  '&nbsp' + '-flatten' + '&nbsp' + 'Chord_' + item + 'hover' + '.png' + '<br>' +  'convert' + '&nbsp' + '-background' + '&nbsp' +  ChordClickedButtonColor + '&nbsp' + '-fill' + '&nbsp' + '#ffcc00' + '&nbsp' +  '-size' + '&nbsp' + 'x13' + '&nbsp' + '-pointsize' + '&nbsp' + '9' + '&nbsp' + '-fill' + '&nbsp' + 'black' + '&nbsp' + '-gravity' + '&nbsp' + 'NorthWest' + '&nbsp' + 'caption:' +  item  + '' + '&nbsp' + '-flatten' + '&nbsp' + 'Chord_' + item + 'selected' + '.png' + '<br>' 
   
-  + 'montage' + '&nbsp' + item + 'inactive' + '.png' + '&nbsp' + item + 'hover' + '.png' + '&nbsp' + item + 'selected' + '.png' + '&nbsp' +  '&nbsp' + '-tile' + '&nbsp' + 'x1' + '&nbsp'  + '-geometry' + '&nbsp' + '+1+1' + '&nbsp'  + '-background' + '&nbsp' + 'SkyBlue' + '&nbsp' +  'C' + ':' + '\\Users\\phill\\Documents\\icons\\' +   item  + '.png' + '<br><br>'
+  + 'montage' + '&nbsp' + 'Chord_' + item + 'inactive' + '.png' + '&nbsp' + 'Chord_' + item + 'hover' + '.png' + '&nbsp' + 'Chord_' + item + 'selected' + '.png' + '&nbsp' +  '&nbsp' + '-tile' + '&nbsp' + 'x1' + '&nbsp'  + '-geometry' + '&nbsp' + '+1+1' + '&nbsp'  + '-background' + '&nbsp' + 'SkyBlue' + '&nbsp' +  'C' + ':' + '\\Users\\phill\\Documents\\icons\\' + 'Chord_' +   item  + '.png' + '<br><br>'
+  
+  +
+  
+    'convert' + '&nbsp' + '-background' + '&nbsp' +  ArpeggioInactiveButtonColor + '&nbsp' + '-fill' + '&nbsp' + '#ffcc00' + '&nbsp' + '-size'  + '&nbsp' + 'x13' + '&nbsp' + '-pointsize' + '&nbsp' + '9' + '&nbsp' + '-fill' + '&nbsp' + 'black' + '&nbsp' + '-gravity' + '&nbsp' + 'NorthWest' + '&nbsp' + 'caption:' +  item  + '' + '&nbsp' + '-flatten' + '&nbsp' + 'Arpeggio_' + item + 'inactive' + '.png' + '<br>' + 'convert' + '&nbsp' + '-background' + '&nbsp' +  ArpeggioHoverButtonColor + '&nbsp' + '-fill' + '&nbsp' + '#ffcc00' + '&nbsp' + '-size' + '&nbsp' + 'x13' + '&nbsp' + '-pointsize' + '&nbsp' + '9' + '&nbsp' + '-fill' + '&nbsp' + 'black' + '&nbsp' + '-gravity' + '&nbsp' + 'NorthWest' + '&nbsp' + 'caption:' +  item  + '' +  '&nbsp' + '-flatten' + '&nbsp' + 'Arpeggio_' + item + 'hover' + '.png' + '<br>' +  'convert' + '&nbsp' + '-background' + '&nbsp' +  ArpeggioClickedButtonColor + '&nbsp' + '-fill' + '&nbsp' + '#ffcc00' + '&nbsp' +  '-size' + '&nbsp' + 'x13' + '&nbsp' + '-pointsize' + '&nbsp' + '9' + '&nbsp' + '-fill' + '&nbsp' + 'black' + '&nbsp' + '-gravity' + '&nbsp' + 'NorthWest' + '&nbsp' + 'caption:' +  item  + '' + '&nbsp' + '-flatten' + '&nbsp' + 'Arpeggio_' + item + 'selected' + '.png' + '<br>'
+  
+  + 'montage' + '&nbsp' + 'Arpeggio_' + item + 'inactive' + '.png' + '&nbsp' + 'Arpeggio_' + item + 'hover' + '.png' + '&nbsp' + 'Arpeggio_' + item + 'selected' + '.png' + '&nbsp' +  '&nbsp' + '-tile' + '&nbsp' + 'x1' + '&nbsp'  + '-geometry' + '&nbsp' + '+1+1' + '&nbsp'  + '-background' + '&nbsp' + 'SkyBlue' + '&nbsp' +  'C' + ':' + '\\Users\\phill\\Documents\\icons\\' + 'Arpeggio_' +   item  + '.png' + '<br><br>'
  
   
   ; 
@@ -56,9 +66,6 @@ function myFunction(item, index) {
 
 
 </script>
-
-
-
 
 
 
